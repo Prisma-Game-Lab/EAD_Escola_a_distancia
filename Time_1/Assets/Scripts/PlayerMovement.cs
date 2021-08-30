@@ -6,32 +6,39 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
     private float speed;
-    Vector2 clickedPosition;
-    bool moving;
+    public GameObject gridGenerator;
+    public List<GameObject> path;
 
-    private void Update() 
+
+    void Update() 
     {
         if (Input.GetMouseButtonDown(0))
         {
-            clickedPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-            moving = true;
+            path = gridGenerator.GetComponent<GridBehaviour>().path;
+            StartCoroutine(MoveThroughPath(path));
         }
-        if (moving && (Vector2) transform.position != clickedPosition)
+
+    }
+
+    private IEnumerator MoveThroughPath(List<GameObject> path)
+    {
+        path.Reverse();
+        foreach(GameObject targetTile in path)
         {
-            float step = speed * Time.deltaTime;
-            transform.position = Vector2.MoveTowards(transform.position, clickedPosition, step);
-        }
-        else
-        {
-            moving = false;
+            float time = 1/speed;
+            yield return StartCoroutine(MoveTo(transform.position, targetTile.transform.position, time));//time seria settado em algum outro lugar
         }
     }
-    void OnCollisionEnter2D(Collision2D col)
+
+    private IEnumerator MoveTo(Vector3 startPos, Vector3 targetPos, float time)
     {
-        clickedPosition = transform.position;
-    }
-    void OnCollisionStay2D(Collision2D col)
-    {
-        clickedPosition = transform.position;
+        float t=0;
+        do
+        {
+            yield return new WaitForFixedUpdate();
+            t+=Time.deltaTime;
+            transform.position = Vector3.Lerp(startPos, targetPos, t/time);
+        }while(t<time);
     }
 }
+
