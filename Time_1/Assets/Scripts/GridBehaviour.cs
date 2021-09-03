@@ -18,16 +18,14 @@ public class GridBehaviour : MonoBehaviour
     private Vector3 leftBottomLocation = new Vector3(0,0,0);
     private GameObject[,] gridArray;
     [SerializeField]
-    private int startX = 0;
+    public int startX = 0;
     [SerializeField]
-    private int startY = 0;
+    public int startY = 0;
     [SerializeField]
-    private int endX = 2;
+    public int endX = 2;
     [SerializeField]
-    private int endY = 2;
+    public int endY = 2;
     public List<GameObject> path =  new List<GameObject>();
-
-
 
     void Awake()
     {
@@ -45,7 +43,6 @@ public class GridBehaviour : MonoBehaviour
             SetPath();
             findDistance = false;
         }
-
     }
 
     //Popula o vetor com os GameObjects gridprefab
@@ -105,7 +102,7 @@ public class GridBehaviour : MonoBehaviour
                 tempList.Add(gridArray[x,y-1]);
             if (TestDirection(x,y,step,4))
                 tempList.Add(gridArray[x-1,y]);
-            
+
             GameObject tempObj = FindClosest(gridArray[endX,endY].transform, tempList);
             path.Add(tempObj);
             x = tempObj.GetComponent<GridStat>().x;
@@ -148,11 +145,11 @@ public class GridBehaviour : MonoBehaviour
                 if(y+1 < linhas && gridArray[x,y+1] && gridArray[x,y+1].GetComponent<GridStat>().visited == step)
                     return true;
                 else
-                    return false; 
+                    return false;
         }
         return false;
     }
-     
+
     // marca as 4 direcoes vizinhas
     void TestFourDirections(int x, int y, int step)
     {
@@ -190,5 +187,13 @@ public class GridBehaviour : MonoBehaviour
             }
         }
         return list[indexNumber];
+    }
+
+    public List<GameObject> GetPath()
+    {
+        SetDistance();
+        SetPath();
+        findDistance = false;
+        return path;
     }
 }
