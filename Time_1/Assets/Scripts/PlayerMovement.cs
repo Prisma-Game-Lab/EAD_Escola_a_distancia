@@ -14,6 +14,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown("r"))
+        {
+            PlayerPrefs.SetInt("key", 0);
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -54,7 +59,8 @@ public class PlayerMovement : MonoBehaviour
         foreach(GameObject targetTile in path)
         {
             float time = 1/speed;
-            yield return StartCoroutine(MoveTo(transform.position, targetTile.transform.position, time));//time seria settado em algum outro lugar
+            Vector3 vec = targetTile.transform.position;
+            yield return StartCoroutine(MoveTo(transform.position, new Vector3(vec.x,0.5f,vec.z), time));//time seria settado em algum outro lugar
         }
     }
 
