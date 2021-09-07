@@ -7,10 +7,10 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
     private float speed;
-    public GridBehaviour gridGenerator;
+    public Pathfinding pathfinding;
     public LayerMask groundLayer;
     [HideInInspector]
-    public List<GameObject> path;
+    public List<Node> path;
 
     void Update()
     {
@@ -19,42 +19,23 @@ public class PlayerMovement : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if(Physics.Raycast(ray, out hit,Mathf.Infinity,groundLayer))
-            {
-                GridStat hitTile = hit.transform.gameObject.GetComponent<GridStat>();
-                if(hitTile != null)
-                {
-                    // TODO: tirar esse 0.5f hard codado
-                    var currentTileGO = Physics.OverlapSphere(transform.position,0.5f,groundLayer)[0];
-                    Assert.IsNotNull(currentTileGO,"Player not on a tile");
+            {              
+                StopAllCoroutines();
 
-                    GridStat currentTile = currentTileGO.GetComponent<GridStat>();
-                    Assert.IsNotNull(currentTile,"Player not on a tile, maybe change my groundLayer property");
-
-                    // Isso pode parar o player entre tiles. Pode ser um problema no futuro
-                    StopAllCoroutines();
-
-                    gridGenerator.endX=hitTile.x;
-                    gridGenerator.endY=hitTile.y;
-
-                    gridGenerator.startX=currentTile.x;
-                    gridGenerator.startY=currentTile.y;
-
-                    path = gridGenerator.GetPath();
-                    StartCoroutine(MoveThroughPath(path));
-                }
+                path = pathfinding.FindPath(transform.position, hit.point);
+                StartCoroutine(MoveThroughPath(path));
             }
 
         }
 
     }
 
-    private IEnumerator MoveThroughPath(List<GameObject> path)
+    private IEnumerator MoveThroughPath(List<Node> path)
     {
-        path.Reverse();
-        foreach(GameObject targetTile in path)
+        foreach(Node targetTile in path)
         {
             float time = 1/speed;
-            yield return StartCoroutine(MoveTo(transform.position, targetTile.transform.position, time));//time seria settado em algum outro lugar
+            yield return StartCoroutine(MoveTo(transform.position, targetTile.worldPosition, time));//time seria settado em algum outro lugar
         }
     }
 
@@ -65,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
         {
             yield return new WaitForFixedUpdate();
             t+=Time.deltaTime;
-            transform.position = Vector3.Lerp(startPos, targetPos, t/time);
+            transform.position = Vector3.Lerp(startPos, new Vector3(targetPos.x, 0.5f, targetPos.z), t/time);
         }while(t<time);
     }
 }
