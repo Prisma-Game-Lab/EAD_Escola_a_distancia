@@ -1,28 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Assertions;
 using UnityEngine.UI;
-using TMPro;
-
+[RequireComponent(typeof(Collider))]
 public class CollectItem : MonoBehaviour
 {
-    public List<ItemBase> inventoryList2 = new List<ItemBase>();
-    public GameObject inventoryItemPrefab;
-    public GameObject inventoryPlace;
-    
-    void Start() {
-        
+    public Inventory inventory;
+
+    private void Start() {
+        var col = GetComponent<Collider>();
+        Assert.IsNotNull(col, "Collider not found");
+        Assert.IsTrue(col.enabled, "Collider not enabled");
     }
 
-    private void OnTriggerEnter2D(Collider2D other) {
-        GameObject Other = other.gameObject;
-        if (Other.CompareTag("Item")) {
-            Other.SetActive(false);
-            GameObject collectedItem = Instantiate(inventoryItemPrefab, inventoryPlace.transform);
-            collectedItem.transform.GetChild(1).gameObject.GetComponent<Image>().sprite = inventoryList2[0].sprite;
-            collectedItem.transform.GetChild(2).gameObject.GetComponent<TextMeshProUGUI>().text = inventoryList2[0].name;
-            
+    private void OnTriggerEnter(Collider other) {
+        GameObject otherGO = other.gameObject;
+        if (otherGO.CompareTag("Item")) {
+            CollectableItem colItem = otherGO.GetComponent<CollectableItem>();
+            Assert.IsNotNull(colItem);
+            inventory.itensList.Add(colItem.item);
+            colItem.Dispose();
         }
-        
     }
 }
