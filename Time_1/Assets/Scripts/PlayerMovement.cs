@@ -8,6 +8,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float speed;
     public Pathfinding pathfinding;
+    public GridGen gridGen;
     public LayerMask groundLayer;
     [HideInInspector]
     public List<Node> path;
@@ -18,7 +19,8 @@ public class PlayerMovement : MonoBehaviour
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-            if(Physics.Raycast(ray, out hit,Mathf.Infinity,groundLayer))
+
+            if(Physics.Raycast(ray, out hit,Mathf.Infinity,groundLayer) && gridGen.NodeFromWorldPoint(hit.point).walkable)
             {              
                 StopAllCoroutines();
 
