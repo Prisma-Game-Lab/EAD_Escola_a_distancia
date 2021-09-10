@@ -21,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
             RaycastHit hit;
 
             if(Physics.Raycast(ray, out hit,Mathf.Infinity,groundLayer) && gridGen.NodeFromWorldPoint(hit.point).walkable)
-            {              
+            {
                 StopAllCoroutines();
 
                 path = pathfinding.FindPath(transform.position, hit.point);
@@ -36,7 +36,8 @@ public class PlayerMovement : MonoBehaviour
     {
         foreach(Node targetTile in path)
         {
-            float time = 1/speed;
+            float distance = Vector3.Distance(transform.position,targetTile.worldPosition);
+            float time = distance/speed;
             yield return StartCoroutine(MoveTo(transform.position, targetTile.worldPosition, time));//time seria settado em algum outro lugar
         }
     }
