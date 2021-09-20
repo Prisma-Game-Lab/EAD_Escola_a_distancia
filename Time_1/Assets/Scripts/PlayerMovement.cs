@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
     private float speed;
+    public bool frozen;
     public Pathfinding pathfinding;
     public GridGen gridGen;
     public LayerMask groundLayer;
@@ -17,6 +18,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+        
+            if (frozen)
+                return;
+
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
@@ -32,6 +37,7 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    
     private IEnumerator MoveThroughPath(List<Node> path)
     {
         foreach(Node targetTile in path)

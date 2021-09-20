@@ -17,6 +17,7 @@ public class ModelSwapper : MonoBehaviour
     public Student currentStudent;
 
     public FadeOut fadeOut;
+
     private void Awake()
     {
         UpdateModels();
