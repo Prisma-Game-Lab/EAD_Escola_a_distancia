@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public enum Student
 {
@@ -17,12 +18,17 @@ public class ModelSwapper : MonoBehaviour
     public GameObject playerMaria;
     public Student currentStudent;
 
+    public Button buttonEricson;
+    public Button buttonClara;
+    public Button buttonMaria;
+
     public VariableManager variableManager;
     public FadeOut fadeOut;
 
     private void Awake()
     {
         UpdateModels();
+        UpdateButtons();
     }
 
     private void Start()
@@ -131,6 +137,24 @@ public class ModelSwapper : MonoBehaviour
         currentStudent = s;
         UpdateModels();
         yield return fadeOut.StartCoroutine(fadeOut.FadeInCoroutine());
+    }
+
+    public void UpdateButtons()
+    {
+        if (variableManager.activeCharacter != "ericson" && variableManager.ericson)
+            buttonEricson.interactable = true;
+        else
+            buttonEricson.interactable = false;
+
+        if (variableManager.activeCharacter != "clara" && variableManager.clara)
+            buttonClara.interactable = true;
+        else
+            buttonClara.interactable = false;
+
+        if (variableManager.activeCharacter != "maria" && variableManager.maria)
+            buttonMaria.interactable = true;
+        else
+            buttonMaria.interactable = false;
     }
 
 }

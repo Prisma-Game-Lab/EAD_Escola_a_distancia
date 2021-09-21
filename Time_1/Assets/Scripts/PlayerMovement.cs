@@ -37,6 +37,11 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    public void Stop()
+    {
+        StopAllCoroutines();
+    }
+
     
     private IEnumerator MoveThroughPath(List<Node> path)
     {

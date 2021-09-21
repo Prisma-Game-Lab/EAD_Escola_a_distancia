@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class Timer : MonoBehaviour
 {
     public float timeRemaining = 10;
-    public bool running = false;
+    private bool running = false;
     public Text timeText;
     public VariableManager variableManager;
 
@@ -31,6 +31,9 @@ public class Timer : MonoBehaviour
                 Kill(variableManager.activeCharacter);
                 timeRemaining = 0;
                 running = false;
+                // espaco para uma kill message
+
+                //load hub
             }
         }
     }
