@@ -12,7 +12,6 @@ public class Timer : MonoBehaviour
 
     private void Start()
     {
-        // Starts the timer automatically
         running = true;
     }
 
