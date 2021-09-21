@@ -103,19 +103,19 @@ public class ModelSwapper : MonoBehaviour
         switch (s)
         {
             case "ericson":
-                if (!variableManager.ericson)
+                if (!variableManager.ericson || variableManager.activeCharacter == "ericson")
                     return;
                 variableManager.activeCharacter = "ericson";
                 student = Student.ericson;
                 break;
             case "clara":
-                if (!variableManager.clara)
+                if (!variableManager.clara || variableManager.activeCharacter == "clara")
                     return;
                 variableManager.activeCharacter = "clara";
                 student = Student.clara;
                 break;
             case "maria":
-                if (!variableManager.maria)
+                if (!variableManager.maria || variableManager.activeCharacter == "maria")
                     return;
                 variableManager.activeCharacter = "maria";
                 student = Student.maria;
