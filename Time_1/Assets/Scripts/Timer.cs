@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Timer : MonoBehaviour
 {
     public float timeRemaining = 10;
     private bool running = false;
-    public Text timeText;
+    public TextMeshProUGUI timeText;
     public VariableManager variableManager;
 
     private void Start()

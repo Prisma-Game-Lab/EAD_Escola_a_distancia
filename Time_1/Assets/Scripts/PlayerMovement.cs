@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
         {
             yield return new WaitForFixedUpdate();
             t+=Time.deltaTime;
-            transform.position = Vector3.Lerp(startPos, new Vector3(targetPos.x, 0.5f, targetPos.z), t/time);
+            transform.position = Vector3.Lerp(startPos, new Vector3(targetPos.x, 0, targetPos.z), t/time);
         }while(t<time);
     }
 }
