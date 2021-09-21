@@ -6,6 +6,7 @@ public enum Student
 {
     ericson, clara, maria
 }
+
 public class ModelSwapper : MonoBehaviour
 {
     public GameObject ericson;
@@ -16,6 +17,7 @@ public class ModelSwapper : MonoBehaviour
     public GameObject playerMaria;
     public Student currentStudent;
 
+    public VariableManager variableManager;
     public FadeOut fadeOut;
 
     private void Awake()
@@ -23,11 +25,54 @@ public class ModelSwapper : MonoBehaviour
         UpdateModels();
     }
 
+    private void Start()
+    {
+        string s = variableManager.activeCharacter;
+        Student student = Student.ericson;
+
+        if (s == "ericson" && variableManager.ericson)
+        {
+            variableManager.activeCharacter = "ericson";
+            student = Student.ericson;
+        }
+        else if (s == "clara" && variableManager.clara)
+        {
+            variableManager.activeCharacter = "clara";
+            student = Student.clara;
+        }
+        else if (s == "maria" && variableManager.maria)
+        {
+            variableManager.activeCharacter = "maria";
+            student = Student.maria;
+        }
+        else if (variableManager.ericson)
+        {
+            variableManager.activeCharacter = "ericson";
+            student = Student.ericson;
+        }
+        else if (variableManager.clara)
+        {
+            variableManager.activeCharacter = "clara";
+            student = Student.clara;
+        }
+        else if (variableManager.maria)
+        {
+            variableManager.activeCharacter = "maria";
+            student = Student.maria;
+        }
+
+        currentStudent = student;
+        UpdateModels();
+    }
+
     private void UpdateModels()
     {
-        ericson.SetActive(true);
-        clara.SetActive(true);
-        maria.SetActive(true);
+        if (variableManager.ericson)
+            ericson.SetActive(true);
+        if (variableManager.clara)
+            clara.SetActive(true);
+        if (variableManager.maria)
+            maria.SetActive(true);
         playerClara.SetActive(false);
         playerEricson.SetActive(false);
         playerMaria.SetActive(false);
@@ -58,12 +103,21 @@ public class ModelSwapper : MonoBehaviour
         switch (s)
         {
             case "ericson":
+                if (!variableManager.ericson)
+                    return;
+                variableManager.activeCharacter = "ericson";
                 student = Student.ericson;
                 break;
             case "clara":
+                if (!variableManager.clara)
+                    return;
+                variableManager.activeCharacter = "clara";
                 student = Student.clara;
                 break;
             case "maria":
+                if (!variableManager.maria)
+                    return;
+                variableManager.activeCharacter = "maria";
                 student = Student.maria;
                 break;
         }
