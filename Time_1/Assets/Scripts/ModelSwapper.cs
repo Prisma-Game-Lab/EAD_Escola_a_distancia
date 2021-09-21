@@ -13,25 +13,20 @@ public class ModelSwapper : MonoBehaviour
     public GameObject ericson;
     public GameObject clara;
     public GameObject maria;
+
     public GameObject playerEricson;
     public GameObject playerClara;
     public GameObject playerMaria;
-    public Student currentStudent;
 
     public Button buttonEricson;
     public Button buttonClara;
     public Button buttonMaria;
 
+    public Student currentStudent;
     public VariableManager variableManager;
     public FadeOut fadeOut;
 
     private void Awake()
-    {
-        UpdateModels();
-        UpdateButtons();
-    }
-
-    private void Start()
     {
         string s = variableManager.activeCharacter;
         Student student = Student.ericson;
@@ -69,6 +64,7 @@ public class ModelSwapper : MonoBehaviour
 
         currentStudent = student;
         UpdateModels();
+        UpdateButtons();
     }
 
     private void UpdateModels()
@@ -79,9 +75,11 @@ public class ModelSwapper : MonoBehaviour
             clara.SetActive(true);
         if (variableManager.maria)
             maria.SetActive(true);
+
         playerClara.SetActive(false);
         playerEricson.SetActive(false);
         playerMaria.SetActive(false);
+
         switch (currentStudent)
         {
             case Student.ericson:
@@ -101,42 +99,39 @@ public class ModelSwapper : MonoBehaviour
 
     public void SwapTo(Student s)
     {
+        StopAllCoroutines();
         StartCoroutine(SwapModels(s));
     }
+
     public void SwapTo(string s)
     {
         Student student = Student.ericson;
         switch (s)
         {
             case "ericson":
-                if (!variableManager.ericson || variableManager.activeCharacter == "ericson")
-                    return;
-                variableManager.activeCharacter = "ericson";
                 student = Student.ericson;
                 break;
             case "clara":
-                if (!variableManager.clara || variableManager.activeCharacter == "clara")
-                    return;
-                variableManager.activeCharacter = "clara";
                 student = Student.clara;
                 break;
             case "maria":
-                if (!variableManager.maria || variableManager.activeCharacter == "maria")
-                    return;
-                variableManager.activeCharacter = "maria";
                 student = Student.maria;
                 break;
         }
 
+        StopAllCoroutines();
         StartCoroutine(SwapModels(student));
     }
 
     private IEnumerator SwapModels(Student s)
     {
+        ButtonsOff();
         yield return fadeOut.StartCoroutine(fadeOut.FadeOutCoroutine());
         currentStudent = s;
+        variableManager.activeCharacter = s.ToString();
         UpdateModels();
         yield return fadeOut.StartCoroutine(fadeOut.FadeInCoroutine());
+        UpdateButtons();
     }
 
     public void UpdateButtons()
@@ -155,6 +150,13 @@ public class ModelSwapper : MonoBehaviour
             buttonMaria.interactable = true;
         else
             buttonMaria.interactable = false;
+    }
+
+    public void ButtonsOff()
+    {
+        buttonEricson.interactable = false;
+        buttonClara.interactable = false;
+        buttonMaria.interactable = false;
     }
 
 }
