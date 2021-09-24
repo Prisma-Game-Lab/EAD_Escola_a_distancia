@@ -3,16 +3,13 @@ using UnityEngine.EventSystems;
 
 public class ButtonHandler : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 {
-    public PlayerMovement playerMovement;
-
     public void OnPointerDown(PointerEventData data)
     {
-        playerMovement.frozen = true;
+        PlayerMovement.instance.LockMovement();
     }
-    
+
     public void OnPointerUp(PointerEventData data)
     {
-        playerMovement.frozen = false;
-        playerMovement.Stop();
+        PlayerMovement.instance.UnlockMovement();
     }
 }

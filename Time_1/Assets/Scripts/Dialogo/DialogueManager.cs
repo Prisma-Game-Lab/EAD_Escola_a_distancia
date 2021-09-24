@@ -33,6 +33,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void StartDialogue(Dialogue dialogue)
     {
+        PlayerMovement.instance.LockMovement();
         isInDialogue = true;
         queue = new Queue<DialogueBox>();
         foreach (var dBox in dialogue.dialogueBoxes)
@@ -90,5 +91,6 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueBox.SetActive(false);
         isInDialogue = false;
+        PlayerMovement.instance.UnlockMovement();
     }
 }
