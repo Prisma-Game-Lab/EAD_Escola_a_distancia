@@ -28,38 +28,41 @@ public class ModelSwapper : MonoBehaviour
 
     private void Awake()
     {
-        string s = variableManager.activeCharacter;
+        Student s = variableManager.activeCharacter;
         Student student = Student.ericson;
 
-        if (s == "ericson" && variableManager.ericson)
+        switch (s)
         {
-            variableManager.activeCharacter = "ericson";
-            student = Student.ericson;
-        }
-        else if (s == "clara" && variableManager.clara)
-        {
-            variableManager.activeCharacter = "clara";
-            student = Student.clara;
-        }
-        else if (s == "maria" && variableManager.maria)
-        {
-            variableManager.activeCharacter = "maria";
-            student = Student.maria;
-        }
-        else if (variableManager.ericson)
-        {
-            variableManager.activeCharacter = "ericson";
-            student = Student.ericson;
-        }
-        else if (variableManager.clara)
-        {
-            variableManager.activeCharacter = "clara";
-            student = Student.clara;
-        }
-        else if (variableManager.maria)
-        {
-            variableManager.activeCharacter = "maria";
-            student = Student.maria;
+            case Student.ericson:
+                variableManager.activeCharacter = Student.ericson;
+                student = Student.ericson;
+                break;
+            case Student.clara:
+                variableManager.activeCharacter = Student.clara;
+                student = Student.clara;
+                break;
+            case Student.maria:
+                variableManager.activeCharacter = Student.maria;
+                student = Student.maria;
+                break;
+
+            default:
+                if (variableManager.ericson)
+                {
+                    variableManager.activeCharacter = Student.ericson;
+                    student = Student.ericson;
+                }
+                else if (variableManager.clara)
+                {
+                    variableManager.activeCharacter = Student.clara;
+                    student = Student.clara;
+                }
+                else if (variableManager.maria)
+                {
+                    variableManager.activeCharacter = Student.maria;
+                    student = Student.maria;
+                }
+                break;
         }
 
         currentStudent = student;
@@ -128,7 +131,7 @@ public class ModelSwapper : MonoBehaviour
         ButtonsOff();
         yield return fadeOut.StartCoroutine(fadeOut.FadeOutCoroutine());
         currentStudent = s;
-        variableManager.activeCharacter = s.ToString();
+        variableManager.activeCharacter = s;
         UpdateModels();
         yield return fadeOut.StartCoroutine(fadeOut.FadeInCoroutine());
         UpdateButtons();
@@ -136,17 +139,17 @@ public class ModelSwapper : MonoBehaviour
 
     public void UpdateButtons()
     {
-        if (variableManager.activeCharacter != "ericson" && variableManager.ericson)
+        if (variableManager.activeCharacter != Student.ericson && variableManager.ericson)
             buttonEricson.interactable = true;
         else
             buttonEricson.interactable = false;
 
-        if (variableManager.activeCharacter != "clara" && variableManager.clara)
+        if (variableManager.activeCharacter != Student.clara && variableManager.clara)
             buttonClara.interactable = true;
         else
             buttonClara.interactable = false;
 
-        if (variableManager.activeCharacter != "maria" && variableManager.maria)
+        if (variableManager.activeCharacter != Student.maria && variableManager.maria)
             buttonMaria.interactable = true;
         else
             buttonMaria.interactable = false;

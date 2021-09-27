@@ -49,17 +49,17 @@ public class Timer : MonoBehaviour
         timeText.text = string.Format("{0:00}:{1:00}", min, sec);
     }
 
-    void Kill(string s)
+    void Kill(Student s)
     {
         switch (s)
         {
-            case "ericson":
+            case Student.ericson:
                 variableManager.ericson = false;
                 break;
-            case "clara":
+            case Student.clara:
                 variableManager.clara = false;
                 break;
-            case "maria":
+            case Student.maria:
                 variableManager.maria = false;
                 break;
         }

@@ -8,5 +8,5 @@ public class VariableManager : ScriptableObject
     public bool ericson;
     public bool clara;
     public bool maria;
-    public string activeCharacter;
+    public Student activeCharacter;
 }
