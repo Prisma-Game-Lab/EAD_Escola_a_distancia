@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -10,6 +11,7 @@ public class Timer : MonoBehaviour
     private bool running = false;
     public TextMeshProUGUI timeText;
     public VariableManager variableManager;
+    public FadeOut fadeOut;
 
     private void Start()
     {
@@ -27,18 +29,33 @@ public class Timer : MonoBehaviour
             }
             else
             {
-                string kill = string.Format("{0} Morreu", variableManager.activeCharacter);
-                Debug.Log(kill);
-                Kill(variableManager.activeCharacter);
                 timeRemaining = 0;
                 running = false;
                 // espaco para uma kill message
-
+                StartCoroutine(respawn());
                 //load hub
             }
         }
     }
 
+
+    private IEnumerator respawn()
+    {
+        string kill = string.Format("{0} Morreu", variableManager.activeCharacter);
+        Debug.Log(kill);
+        Kill(variableManager.activeCharacter);
+
+        yield return fadeOut.StartCoroutine(fadeOut.FadeOutCoroutine());
+
+        yield return new WaitForSeconds(1);
+
+        SceneManager.LoadScene(0);
+
+
+
+    }
+
+    
     void DisplayTime(float timeToDisplay)
     {
         timeToDisplay += 1;
