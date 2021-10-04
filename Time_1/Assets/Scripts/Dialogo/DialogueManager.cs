@@ -31,9 +31,16 @@ public class DialogueManager : MonoBehaviour
         Assert.IsNull(instance);
         instance=this;
     }
+    private void Update() {
+        if (isInDialogue && Input.GetButtonUp("AdvanceDialogue"))
+        {
+            DisplayNextBox();
+        }
+    }
     public void StartDialogue(Dialogue dialogue)
     {
         PlayerMovement.instance.LockMovement();
+        Interactable.LockInteraction();
         isInDialogue = true;
         queue = new Queue<DialogueBox>();
         foreach (var dBox in dialogue.dialogueBoxes)
@@ -80,6 +87,8 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
             dialogueText.text += charArray[i];
         }
+        // helps avoiding accidently skipping dialogue
+        yield return new WaitForSeconds(0.5f);
         displayBoxCoroutine = null;
     }
     private void DisplayBoxInstantly(DialogueBox box)
@@ -92,5 +101,6 @@ public class DialogueManager : MonoBehaviour
         dialogueBox.SetActive(false);
         isInDialogue = false;
         PlayerMovement.instance.UnlockMovement();
+        Interactable.UnlockInteraction();
     }
 }
