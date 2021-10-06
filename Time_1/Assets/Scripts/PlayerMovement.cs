@@ -38,7 +38,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (locks > 0) return;
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetButtonUp("Walk"))
         {
 
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);

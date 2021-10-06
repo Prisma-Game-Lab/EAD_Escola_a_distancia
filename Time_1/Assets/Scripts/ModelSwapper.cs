@@ -30,44 +30,49 @@ public class ModelSwapper : MonoBehaviour
     {
         Student s = variableManager.activeCharacter;
         Student student = Student.ericson;
-
-        switch (s)
+        
+        if (variableManager.IsStudentAlive(s))
         {
-            case Student.ericson:
+            switch (s)
+            {
+                case Student.ericson:
+                    student = Student.ericson;
+                    break;
+                case Student.clara:
+                    student = Student.clara;
+                    break;
+                case Student.maria:
+                    student = Student.maria;
+                    break;
+            }
+        }
+        else
+        {
+            if (variableManager.ericson)
+            {
                 variableManager.activeCharacter = Student.ericson;
                 student = Student.ericson;
-                break;
-            case Student.clara:
+            }
+            else if (variableManager.clara)
+            {
                 variableManager.activeCharacter = Student.clara;
                 student = Student.clara;
-                break;
-            case Student.maria:
+            }
+            else if (variableManager.maria)
+            {
                 variableManager.activeCharacter = Student.maria;
                 student = Student.maria;
-                break;
-
-            default:
-                if (variableManager.ericson)
-                {
-                    variableManager.activeCharacter = Student.ericson;
-                    student = Student.ericson;
-                }
-                else if (variableManager.clara)
-                {
-                    variableManager.activeCharacter = Student.clara;
-                    student = Student.clara;
-                }
-                else if (variableManager.maria)
-                {
-                    variableManager.activeCharacter = Student.maria;
-                    student = Student.maria;
-                }
-                break;
+            }
         }
 
         currentStudent = student;
         UpdateModels();
         UpdateButtons();
+    }
+
+    void Start()
+    {
+        fadeOut.StartCoroutine(fadeOut.FadeInCoroutine());
     }
 
     private void UpdateModels()

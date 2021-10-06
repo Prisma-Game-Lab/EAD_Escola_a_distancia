@@ -110,7 +110,7 @@ GameObject:
   - component: {fileID: 1617568255812838027}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -187,14 +187,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  locks: 0
   pathfinding: {fileID: 0}
   gridGen: {fileID: 0}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  blockLayer:
-    serializedVersion: 2
-    m_Bits: 128
 --- !u!1001 &655387362000001604
 PrefabInstance:
   m_ObjectHideFlags: 0
