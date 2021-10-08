@@ -70,11 +70,6 @@ public class ModelSwapper : MonoBehaviour
         UpdateButtons();
     }
 
-    void Start()
-    {
-        fadeOut.StartCoroutine(fadeOut.FadeInCoroutine());
-    }
-
     private void UpdateModels()
     {
         if (variableManager.ericson)
