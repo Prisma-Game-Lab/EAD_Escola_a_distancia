@@ -41,10 +41,14 @@ public class Interactable : MonoBehaviour
         }
     }
     public UnityEvent onInteract;
+
+    protected virtual bool CanInteract()
+    {
+        return playerIsNear && _locks <= 0;
+    }
     private void Update()
     {
-        if (playerIsNear &&
-            _locks <= 0 &&
+        if (CanInteract() &&
             Input.GetButtonUp("Interact"))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
