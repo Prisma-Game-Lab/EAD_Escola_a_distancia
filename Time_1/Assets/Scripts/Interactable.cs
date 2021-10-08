@@ -61,7 +61,7 @@ public class Interactable : MonoBehaviour
             {
                 if (hit.collider == _col)
                 {
-                    onInteract.Invoke();
+                    Interact();
                 }
             }
 
