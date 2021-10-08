@@ -6,7 +6,7 @@ using UnityEngine.Assertions;
 
 
 [RequireComponent(typeof(Collider))]
-public class CondicionalInteractable : Interactable
+public class ConditionalInteractable : Interactable
 {
     public Inventory inventory;
     public List<Item> requiredItems;

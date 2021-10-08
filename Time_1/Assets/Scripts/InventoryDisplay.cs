@@ -19,7 +19,7 @@ public class InventoryDisplay : MonoBehaviour
         List<Item> itemList= inventory.itensList;
         while(true)
         {
-            yield return new WaitUntil(()=>itemList.Count != myCount);
+            yield return null; //WaitUntil(()=>itemList.Count != myCount);
             myCount = itemList.Count;
             int childCount = transform.childCount;
             Assert.IsTrue(childCount >= myCount, "not enough children");
