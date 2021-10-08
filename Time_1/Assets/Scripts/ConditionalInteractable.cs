@@ -11,15 +11,22 @@ public class CondicionalInteractable : Interactable
     public Inventory inventory;
     public List<Item> requiredItems;
 
-    protected override bool CanInteract()
+    public UnityEvent defaultBehaviour;
+
+    protected override void Interact()
     {
+        var hasRequirements = true;
         foreach (var item in requiredItems)
         {
-            if(! inventory.itensList.Contains(item))
-            {
-                return false;
-            }
+            hasRequirements = hasRequirements && inventory.itensList.Contains(item);
         }
-        return base.CanInteract();
+        if(hasRequirements)
+        {
+            onInteract.Invoke();
+        }
+        else
+        {
+            defaultBehaviour.Invoke();
+        }
     }
 }

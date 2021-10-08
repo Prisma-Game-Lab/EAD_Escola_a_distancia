@@ -42,6 +42,10 @@ public class Interactable : MonoBehaviour
     }
     public UnityEvent onInteract;
 
+    protected virtual void Interact()
+    {
+        onInteract.Invoke();
+    }
     protected virtual bool CanInteract()
     {
         return playerIsNear && _locks <= 0;
