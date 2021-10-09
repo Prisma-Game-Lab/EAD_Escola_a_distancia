@@ -5,6 +5,7 @@ using UnityEngine.Assertions;
 [CreateAssetMenu(fileName = "Inventory", menuName = "Item/Create a new Item Inventory")]
 public class Inventory : ScriptableObject
 {
+    private void OnEnable() => hideFlags = HideFlags.DontUnloadUnusedAsset;
     public List<Item> itensList = new List<Item>();
 
     public void RemoveItem(Item i)
