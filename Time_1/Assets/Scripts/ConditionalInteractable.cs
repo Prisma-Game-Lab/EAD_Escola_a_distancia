@@ -18,7 +18,7 @@ public class ConditionalInteractable : Interactable
         var hasRequirements = true;
         foreach (var item in requiredItems)
         {
-            hasRequirements = hasRequirements && inventory.itensList.Contains(item);
+            hasRequirements = hasRequirements && inventory.itemList.Contains(item);
         }
         if(hasRequirements)
         {

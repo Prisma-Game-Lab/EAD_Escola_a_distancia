@@ -26,7 +26,7 @@ public class InventoryDisplay : MonoBehaviour
     private IEnumerator UpdateSprites()
     {
         int myCount = 0;
-        List<Item> itemList= inventory.itensList;
+        List<Item> itemList= inventory.itemList;
         while(true)
         {
             yield return null; //WaitUntil(()=>itemList.Count != myCount);
