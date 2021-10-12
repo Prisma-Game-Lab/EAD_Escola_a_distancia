@@ -22,7 +22,7 @@ public class Inventory : ScriptableObject
     {
         for (int i = 0; i < itemList.Count; i++)
         {
-            if(itemList[i]!=null)
+            if(itemList[i]==null)
             {
                 itemList[i] = item;
                 return true;

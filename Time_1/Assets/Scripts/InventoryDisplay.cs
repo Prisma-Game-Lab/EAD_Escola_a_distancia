@@ -38,15 +38,16 @@ public class InventoryDisplay : MonoBehaviour
                 var correspondingButton = transform.GetChild(i);
                 var correspondingImg = correspondingButton.GetChild(0);
 
+                if (itemList[i]==null)
+                {
+                    correspondingImg.gameObject.SetActive(false);
+                    continue;
+                }
+
                 correspondingImg.gameObject.SetActive(true);
                 var img = correspondingImg.GetComponent<Image>();
                 Assert.IsNotNull(img,"inventory display child missing Image component");
                 img.sprite = itemList[i].sprite;
-            }
-            for (int i = myCount; i < childCount; i++)
-            {
-                var child = transform.GetChild(i);
-                child.GetChild(0).gameObject.SetActive(false);
             }
         }
     }

@@ -30,14 +30,14 @@ public class InventoryManager : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
 
 
-        List<Item> itemList= origem.itensList;
+        List<Item> itemList= origem.itemList;
         int index = button.transform.GetSiblingIndex();
 
         if (!globalInventory.activeSelf || index >= itemList.Count)
             return;
 
         var item = itemList[index];
-        origem.RemoveItem(item);
+        origem.PopItemAt(index);
         destino.AddItem(item);
     }
 }
