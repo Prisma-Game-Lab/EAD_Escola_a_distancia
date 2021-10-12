@@ -13,6 +13,16 @@ public class InventoryDisplay : MonoBehaviour
         StartCoroutine(UpdateSprites());
     }
 
+    void OnEnable() 
+    {
+        Start();
+    }
+
+    void OnDisable()
+    {
+        StopAllCoroutines();
+    }
+
     private IEnumerator UpdateSprites()
     {
         int myCount = 0;
@@ -25,15 +35,18 @@ public class InventoryDisplay : MonoBehaviour
             Assert.IsTrue(childCount >= myCount, "not enough children");
             for (int i = 0; i < myCount; i++)
             {
-                var correspondingChild = transform.GetChild(i);
-                correspondingChild.gameObject.SetActive(true);
-                var img = correspondingChild.GetComponent<Image>();
+                var correspondingButton = transform.GetChild(i);
+                var correspondingImg = correspondingButton.GetChild(0);
+
+                correspondingImg.gameObject.SetActive(true);
+                var img = correspondingImg.GetComponent<Image>();
                 Assert.IsNotNull(img,"inventory display child missing Image component");
                 img.sprite = itemList[i].sprite;
             }
             for (int i = myCount; i < childCount; i++)
             {
-                transform.GetChild(i).gameObject.SetActive(false);
+                var child = transform.GetChild(i);
+                child.GetChild(0).gameObject.SetActive(false);
             }
         }
     }
