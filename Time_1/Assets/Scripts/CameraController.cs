@@ -12,13 +12,11 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        // Trigger functions if Rotate is requested
-        if (Input.GetKeyDown(KeyCode.LeftArrow)) 
+        if (Input.GetButtonDown("RotateCameraLeft")) 
         {
             Left();
         } 
-        else if (Input.GetKeyDown(KeyCode.RightArrow)) 
+        else if (Input.GetButtonDown("RotateCameraRight")) 
         {
             Right();
         }

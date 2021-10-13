@@ -40,6 +40,7 @@ public class Interactable : MonoBehaviour
             playerIsNear = false;
         }
     }
+
     public UnityEvent onInteract;
 
     protected virtual void Interact()
@@ -52,19 +53,35 @@ public class Interactable : MonoBehaviour
     }
     private void Update()
     {
-        if (CanInteract() &&
-            Input.GetButtonUp("Interact"))
+        if (_locks <= 0 && Input.GetButtonUp("Interact"))
         {
+
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, 1<<gameObject.layer))
             {
                 if (hit.collider == _col)
                 {
+                    if (!playerIsNear)
+                    {
+                        _locks++;
+                        StartCoroutine(WaitForPlayer());
+                        return;
+                    }
                     Interact();
                 }
             }
 
         }
+    }
+
+    private IEnumerator WaitForPlayer()
+    {
+        while (!playerIsNear)
+        {
+            yield return new WaitForFixedUpdate();
+        }
+        _locks--;
+        Interact();
     }
 }

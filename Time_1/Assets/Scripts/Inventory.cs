@@ -18,6 +18,7 @@ public class Inventory : ScriptableObject
         return true;
     }
 
+
     public bool AddItem(Item item)
     {
         for (int i = 0; i < itemList.Count; i++)

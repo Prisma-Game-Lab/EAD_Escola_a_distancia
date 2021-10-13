@@ -44,11 +44,18 @@ public class PlayerMovement : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity, groundLayer) && gridGen.NodeFromWorldPoint(hit.point).walkable)
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity, groundLayer))
             {
+                Vector3 target = hit.point;
+                if (!gridGen.NodeFromWorldPoint(target).walkable)
+                {
+                    target = pathfinding.FindClosestWalkable(transform.position, target).worldPosition;
+                }
+
+
                 StopAllCoroutines();
 
-                path = pathfinding.FindPath(transform.position, hit.point);
+                path = pathfinding.FindPath(transform.position, target);
                 StartCoroutine(MoveThroughPath(path));
             }
 
