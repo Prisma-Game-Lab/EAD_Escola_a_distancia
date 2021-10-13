@@ -7,6 +7,9 @@ public class Inventory : ScriptableObject
 {
     public List<Item> itemList;
 
+    [System.NonSerialized]
+    public bool changed = true;
+
     public void RemoveItem(Item item)
     {
         var index = itemList.IndexOf(item);
@@ -15,6 +18,7 @@ public class Inventory : ScriptableObject
         if(index == -1) return;
 
         itemList[index] = null;
+        changed = true;
     }
 
 
@@ -25,6 +29,7 @@ public class Inventory : ScriptableObject
             if(itemList[i]==null)
             {
                 itemList[i] = item;
+                changed = true;
                 return;
             }
         }
@@ -36,6 +41,8 @@ public class Inventory : ScriptableObject
         if(itemList[index]!=null) return false;
 
         itemList[index]=item;
+
+        changed = true;
         return true;
     }
 
@@ -48,6 +55,8 @@ public class Inventory : ScriptableObject
     {
         var ret = itemList[index];
         itemList[index] = null;
+
+        changed = true;
         return ret;
     }
 

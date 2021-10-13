@@ -29,7 +29,7 @@ public class InventoryDisplay : MonoBehaviour
         List<Item> itemList= inventory.itemList;
         while(true)
         {
-            yield return null; //WaitUntil(()=>itemList.Count != myCount);
+            yield return new WaitUntil(()=> inventory.changed);
             myCount = itemList.Count;
             int childCount = transform.childCount;
             Assert.IsTrue(childCount >= myCount, "not enough children");
@@ -49,6 +49,7 @@ public class InventoryDisplay : MonoBehaviour
                 Assert.IsNotNull(img,"inventory display child missing Image component");
                 img.sprite = itemList[i].sprite;
             }
+            inventory.changed = false;
         }
     }
 }

@@ -7,22 +7,16 @@ public class InventoryManager : MonoBehaviour
 {
     public Inventory origem;
     public Inventory destino;
+    public Item item;
+    public Item item2;
+    public int indOrigem;
+    public int indDestino;
 
     public GameObject globalInventory;
 
     public void Swap()
     {
         globalInventory.SetActive(!globalInventory.activeSelf);
-    }
-
-    public void SetOrigem(Inventory inv)
-    {
-        origem = inv;
-    }
-
-    public void SetDestino(Inventory inv)
-    {
-        destino = inv;
     }
 
     public void MoveItem(GameObject button)
@@ -39,5 +33,27 @@ public class InventoryManager : MonoBehaviour
         var item = itemList[index];
         origem.PopItemAt(index);
         destino.AddItem(item);
+    }
+
+    public void MoveItemTo()
+    {
+        if (!origem.PeekItemAt(indOrigem))
+        {
+            return;
+        }
+
+        if (destino.PeekItemAt(indDestino))
+        {
+            item = origem.PopItemAt(indOrigem);
+            item2 = destino.PopItemAt(indDestino);
+            destino.AddItemAt(item, indDestino);
+            origem.AddItemAt(item2, indOrigem);
+
+        }
+        else
+        {
+            item = origem.PopItemAt(indOrigem);
+            destino.AddItemAt(item, indDestino);
+        }
     }
 }
