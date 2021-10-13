@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer;
     [HideInInspector]
     public List<Node> path;
+    public List<Node> lastPath;
 
     public static PlayerMovement instance = null;
 
@@ -56,6 +57,9 @@ public class PlayerMovement : MonoBehaviour
                 StopAllCoroutines();
 
                 path = pathfinding.FindPath(transform.position, target);
+                if (path == lastPath)
+                    {return;}
+                lastPath = path;
                 StartCoroutine(MoveThroughPath(path));
             }
 
