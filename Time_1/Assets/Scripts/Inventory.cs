@@ -7,31 +7,27 @@ public class Inventory : ScriptableObject
 {
     public List<Item> itemList;
 
-    public bool RemoveItem(Item item)
+    public void RemoveItem(Item item)
     {
         var index = itemList.IndexOf(item);
 
         // item not present
-        if(index == -1) return false;
+        if(index == -1) return;
 
         itemList[index] = null;
-        return true;
     }
 
 
-    public bool AddItem(Item item)
+    public void AddItem(Item item)
     {
         for (int i = 0; i < itemList.Count; i++)
         {
             if(itemList[i]==null)
             {
                 itemList[i] = item;
-                return true;
+                return;
             }
         }
-
-        // inventory full
-        return false;
     }
 
     public bool AddItemAt(Item item, int index)

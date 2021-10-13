@@ -6258,18 +6258,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 1969682607}
     m_Modifications:
     - target: {fileID: 2032970010412218533, guid: 9e5b682c8d111de46a6fe2f0d5e0ad9b, type: 3}
-      propertyPath: m_Size.x
-      value: 1.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 2032970010412218533, guid: 9e5b682c8d111de46a6fe2f0d5e0ad9b, type: 3}
-      propertyPath: m_Size.y
-      value: 1.19
-      objectReference: {fileID: 0}
-    - target: {fileID: 2032970010412218533, guid: 9e5b682c8d111de46a6fe2f0d5e0ad9b, type: 3}
-      propertyPath: m_Size.z
-      value: 1.81
-      objectReference: {fileID: 0}
-    - target: {fileID: 2032970010412218533, guid: 9e5b682c8d111de46a6fe2f0d5e0ad9b, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
@@ -17248,7 +17236,7 @@ MonoBehaviour:
   onInteract:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
+      - m_Target: {fileID: 11400000, guid: d36588eddde7dc141a8d76cb888b67ec, type: 2}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: RemoveItem
         m_Mode: 2
@@ -17260,7 +17248,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
+      - m_Target: {fileID: 11400000, guid: d36588eddde7dc141a8d76cb888b67ec, type: 2}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
         m_MethodName: AddItem
         m_Mode: 2
@@ -17284,7 +17272,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  inventory: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
+  inventory: {fileID: 11400000, guid: d36588eddde7dc141a8d76cb888b67ec, type: 2}
   requiredItems:
   - {fileID: 11400000, guid: 97baef93d9e100e46b08e5013ff0d862, type: 2}
   defaultBehaviour:
