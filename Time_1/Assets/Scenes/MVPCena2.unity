@@ -2874,7 +2874,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0.000061035156, y: 30.00004}
+  m_AnchoredPosition: {x: 0.000061035156, y: 30.000061}
   m_SizeDelta: {x: 0, y: 80}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &620400527
@@ -9371,6 +9371,10 @@ PrefabInstance:
       propertyPath: gridGen
       value: 
       objectReference: {fileID: 1254967820}
+    - target: {fileID: 1617568255812838027, guid: 1ddc7c4db74e16346a403f00d591c88c, type: 3}
+      propertyPath: maxPath
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 1617568255812838027, guid: 1ddc7c4db74e16346a403f00d591c88c, type: 3}
       propertyPath: pathfinding
       value: 

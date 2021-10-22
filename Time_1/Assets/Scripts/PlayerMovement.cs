@@ -7,6 +7,8 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
     private float speed;
+    [SerializeField]
+    private int maxPath;
     public int locks = 0;
     public Pathfinding pathfinding;
     public GridGen gridGen;
@@ -57,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
                 StopAllCoroutines();
 
                 path = pathfinding.FindPath(transform.position, target);
-                if (path == lastPath)
+                if (path == lastPath || path.Count > maxPath)
                     {return;}
                 lastPath = path;
                 StartCoroutine(MoveThroughPath(path));
