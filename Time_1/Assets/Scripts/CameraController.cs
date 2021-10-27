@@ -6,10 +6,16 @@ public class CameraController : MonoBehaviour
 {
     public GameObject targetObject;
     private float targetAngle = 0;
-    public float rotationAmount = 1f;
+    [SerializeField] private float rotationAmount = 1f;
+    [SerializeField] private float scrollIntensity;
+    [SerializeField] private float minDist;
+    [SerializeField] private float maxDist;
+    private Camera cam;
 
-
-    // Update is called once per frame
+    void Start()
+    {
+        cam = gameObject.GetComponent<Camera>();
+    }
     void Update()
     {
         if (Input.GetButtonDown("RotateCameraLeft")) 
@@ -20,6 +26,13 @@ public class CameraController : MonoBehaviour
         {
             Right();
         }
+
+        cam.orthographicSize -= Input.GetAxisRaw("Mouse ScrollWheel") * scrollIntensity;
+        if (cam.orthographicSize < minDist)
+            cam.orthographicSize = minDist;
+
+        if (cam.orthographicSize > maxDist)
+            cam.orthographicSize = maxDist;
     }
 
     void FixedUpdate() 

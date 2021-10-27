@@ -13598,6 +13598,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 1895079686}
   rotationAmount: 5
+  scrollIntensity: 10
+  minDist: 2
+  maxDist: 15
 --- !u!1001 &2114580276
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13845,7 +13848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2210862282504744281, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2210862282504744281, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
       propertyPath: m_AnchorMax.x

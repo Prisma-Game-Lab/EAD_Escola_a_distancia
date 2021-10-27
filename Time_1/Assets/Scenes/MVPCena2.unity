@@ -878,7 +878,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2210862282504744281, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2210862282504744281, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
       propertyPath: m_AnchorMax.x
@@ -5689,6 +5689,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 866053133}
   rotationAmount: 5
+  scrollIntensity: 10
+  minDist: 2
+  maxDist: 15
 --- !u!1001 &1107716455
 PrefabInstance:
   m_ObjectHideFlags: 0
