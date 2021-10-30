@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private float speed;
     [SerializeField]
     private int maxPath;
+    private Vector3 initialPosition;
     public int locks = 0;
     public Pathfinding pathfinding;
     public GridGen gridGen;
@@ -37,6 +38,12 @@ public class PlayerMovement : MonoBehaviour
         instance = this;
         locks = 0;
     }
+
+    private void Start()
+    {
+        initialPosition = transform.position;
+    }
+
     void Update()
     {
         if (locks > 0) return;
@@ -72,6 +79,11 @@ public class PlayerMovement : MonoBehaviour
     public void Stop()
     {
         StopAllCoroutines();
+    }
+
+    public void ResetPosition()
+    {
+        transform.position = initialPosition;
     }
 
 
