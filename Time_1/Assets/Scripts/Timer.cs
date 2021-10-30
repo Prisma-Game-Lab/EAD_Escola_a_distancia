@@ -38,7 +38,6 @@ public class Timer : MonoBehaviour
 
                 // espaco para uma kill message
                 sceneJump.StartCoroutine(sceneJump.ChangeScene(0));
-                //StartCoroutine(respawn());
                 //load hub
             }
         }

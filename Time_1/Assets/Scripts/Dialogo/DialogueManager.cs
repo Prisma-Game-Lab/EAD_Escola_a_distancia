@@ -81,11 +81,15 @@ public class DialogueManager : MonoBehaviour
     private IEnumerator DisplayBox(DialogueBox box)
     {
         dialogueText.text = "";
-        char[] charArray = box.text.ToCharArray();
-        for (int i = 0; i < charArray.Length; i++)
+        string currentText = "";
+        string finalText = box.text;
+        
+        for (int i = 0; i < finalText.Length; i++)
         {
+            currentText = finalText.Substring(0, i);
+            currentText += "<color=#00000000>" + finalText.Substring(i) + "</color>";
             yield return new WaitForSeconds(0.1f);
-            dialogueText.text += charArray[i];
+            dialogueText.text = currentText;
         }
         // helps avoiding accidently skipping dialogue
         yield return new WaitForSeconds(0.5f);

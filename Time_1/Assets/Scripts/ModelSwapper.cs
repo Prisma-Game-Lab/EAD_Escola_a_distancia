@@ -74,10 +74,18 @@ public class ModelSwapper : MonoBehaviour
     {
         if (variableManager.ericson)
             ericson.SetActive(true);
+        else
+            ericson.SetActive(false);
+
         if (variableManager.clara)
             clara.SetActive(true);
+        else
+            clara.SetActive(false);
+
         if (variableManager.maria)
             maria.SetActive(true);
+        else
+            maria.SetActive(false);
 
         playerClara.SetActive(false);
         playerEricson.SetActive(false);

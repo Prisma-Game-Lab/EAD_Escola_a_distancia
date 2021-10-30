@@ -19,7 +19,7 @@ public class CollectItem : MonoBehaviour
         if (otherGO.CompareTag("Item")) {
             CollectableItem colItem = otherGO.GetComponent<CollectableItem>();
             Assert.IsNotNull(colItem);
-            inventory.itensList.Add(colItem.item);
+            inventory.itemList.Add(colItem.item);
             colItem.Dispose();
         }
     }

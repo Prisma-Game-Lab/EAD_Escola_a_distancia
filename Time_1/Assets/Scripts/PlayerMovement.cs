@@ -7,12 +7,15 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
     private float speed;
+    [SerializeField]
+    private int maxPath;
     public int locks = 0;
     public Pathfinding pathfinding;
     public GridGen gridGen;
     public LayerMask groundLayer;
     [HideInInspector]
     public List<Node> path;
+    public List<Node> lastPath;
 
     public static PlayerMovement instance = null;
 
@@ -44,11 +47,21 @@ public class PlayerMovement : MonoBehaviour
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity, groundLayer) && gridGen.NodeFromWorldPoint(hit.point).walkable)
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity, groundLayer))
             {
+                Vector3 target = hit.point;
+                if (!gridGen.NodeFromWorldPoint(target).walkable)
+                {
+                    target = pathfinding.FindClosestWalkable(transform.position, target).worldPosition;
+                }
+
+
                 StopAllCoroutines();
 
-                path = pathfinding.FindPath(transform.position, hit.point);
+                path = pathfinding.FindPath(transform.position, target);
+                if (path == lastPath || path.Count > maxPath)
+                    {return;}
+                lastPath = path;
                 StartCoroutine(MoveThroughPath(path));
             }
 

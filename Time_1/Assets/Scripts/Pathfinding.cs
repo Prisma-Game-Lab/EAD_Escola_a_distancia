@@ -64,6 +64,27 @@ public class Pathfinding : MonoBehaviour
         return grid.path;
     }
 
+    public Node FindClosestWalkable(Vector3 PlayerPos, Vector3 ClickPos)
+    {
+        Node startNode = grid.NodeFromWorldPoint(ClickPos);
+        
+        float distance = Vector3.Distance(ClickPos, PlayerPos);
+        while (!startNode.walkable)
+        {
+            foreach(Node vizinho in grid.GetNeighbours(startNode))
+            {
+                float tempDistance = Vector3.Distance(vizinho.worldPosition, PlayerPos);
+                if (tempDistance < distance)
+                {
+                    startNode = vizinho;
+                    distance = tempDistance;
+                }
+            }
+        }
+        return startNode;
+        
+    }
+
 
     void RetracePath(Node startNode, Node endNode)
     {
