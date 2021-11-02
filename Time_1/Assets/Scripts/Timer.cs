@@ -6,12 +6,13 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    public float timeRemaining = 10;
+    public float timeRemaining;
     private bool running = false;
     public TextMeshProUGUI timeText;
     public VariableManager variableManager;
     public FadeOut fadeOut;
     public SceneJump sceneJump;
+    public Inventory personalInventory;
 
     private void Start()
     {
@@ -36,9 +37,24 @@ public class Timer : MonoBehaviour
                 Debug.Log(kill);
                 Kill(variableManager.activeCharacter);
 
+                var lostItems = new List<Item>();
+                for (int i = 0; i < personalInventory.itemList.Count; i++)
+                {
+                    var item = personalInventory.PopItemAt(i);
+                    if(item != null)
+                    {
+                        lostItems.Add(item);
+                    }
+                }
+                var rs = new RescueStruct();
+                rs.lostItems = lostItems;
+                rs.student = variableManager.activeCharacter;
+                variableManager.rescuables.Add(rs);
+
                 // espaco para uma kill message
-                sceneJump.StartCoroutine(sceneJump.ChangeScene(0));
+                
                 //load hub
+                sceneJump.StartCoroutine(sceneJump.ChangeScene(0));
             }
         }
     }

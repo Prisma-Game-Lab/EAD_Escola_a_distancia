@@ -60,4 +60,25 @@ public class Inventory : ScriptableObject
         return ret;
     }
 
+    public int GetFreeSlots()
+    {
+        int slots = 0;
+        for (int i = 0; i < itemList.Count; i++)
+        {
+            if(itemList[i] == null)
+            {
+                slots += 1;
+            }
+        }
+        return slots;
+    }
+    public int GetTotalSlots()
+    {
+        return itemList.Count;
+    }
+    public int GetTotalItems()
+    {
+        return GetTotalSlots() - GetFreeSlots();
+    }
+
 }
