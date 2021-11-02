@@ -76,6 +76,23 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    public void WalkTo(Vector3 target)
+    {
+        if (!gridGen.NodeFromWorldPoint(target).walkable)
+        {
+            target = pathfinding.FindClosestWalkable(transform.position, target).worldPosition;
+        }
+
+
+        StopAllCoroutines();
+
+        path = pathfinding.FindPath(transform.position, target);
+        if (path == lastPath || path.Count > maxPath)
+            {return;}
+        lastPath = path;
+        StartCoroutine(MoveThroughPath(path));   
+    }
+
     public void Stop()
     {
         StopAllCoroutines();

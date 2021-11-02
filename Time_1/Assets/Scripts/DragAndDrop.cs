@@ -15,6 +15,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     public InventoryManager invManager;
     public Inventory inv;
     private CanvasGroup canvasGroup;
+    public LayerMask unwalkableLayer;
 
     void Start()
     {   
@@ -23,7 +24,6 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
         canvasRect = canvas.GetComponent<RectTransform>();
         rect = dragItem.GetComponent<RectTransform>();
         canvasGroup = dragItem.GetComponent<CanvasGroup>();
-
     }
 
 
@@ -63,8 +63,19 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
             child.gameObject.SetActive(true);
             dragItem.SetActive(false);
         }
-
         canvasGroup.blocksRaycasts = true;
+
+                
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, Mathf.Infinity, unwalkableLayer) && !inv.changed)
+        {   
+            Collider col = hit.collider;
+            ItemReceiver receiver = col.GetComponent(typeof(ItemReceiver)) as ItemReceiver;
+            if (receiver)
+                receiver.Receive(invManager.origem.PeekItemAt(invManager.indOrigem), hit.point);
+        }
     }
 
     public void OnDrop(PointerEventData eventData)
