@@ -12,6 +12,9 @@ public class VariableManager : ScriptableSingleton<VariableManager>
     [SerializeField]
     public List<RescueStruct> rescuables = new List<RescueStruct>();
 
+    public List<Item> collectedItems;
+
+
     public bool IsStudentAlive(Student s)
     {
         switch (s)
@@ -40,6 +43,11 @@ public class VariableManager : ScriptableSingleton<VariableManager>
                 clara = alive;
                 return;
         }
+    }
+
+    public void CollectItem(Item item)
+    {
+        collectedItems.Add(item);
     }
 
 }

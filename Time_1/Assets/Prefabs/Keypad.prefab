@@ -2304,6 +2304,7 @@ GameObject:
   - component: {fileID: 4277364822909267973}
   - component: {fileID: 4277364822909267975}
   - component: {fileID: 4277364822909267972}
+  - component: {fileID: 6190222527813621814}
   m_Layer: 5
   m_Name: Output Panel
   m_TagString: Untagged
@@ -2369,6 +2370,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6190222527813621814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4277364822909267970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea73ae27b5262e24bb8d2b2ad5db2032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4277364822911059950
 GameObject:
   m_ObjectHideFlags: 0
@@ -2896,6 +2909,7 @@ GameObject:
   - component: {fileID: 4277364823414595408}
   - component: {fileID: 4277364823414595409}
   - component: {fileID: 4277364823414595422}
+  - component: {fileID: 7405488967527247003}
   m_Layer: 5
   m_Name: Input Panel
   m_TagString: Untagged
@@ -2996,6 +3010,18 @@ MonoBehaviour:
   m_Spacing: {x: 20, y: 20}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &7405488967527247003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4277364823414595420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea73ae27b5262e24bb8d2b2ad5db2032, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4277364823463668678
 GameObject:
   m_ObjectHideFlags: 0

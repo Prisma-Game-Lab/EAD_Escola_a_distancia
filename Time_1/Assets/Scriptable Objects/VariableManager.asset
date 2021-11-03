@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 32
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15ee4857384a19247abd01c84a0ac842, type: 3}
   m_Name: VariableManager
   m_EditorClassIdentifier: 
-  ericson: 0
+  ericson: 1
   clara: 1
   maria: 1
-  activeCharacter: 1
+  activeCharacter: 2
   rescuables:
   - student: 1
     lostItems:
@@ -24,3 +24,9 @@ MonoBehaviour:
   - student: 0
     lostItems: []
     position: {x: 0, y: 0, z: 0}
+  - student: 2
+    lostItems:
+    - {fileID: 11400000, guid: 97baef93d9e100e46b08e5013ff0d862, type: 2}
+    - {fileID: 11400000, guid: a8e9baee5b5156340981b25728c18d1b, type: 2}
+    position: {x: 0, y: 0, z: 0}
+  collectedItems: []
