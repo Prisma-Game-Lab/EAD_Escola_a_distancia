@@ -12,11 +12,15 @@ public class SceneJump : MonoBehaviour
         fadeOut.StartCoroutine(fadeOut.FadeInCoroutine());
     }
 
+    public void SwitchScene(int index)
+    {
+        StartCoroutine(ChangeScene(index));
+    }
+
     public IEnumerator ChangeScene(int index)
     {
+        fadeOut.gameObject.SetActive(true);
         yield return fadeOut.StartCoroutine(fadeOut.FadeOutCoroutine());
-        yield return new WaitForSeconds(.5f);
         SceneManager.LoadScene(index);
-        
     }
 }

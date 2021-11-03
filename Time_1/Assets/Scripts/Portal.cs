@@ -8,8 +8,7 @@ public class Portal : MonoBehaviour
     public SceneJump sceneManager;
     public int cenaEric;
     public int cenaClara;
-    public int cenaMaria;
-    
+    public int cenaMaria;    
 
     private void OnTriggerEnter(Collider other)
     {

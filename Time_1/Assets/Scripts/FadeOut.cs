@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class FadeOut : MonoBehaviour
 {
     public float transitionTime;
+
     public void StartFadeOut()
     {
         StartCoroutine(FadeOutCoroutine());
@@ -26,6 +27,7 @@ public class FadeOut : MonoBehaviour
             img.color = new Color(color.r,color.g,color.b,t/transitionTime);
             yield return new WaitForEndOfFrame();
         }
+        gameObject.SetActive(false);
     }
     public IEnumerator FadeInCoroutine()
     {
@@ -37,5 +39,6 @@ public class FadeOut : MonoBehaviour
             img.color = new Color(color.r,color.g,color.b,t/transitionTime);
             yield return new WaitForEndOfFrame();
         }
+        gameObject.SetActive(false);
     }
 }

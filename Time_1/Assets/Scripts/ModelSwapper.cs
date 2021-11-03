@@ -140,12 +140,14 @@ public class ModelSwapper : MonoBehaviour
     private IEnumerator SwapModels(Student s)
     {
         ButtonsOff();
+        fadeOut.gameObject.SetActive(true);
         yield return fadeOut.StartCoroutine(fadeOut.FadeOutCoroutine());
         currentStudent = s;
         variableManager.activeCharacter = s;
         UpdateModels();
         gridGen.CreateGrid();
         playerMovement.ResetPosition();
+        fadeOut.gameObject.SetActive(true);
         yield return fadeOut.StartCoroutine(fadeOut.FadeInCoroutine());
         UpdateButtons();
     }
