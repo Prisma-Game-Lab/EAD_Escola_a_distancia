@@ -23,6 +23,9 @@ public class BookPuzzle : MonoBehaviour
         {
             personalInventory.AddItem(chave);
             this.gameObject.SetActive(false);
+            Debug.Log("COLECTED!");
+            // hotfix marretado
+            PlayerMovement.instance.locks = 0;
         }
     }
 }
