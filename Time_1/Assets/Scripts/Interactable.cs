@@ -8,6 +8,13 @@ using UnityEngine.Assertions;
 [RequireComponent(typeof(Collider))]
 public class Interactable : MonoBehaviour
 {
+    private LayerMask player;
+    
+    void Awake()
+    {
+        player = LayerMask.GetMask("Player");
+    }
+
     static int _locks;
     public static void LockInteraction()
     {
@@ -58,7 +65,8 @@ public class Interactable : MonoBehaviour
 
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, Mathf.Infinity, 1<<gameObject.layer))
+            //if (Physics.Raycast(ray, out hit, Mathf.Infinity, 1<<gameObject.layer))
+            if (Physics.Raycast(ray, out hit, Mathf.Infinity, ~player))
             {
                 if (hit.collider == _col)
                 {

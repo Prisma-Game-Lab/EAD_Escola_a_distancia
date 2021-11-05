@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.4489317, g: 0.49899906, b: 0.57570624, a: 1}
+  m_IndirectSpecularColor: {r: 0.44893205, g: 0.4989997, b: 0.57570755, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1196,6 +1196,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: db1c17e3e91b33d4f98c227279de67b2, type: 3}
+--- !u!1 &83480998 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7016658407343803833, guid: 4eaede993d3415e4db3d67763a87deaf, type: 3}
+  m_PrefabInstance: {fileID: 212633197}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &83481003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83480998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efaf63b044fbb8a409cbbbf934d55dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 623837997}
+        m_TargetAssemblyTypeName: ChairPuzzle, Assembly-CSharp
+        m_MethodName: GiraCadeira
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &83953140
 GameObject:
   m_ObjectHideFlags: 0
@@ -1875,7 +1907,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &188275817
 PrefabInstance:
@@ -2259,6 +2291,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1415881001969709904, guid: 4eaede993d3415e4db3d67763a87deaf, type: 3}
   m_PrefabInstance: {fileID: 1400254702}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &202221273 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7016658407343803833, guid: 4eaede993d3415e4db3d67763a87deaf, type: 3}
+  m_PrefabInstance: {fileID: 328426303}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &202221275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 202221273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efaf63b044fbb8a409cbbbf934d55dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 623837997}
+        m_TargetAssemblyTypeName: ChairPuzzle, Assembly-CSharp
+        m_MethodName: GiraCadeira
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &205854543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2346,7 +2410,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1415881001969709904, guid: 4eaede993d3415e4db3d67763a87deaf, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 1415881001969709904, guid: 4eaede993d3415e4db3d67763a87deaf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3660,7 +3724,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1415881001969709904, guid: 4eaede993d3415e4db3d67763a87deaf, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1415881001969709904, guid: 4eaede993d3415e4db3d67763a87deaf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3705,30 +3769,6 @@ PrefabInstance:
     - target: {fileID: 1796347916434057706, guid: 4eaede993d3415e4db3d67763a87deaf, type: 3}
       propertyPath: m_Name
       value: cadeira_prof
-      objectReference: {fileID: 0}
-    - target: {fileID: 7650486610828203779, guid: 4eaede993d3415e4db3d67763a87deaf, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 7650486610828203779, guid: 4eaede993d3415e4db3d67763a87deaf, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.57
-      objectReference: {fileID: 0}
-    - target: {fileID: 7650486610828203779, guid: 4eaede993d3415e4db3d67763a87deaf, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7650486610828203779, guid: 4eaede993d3415e4db3d67763a87deaf, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7650486610828203779, guid: 4eaede993d3415e4db3d67763a87deaf, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7650486610828203779, guid: 4eaede993d3415e4db3d67763a87deaf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4eaede993d3415e4db3d67763a87deaf, type: 3}
@@ -4549,7 +4589,7 @@ GameObject:
   - component: {fileID: 426190141}
   - component: {fileID: 426190140}
   m_Layer: 0
-  m_Name: Cube (3)
+  m_Name: Cube 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4567,7 +4607,7 @@ Transform:
   m_LocalScale: {x: 0.88317007, y: 0.8837, z: 20.590536}
   m_Children: []
   m_Father: {fileID: 623837996}
-  m_RootOrder: 12
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: -44.876, z: 0}
 --- !u!65 &426190140
 BoxCollider:
@@ -5770,7 +5810,7 @@ Transform:
   - {fileID: 935692105}
   - {fileID: 1748027203}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &598220819
 GameObject:
@@ -5785,7 +5825,7 @@ GameObject:
   - component: {fileID: 598220822}
   - component: {fileID: 598220821}
   m_Layer: 0
-  m_Name: Cube (2)
+  m_Name: Cube 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5803,7 +5843,7 @@ Transform:
   m_LocalScale: {x: 0.8831701, y: 0.8837, z: 44.17715}
   m_Children: []
   m_Father: {fileID: 623837996}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!65 &598220821
 BoxCollider:
@@ -6205,7 +6245,7 @@ RectTransform:
   - {fileID: 719092142}
   - {fileID: 361909317}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -6282,6 +6322,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 623837996}
+  - component: {fileID: 623837997}
   m_Layer: 0
   m_Name: Puzzle Cadeira
   m_TagString: Untagged
@@ -6301,19 +6342,19 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1175574046}
-  - {fileID: 1836506475}
   - {fileID: 1977522029}
+  - {fileID: 1836506475}
+  - {fileID: 659288999}
+  - {fileID: 426190139}
+  - {fileID: 598220820}
   - {fileID: 1599273999}
   - {fileID: 2021342758}
   - {fileID: 794983579}
   - {fileID: 978386099}
-  - {fileID: 598220820}
   - {fileID: 1556472462}
-  - {fileID: 2042017109}
-  - {fileID: 365016375}
   - {fileID: 1449249680}
-  - {fileID: 426190139}
-  - {fileID: 659288999}
+  - {fileID: 365016375}
+  - {fileID: 2042017109}
   - {fileID: 1190866762}
   - {fileID: 1235114880}
   - {fileID: 706759791}
@@ -6324,6 +6365,37 @@ Transform:
   m_Father: {fileID: 1715913842}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &623837997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 623837995}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ebc8e93ea089734eae68fb67d937883, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cadeiras:
+  - {fileID: 202221273}
+  - {fileID: 715933930}
+  - {fileID: 83480998}
+  - {fileID: 688758622}
+  linhas:
+  - {fileID: 1977522025}
+  - {fileID: 1836506471}
+  - {fileID: 659288998}
+  - {fileID: 426190138}
+  - {fileID: 598220819}
+  finalAngles: 00000000000000000000000000000000
+  materialErrado: {fileID: 2100000, guid: 7c6a50e2f8ae2cf43b3f6ad9c5994339, type: 2}
+  materialCerto: {fileID: 2100000, guid: 2a3d4a405f1f17641b791a9db5567164, type: 2}
+  chairSpeed: 300
+  door: {fileID: 1235114876}
+  doorSpeed: 4
+  gridGen: {fileID: 1254967820}
+  cupula: {fileID: 1190866758}
 --- !u!1 &641429627
 GameObject:
   m_ObjectHideFlags: 0
@@ -6534,7 +6606,7 @@ GameObject:
   - component: {fileID: 659289001}
   - component: {fileID: 659289000}
   m_Layer: 0
-  m_Name: Cube (4)
+  m_Name: Cube 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6552,7 +6624,7 @@ Transform:
   m_LocalScale: {x: 0.8831701, y: 0.8837, z: 17.938267}
   m_Children: []
   m_Father: {fileID: 623837996}
-  m_RootOrder: 13
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 44.87, z: 0}
 --- !u!65 &659289000
 BoxCollider:
@@ -7083,6 +7155,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fc5dead8b4b9101419f3f54db46a9610, type: 3}
   m_PrefabInstance: {fileID: 687282370}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &688758622 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7016658407343803833, guid: 4eaede993d3415e4db3d67763a87deaf, type: 3}
+  m_PrefabInstance: {fileID: 1327855087}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &688758627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 688758622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efaf63b044fbb8a409cbbbf934d55dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 623837997}
+        m_TargetAssemblyTypeName: ChairPuzzle, Assembly-CSharp
+        m_MethodName: GiraCadeira
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 3
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &699921869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7479,6 +7583,38 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: db1c17e3e91b33d4f98c227279de67b2, type: 3}
   m_PrefabInstance: {fileID: 713292721}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &715933930 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7016658407343803833, guid: 4eaede993d3415e4db3d67763a87deaf, type: 3}
+  m_PrefabInstance: {fileID: 1704936821}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &715933935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 715933930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efaf63b044fbb8a409cbbbf934d55dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 623837997}
+        m_TargetAssemblyTypeName: ChairPuzzle, Assembly-CSharp
+        m_MethodName: GiraCadeira
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &719092141 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2210862282504744280, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
@@ -8016,7 +8152,7 @@ Transform:
   m_LocalScale: {x: 4, y: 1.7001421, z: 4}
   m_Children: []
   m_Father: {fileID: 623837996}
-  m_RootOrder: 5
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &795559410
 PrefabInstance:
@@ -9953,7 +10089,7 @@ Transform:
   m_LocalScale: {x: 4, y: 1.7001421, z: 4}
   m_Children: []
   m_Father: {fileID: 623837996}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &998007693
 PrefabInstance:
@@ -10519,6 +10655,10 @@ PrefabInstance:
     - target: {fileID: 1617568255812838024, guid: 1ddc7c4db74e16346a403f00d591c88c, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1617568255812838024, guid: 1ddc7c4db74e16346a403f00d591c88c, type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1617568255812838027, guid: 1ddc7c4db74e16346a403f00d591c88c, type: 3}
       propertyPath: gridGen
@@ -12218,7 +12358,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1235114876}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 38.99686, y: 9.479789, z: -4.4595184}
+  m_LocalPosition: {x: 39.84, y: 9.12, z: -4.4595184}
   m_LocalScale: {x: 1, y: 11.672511, z: 14.867152}
   m_Children: []
   m_Father: {fileID: 623837996}
@@ -13156,7 +13296,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1415881001969709904, guid: 4eaede993d3415e4db3d67763a87deaf, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 1415881001969709904, guid: 4eaede993d3415e4db3d67763a87deaf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16520,7 +16660,7 @@ Transform:
   m_LocalScale: {x: 4, y: 1.7001421, z: 4}
   m_Children: []
   m_Father: {fileID: 623837996}
-  m_RootOrder: 3
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1601876234
 PrefabInstance:
@@ -17949,7 +18089,7 @@ Transform:
   - {fileID: 247924386}
   - {fileID: 957059802}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1725990463
 PrefabInstance:
@@ -18812,7 +18952,7 @@ Transform:
   m_Children:
   - {fileID: 1515529257}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1805523763
 PrefabInstance:
@@ -19093,7 +19233,7 @@ GameObject:
   - component: {fileID: 1836506473}
   - component: {fileID: 1836506472}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: Cube 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19173,7 +19313,7 @@ Transform:
   m_LocalScale: {x: 0.88317007, y: 0.8837, z: 20.590536}
   m_Children: []
   m_Father: {fileID: 623837996}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: -44.876, z: 0}
 --- !u!1001 &1840699694
 PrefabInstance:
@@ -20486,7 +20626,7 @@ GameObject:
   - component: {fileID: 1977522027}
   - component: {fileID: 1977522026}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: Cube 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20566,7 +20706,7 @@ Transform:
   m_LocalScale: {x: 0.8831701, y: 0.8837, z: 17.938267}
   m_Children: []
   m_Father: {fileID: 623837996}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 44.87, z: 0}
 --- !u!1001 &1979948662
 PrefabInstance:
@@ -21192,7 +21332,7 @@ Transform:
   m_LocalScale: {x: 4, y: 1.7001421, z: 4}
   m_Children: []
   m_Father: {fileID: 623837996}
-  m_RootOrder: 4
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2026604573
 PrefabInstance:
