@@ -9,6 +9,7 @@ public struct RescueStruct
     public Student student;
     public List<Item> lostItems;
     public Vector3 position;
+
 }
 
 public class RescueObject : MonoBehaviour
@@ -17,6 +18,16 @@ public class RescueObject : MonoBehaviour
     public List<Item> itemList;
     [SerializeField]
     private Inventory globalInventory;
+    [SerializeField]
+    GameObject ericModel, mariaModel, claraModel;
+
+    private void Start()
+    {
+        ericModel.SetActive(student == Student.ericson);
+        mariaModel.SetActive(student == Student.maria);
+        claraModel.SetActive(student == Student.clara);
+    }
+
     public void Rescue()
     {
         Assert.IsNotNull(globalInventory, "RescueObject precisa de uma referência pro inventário global!");
@@ -26,7 +37,7 @@ public class RescueObject : MonoBehaviour
         {
             globalInventory.AddItem(itemList[i]);
         }
-        var numberRemoved = VariableManager.instance.rescuables.RemoveAll((RescueStruct r)=>r.student == student);
+        var numberRemoved = VariableManager.instance.rescuables.RemoveAll((RescueStruct r) => r.student == student);
         Assert.IsTrue(numberRemoved == 1);
     }
 }
