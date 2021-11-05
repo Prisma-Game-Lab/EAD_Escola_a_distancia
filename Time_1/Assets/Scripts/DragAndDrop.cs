@@ -74,7 +74,9 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
             Collider col = hit.collider;
             ItemReceiver receiver = col.GetComponent(typeof(ItemReceiver)) as ItemReceiver;
             if (receiver)
+            {
                 receiver.Receive(invManager.origem.PeekItemAt(invManager.indOrigem), hit.point);
+            }
         }
     }
 
