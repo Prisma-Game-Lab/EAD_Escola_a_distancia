@@ -11,6 +11,13 @@ public class Passcode : MonoBehaviour
     private string inputText = "";
     [SerializeField]
     private int maxSize;
+    [SerializeField]
+    private GameObject door;
+    [SerializeField]
+    private int time;
+    public GridGen gridGen;
+    
+
     void Start()
     {
         passcodeText.text = "";
@@ -35,8 +42,8 @@ public class Passcode : MonoBehaviour
     {
        if (inputText == passcode)
         {
-            inputText = "Correto";
-            AtualizaDisplay();
+            inputText = "";
+            StartCoroutine(Correta());
         }
         else
         {
@@ -59,5 +66,23 @@ public class Passcode : MonoBehaviour
         passcodeText.text = "";
     }
 
+    private IEnumerator Correta()
+    {
+        passcodeText.text = "Correto";
+
+        Vector3 startPos = door.transform.position;
+        Vector3 targetPos = new Vector3 (startPos.x -12, startPos.y,startPos.z);
+        float t = 0;
+        
+        do
+        {
+            yield return new WaitForFixedUpdate();
+            t += Time.deltaTime;
+            door.transform.position = Vector3.Lerp(startPos, targetPos, t / time);
+        } while (t < time);
+        gridGen.CreateGrid();
+        
+        this.gameObject.SetActive(false);
+    }
 
 }
