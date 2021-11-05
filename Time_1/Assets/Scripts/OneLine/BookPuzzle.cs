@@ -9,6 +9,11 @@ public class BookPuzzle : MonoBehaviour
     public Inventory personalInventory;
     public Item chave;
 
+    private void Awake() {
+        bookInventory.itemList[0] = ordemFinal[1];
+        bookInventory.itemList[1] = ordemFinal[2];
+        bookInventory.itemList[2] = ordemFinal[0];
+    }
 
     private void FixedUpdate() {
 
@@ -26,6 +31,7 @@ public class BookPuzzle : MonoBehaviour
             Debug.Log("COLECTED!");
             // hotfix marretado
             PlayerMovement.instance.locks = 0;
+            Destroy(gameObject);
         }
     }
 }
