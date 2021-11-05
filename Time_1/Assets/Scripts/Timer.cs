@@ -6,16 +6,18 @@ using TMPro;
 
 public class Timer : MonoBehaviour
 {
-    public float timeRemaining;
+    public float totalTime;
+    private float timeRemaining;
     private bool running = false;
-    public TextMeshProUGUI timeText;
     public VariableManager variableManager;
+    public Image o2Fill;
     public FadeOut fadeOut;
     public SceneJump sceneJump;
     public Inventory personalInventory;
 
     private void Start()
     {
+        timeRemaining = totalTime;
         running = true;
     }
 
@@ -63,12 +65,7 @@ public class Timer : MonoBehaviour
     
     void DisplayTime(float timeToDisplay)
     {
-        timeToDisplay += 1;
-
-        float min = Mathf.FloorToInt(timeToDisplay / 60); 
-        float sec = Mathf.FloorToInt(timeToDisplay % 60);
-
-        timeText.text = string.Format("{0:00}:{1:00}", min, sec);
+        o2Fill.fillAmount = timeRemaining / totalTime;
     }
 
     void Kill(Student s)
