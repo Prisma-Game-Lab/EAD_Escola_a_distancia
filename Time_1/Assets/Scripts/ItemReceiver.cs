@@ -6,7 +6,8 @@ using UnityEngine.Assertions;
 
 public class ItemReceiver : MonoBehaviour
 {
-    public Item expectedItem;
+    public List<Item> expectedItems;
+    public List<Item> receivedItems;
     static int _locks;
     public static void LockInteraction()
     {
@@ -53,7 +54,19 @@ public class ItemReceiver : MonoBehaviour
 
     public void Receive(Item item, Vector3 target)
     {
-        if(item == expectedItem)
+
+        receivedItems.Add(item);
+
+        bool check = true;
+
+        foreach (Item expected in expectedItems)
+        {
+            if (!receivedItems.Contains(expected))
+            {
+                check = false;
+            }
+        }
+        if(check)
         {
             if (!playerIsNear)
             {
