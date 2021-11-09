@@ -39,7 +39,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void StartDialogue(Dialogue dialogue)
     {
-        PlayerMovement.instance.LockMovement();
+        //PlayerMovement.instance.LockMovement();
         Interactable.LockInteraction();
         isInDialogue = true;
         queue = new Queue<DialogueBox>();
@@ -104,7 +104,7 @@ public class DialogueManager : MonoBehaviour
     {
         dialogueBox.SetActive(false);
         isInDialogue = false;
-        PlayerMovement.instance.UnlockMovement();
+        //PlayerMovement.instance.UnlockMovement();
         Interactable.UnlockInteraction();
     }
 }

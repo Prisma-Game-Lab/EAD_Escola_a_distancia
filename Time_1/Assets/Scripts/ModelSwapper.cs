@@ -146,7 +146,7 @@ public class ModelSwapper : MonoBehaviour
         variableManager.activeCharacter = s;
         UpdateModels();
         gridGen.CreateGrid();
-        playerMovement.ResetPosition();
+        //playerMovement.ResetPosition();
         fadeOut.gameObject.SetActive(true);
         yield return fadeOut.StartCoroutine(fadeOut.FadeInCoroutine());
         UpdateButtons();

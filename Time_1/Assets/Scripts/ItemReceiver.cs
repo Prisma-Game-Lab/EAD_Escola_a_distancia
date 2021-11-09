@@ -80,7 +80,7 @@ public class ItemReceiver : MonoBehaviour
 
     private IEnumerator WaitForPlayer(Vector3 target)
     {
-        PlayerMovement.instance.WalkTo(target);
+        //PlayerMovement.instance.WalkTo(target);
         while (!playerIsNear)
         {
             yield return new WaitForFixedUpdate();

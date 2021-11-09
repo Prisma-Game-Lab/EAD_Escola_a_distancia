@@ -30,7 +30,7 @@ public class BookPuzzle : MonoBehaviour
             this.gameObject.SetActive(false);
             Debug.Log("COLECTED!");
             // hotfix marretado
-            PlayerMovement.instance.locks = 0;
+            //PlayerMovement.instance.locks = 0;
             Destroy(gameObject);
         }
     }
