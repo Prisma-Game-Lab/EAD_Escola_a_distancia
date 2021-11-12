@@ -6194,6 +6194,7 @@ GameObject:
   - component: {fileID: 517874400}
   - component: {fileID: 517874399}
   - component: {fileID: 517874403}
+  - component: {fileID: 517874404}
   m_Layer: 3
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -6295,18 +6296,6 @@ MonoBehaviour:
   onInteract:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 517874398}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1254967820}
         m_TargetAssemblyTypeName: GridGen, Assembly-CSharp
         m_MethodName: CreateGrid
@@ -6319,6 +6308,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 517874398}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &517874404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517874398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df10cf16933c0c4591393adec1e5e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleName: tabua
 --- !u!1001 &525938511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11558,6 +11572,7 @@ GameObject:
   - component: {fileID: 1026261467}
   - component: {fileID: 1026261466}
   - component: {fileID: 1026261470}
+  - component: {fileID: 1026261471}
   m_Layer: 3
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -11683,6 +11698,31 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 778fd65bc6cc1ee4f8270199f51eebb8, type: 2}
+        m_TargetAssemblyTypeName: VariableManager, Assembly-CSharp
+        m_MethodName: CompletePuzzle
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: tabua
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1026261471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026261465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df10cf16933c0c4591393adec1e5e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleName: tabua
 --- !u!1001 &1033322736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12505,6 +12545,7 @@ GameObject:
   - component: {fileID: 1137664203}
   - component: {fileID: 1137664202}
   - component: {fileID: 1137664206}
+  - component: {fileID: 1137664207}
   m_Layer: 3
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -12630,6 +12671,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1137664207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137664201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3df10cf16933c0c4591393adec1e5e44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  puzzleName: tabua
 --- !u!1001 &1141572963
 PrefabInstance:
   m_ObjectHideFlags: 0

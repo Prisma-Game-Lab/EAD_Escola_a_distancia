@@ -14,6 +14,8 @@ public class VariableManager : ScriptableSingleton<VariableManager>
 
     public List<Item> collectedItems;
 
+    public List<string> completedPuzzles;
+
 
     public bool IsStudentAlive(Student s)
     {
@@ -48,6 +50,14 @@ public class VariableManager : ScriptableSingleton<VariableManager>
     public void CollectItem(Item item)
     {
         collectedItems.Add(item);
+    }
+
+    public void CompletePuzzle(string puzzle)
+    {
+        if(!completedPuzzles.Contains(puzzle))
+        {
+            completedPuzzles.Add(puzzle);
+        }
     }
 
 }

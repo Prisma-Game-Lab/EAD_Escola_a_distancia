@@ -12,9 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 15ee4857384a19247abd01c84a0ac842, type: 3}
   m_Name: VariableManager
   m_EditorClassIdentifier: 
-  ericson: 1
+  ericson: 0
   clara: 1
   maria: 1
-  activeCharacter: 0
-  rescuables: []
+  activeCharacter: 1
+  rescuables:
+  - student: 0
+    lostItems:
+    - {fileID: 11400000, guid: 08d8f45bf584e0f458ab6fccf8ad9568, type: 2}
+    - {fileID: 11400000, guid: 08d8f45bf584e0f458ab6fccf8ad9568, type: 2}
+    - {fileID: 11400000, guid: 08d8f45bf584e0f458ab6fccf8ad9568, type: 2}
+    - {fileID: 11400000, guid: 08d8f45bf584e0f458ab6fccf8ad9568, type: 2}
+    position: {x: 0, y: 0, z: 0}
   collectedItems: []
+  completedPuzzles:
+  - cadeiras
+  - cadeiras
+  - cadeiras
