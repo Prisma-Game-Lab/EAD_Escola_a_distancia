@@ -1,22 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.Assertions;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField]
-    private float speed;
-    [SerializeField]
-    private int maxPath;
     private Vector3 initialPosition;
     public int locks = 0;
-    public Pathfinding pathfinding;
-    public GridGen gridGen;
     public LayerMask groundLayer;
-    [HideInInspector]
-    public List<Node> path;
-    public List<Node> lastPath;
+    private Camera cam;
+    private NavMeshAgent agent;
 
     public static PlayerMovement instance = null;
 
@@ -26,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
         locks += 1;
         Stop();
     }
+
     public void UnlockMovement()
     {
         Assert.IsTrue(locks >= 1);
@@ -37,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
         Assert.IsNull(instance);
         instance = this;
         locks = 0;
+        agent = GetComponent<NavMeshAgent>();
     }
 
     private void Start()
@@ -56,41 +52,16 @@ public class PlayerMovement : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, Mathf.Infinity, groundLayer))
             {
-                Vector3 target = hit.point;
-                if (!gridGen.NodeFromWorldPoint(target).walkable)
-                {
-                    target = pathfinding.FindClosestWalkable(transform.position, target).worldPosition;
-                }
-
-
-                StopAllCoroutines();
-
-                path = pathfinding.FindPath(transform.position, target);
-                if (path == lastPath || path.Count > maxPath)
-                    {return;}
-                lastPath = path;
-                StartCoroutine(MoveThroughPath(path));
+                WalkTo(hit.point);
             }
 
         }
 
     }
-
+    
     public void WalkTo(Vector3 target)
     {
-        if (!gridGen.NodeFromWorldPoint(target).walkable)
-        {
-            target = pathfinding.FindClosestWalkable(transform.position, target).worldPosition;
-        }
-
-
-        StopAllCoroutines();
-
-        path = pathfinding.FindPath(transform.position, target);
-        if (path == lastPath || path.Count > maxPath)
-            {return;}
-        lastPath = path;
-        StartCoroutine(MoveThroughPath(path));   
+        agent.SetDestination(target);
     }
 
     public void Stop()
@@ -101,28 +72,6 @@ public class PlayerMovement : MonoBehaviour
     public void ResetPosition()
     {
         transform.position = initialPosition;
-    }
-
-
-    private IEnumerator MoveThroughPath(List<Node> path)
-    {
-        foreach (Node targetTile in path)
-        {
-            float distance = Vector3.Distance(transform.position, targetTile.worldPosition);
-            float time = distance / speed;
-            yield return StartCoroutine(MoveTo(transform.position, targetTile.worldPosition, time));//time seria settado em algum outro lugar
-        }
-    }
-
-    private IEnumerator MoveTo(Vector3 startPos, Vector3 targetPos, float time)
-    {
-        float t = 0;
-        do
-        {
-            yield return new WaitForFixedUpdate();
-            t += Time.deltaTime;
-            transform.position = Vector3.Lerp(startPos, new Vector3(targetPos.x, 0, targetPos.z), t / time);
-        } while (t < time);
     }
 }
 
