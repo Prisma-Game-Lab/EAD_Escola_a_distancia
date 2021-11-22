@@ -16,7 +16,7 @@ public class Passcode : MonoBehaviour
     [SerializeField]
     private int time;
     public GridGen gridGen;
-    
+
 
     void Start()
     {
@@ -73,7 +73,7 @@ public class Passcode : MonoBehaviour
         Vector3 startPos = door.transform.position;
         Vector3 targetPos = new Vector3 (startPos.x -12, startPos.y,startPos.z);
         float t = 0;
-        
+
         do
         {
             yield return new WaitForFixedUpdate();
@@ -81,8 +81,18 @@ public class Passcode : MonoBehaviour
             door.transform.position = Vector3.Lerp(startPos, targetPos, t / time);
         } while (t < time);
         gridGen.CreateGrid();
-        
+
         this.gameObject.SetActive(false);
+    }
+
+    private void OnEnable() {
+        Interactable.LockInteraction();
+        PlayerMovement.instance.LockMovement();
+    }
+
+    private void OnDisable() {
+        Interactable.UnlockInteraction();
+        PlayerMovement.instance.UnlockMovement();
     }
 
 }

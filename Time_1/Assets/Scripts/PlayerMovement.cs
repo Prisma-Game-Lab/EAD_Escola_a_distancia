@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void LockMovement()
     {
+        Debug.Log("playerMovLocked");
         Assert.IsTrue(locks >= 0);
         locks += 1;
         Stop();
@@ -23,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void UnlockMovement()
     {
+        Debug.Log("playerMovUnlocked");
         Assert.IsTrue(locks >= 1);
         locks -= 1;
     }
@@ -58,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
         }
 
     }
-    
+
     public void WalkTo(Vector3 target)
     {
         agent.SetDestination(target);

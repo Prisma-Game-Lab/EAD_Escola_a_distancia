@@ -9,7 +9,7 @@ using UnityEngine.Assertions;
 public class Interactable : MonoBehaviour
 {
     private LayerMask player;
-    
+
     void Awake()
     {
         player = LayerMask.GetMask("Player");
@@ -19,10 +19,12 @@ public class Interactable : MonoBehaviour
     public static void LockInteraction()
     {
         _locks += 1;
+        Debug.Log(_locks);
     }
     public static void UnlockInteraction()
     {
         _locks -= 1;
+        Debug.Log(_locks);
     }
     Collider _col;
     private void Start()
