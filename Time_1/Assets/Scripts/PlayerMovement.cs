@@ -75,5 +75,14 @@ public class PlayerMovement : MonoBehaviour
     {
         transform.position = initialPosition;
     }
+
+    public bool IsMoving()
+    {
+        if (agent.velocity != new Vector3 (0,0,0))
+        {
+            return true;
+        }
+        return false;
+    }
 }
 
