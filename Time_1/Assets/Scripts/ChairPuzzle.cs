@@ -94,7 +94,6 @@ public class ChairPuzzle : MonoBehaviour
             t += Time.deltaTime;
             door.transform.position = Vector3.Lerp(startPos, targetPos, t / time);
         } while (t < time);
-        gridGen.CreateGrid();
     }
 
 }
