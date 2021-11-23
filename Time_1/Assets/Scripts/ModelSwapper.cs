@@ -26,7 +26,6 @@ public class ModelSwapper : MonoBehaviour
     public VariableManager variableManager;
     public FadeOut fadeOut;
 
-    public GridGen gridGen;
     public PlayerMovement playerMovement;
 
     private void Awake()
@@ -145,7 +144,6 @@ public class ModelSwapper : MonoBehaviour
         currentStudent = s;
         variableManager.activeCharacter = s;
         UpdateModels();
-        gridGen.CreateGrid();
         playerMovement.ResetPosition();
         fadeOut.gameObject.SetActive(true);
         yield return fadeOut.StartCoroutine(fadeOut.FadeInCoroutine());
