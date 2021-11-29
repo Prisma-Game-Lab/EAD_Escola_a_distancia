@@ -21,7 +21,7 @@ public class PlayerAnimator : MonoBehaviour
      void Update() 
      { 
         anim.SetFloat("Speed", PlayerMovement.instance.CurrentSpeed());
-        CheckKey();
+        //CheckKey();
      }
 
      void CheckKey()
