@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Assertions;
 
 [System.Serializable]
 public class ItemDialogueOption
@@ -17,6 +18,8 @@ public class PuzzleDialogueOption
 public class NPCDialogue : MonoBehaviour
 {
     [SerializeField]
+    Student self;
+    [SerializeField]
     Student targetStudent;
     [SerializeField]
     Dialogue initialDialogue;
@@ -28,14 +31,28 @@ public class NPCDialogue : MonoBehaviour
     [SerializeField]
     List<Dialogue> genericDialogueOptions;
 
+    private void Awake()
+    {
+        Assert.IsNotNull(initialDialogue, "Initial dialogue is null");
+        Assert.IsNotNull(itemDialogueOptions, "Item dialogue options is null");
+        Assert.IsNotNull(puzzleDialogueOptions, "Puzzle dialogue options is null");
+        Assert.IsNotNull(genericDialogueOptions, "Generic dialogue options is null");
+        Assert.IsTrue(genericDialogueOptions.Count > 0, "Generic dialogue options is empty");
+    }
+
     public void TriggerDialogue()
     {
         var vInstance = VariableManager.instance;
+        if(targetStudent != vInstance.activeCharacter)
+        {
+            return;
+        }
         var dInstance = DialogueManager.instance;
-        string metString = Students.GetName(vInstance.activeCharacter) + "met" + Students.GetName(targetStudent);
-        if (vInstance.HasCompletedPuzzle(metString))
+        string metString = Students.GetName(targetStudent) + "met" + Students.GetName(self);
+        if (!vInstance.HasCompletedPuzzle(metString))
         {
             dInstance.StartDialogue(initialDialogue);
+            vInstance.CompletePuzzle(metString);
             return;
         }
         else
