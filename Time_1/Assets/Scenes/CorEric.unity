@@ -6383,11 +6383,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collectables:
-  - {fileID: 952079901}
   - {fileID: 1872971014}
   - {fileID: 2040614612}
   items:
-  - {fileID: 11400000, guid: b4c38187d7f4b314c835d45582342239, type: 2}
   - {fileID: 11400000, guid: b4c38187d7f4b314c835d45582342239, type: 2}
   - {fileID: 11400000, guid: 6c628cbff15636c408b29a5c3445b62d, type: 2}
 --- !u!1001 &516621887
@@ -6490,12 +6488,13 @@ GameObject:
   - component: {fileID: 517874399}
   - component: {fileID: 517874403}
   - component: {fileID: 517874404}
+  - component: {fileID: 517874405}
   m_Layer: 3
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!65 &517874399
 BoxCollider:
@@ -6628,6 +6627,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleName: tabua
+--- !u!208 &517874405
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 517874398}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 2.145, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: -1.63, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1001 &525938511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7492,10 +7507,45 @@ MonoBehaviour:
   materialErrado: {fileID: 2100000, guid: 7c6a50e2f8ae2cf43b3f6ad9c5994339, type: 2}
   materialCerto: {fileID: 2100000, guid: 2a3d4a405f1f17641b791a9db5567164, type: 2}
   chairSpeed: 300
-  door: {fileID: 1235114876}
-  doorSpeed: 4
-  gridGen: {fileID: 0}
-  cupula: {fileID: 1190866758}
+  onSolve:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1190866758}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1235114881}
+        m_TargetAssemblyTypeName: MoveItem, Assembly-CSharp
+        m_MethodName: SetZ
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 15
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1235114881}
+        m_TargetAssemblyTypeName: MoveItem, Assembly-CSharp
+        m_MethodName: MoveStraight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &641429627
 GameObject:
   m_ObjectHideFlags: 0
@@ -7855,7 +7905,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 1515529256}
-  rotationAmount: 5
   scrollIntensity: 10
   minDist: 2
   maxDist: 15
@@ -12184,12 +12233,13 @@ GameObject:
   - component: {fileID: 1026261466}
   - component: {fileID: 1026261470}
   - component: {fileID: 1026261471}
+  - component: {fileID: 1026261472}
   m_Layer: 3
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!65 &1026261466
 BoxCollider:
@@ -12334,6 +12384,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleName: tabua
+--- !u!208 &1026261472
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026261465}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 4.625, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: -4.1, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1001 &1033322736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12509,6 +12575,10 @@ PrefabInstance:
     - target: {fileID: 1617568255812838031, guid: 1ddc7c4db74e16346a403f00d591c88c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5867814568964250577, guid: 1ddc7c4db74e16346a403f00d591c88c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ddc7c4db74e16346a403f00d591c88c, type: 3}
@@ -13243,12 +13313,13 @@ GameObject:
   - component: {fileID: 1137664202}
   - component: {fileID: 1137664206}
   - component: {fileID: 1137664207}
+  - component: {fileID: 1137664208}
   m_Layer: 3
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!65 &1137664202
 BoxCollider:
@@ -13381,6 +13452,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   puzzleName: tabua
+--- !u!208 &1137664208
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1137664201}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 2.435, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: -2.05, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1001 &1141572963
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14536,12 +14623,14 @@ GameObject:
   - component: {fileID: 1235114879}
   - component: {fileID: 1235114878}
   - component: {fileID: 1235114877}
+  - component: {fileID: 1235114881}
+  - component: {fileID: 1235114882}
   m_Layer: 3
-  m_Name: Cube
+  m_Name: PortaPuzzle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!65 &1235114877
 BoxCollider:
@@ -14619,6 +14708,35 @@ Transform:
   m_Father: {fileID: 623837996}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1235114881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235114876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bde7eaa48fcff1145b6d464ae8561f6c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 2
+--- !u!208 &1235114882
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1235114876}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 0
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1250986858
 GameObject:
   m_ObjectHideFlags: 0

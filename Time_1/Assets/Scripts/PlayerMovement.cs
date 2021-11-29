@@ -44,6 +44,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        CurrentSpeed();
         if (locks > 0) return;
 
         if (Input.GetButtonUp("Walk"))
@@ -78,11 +79,16 @@ public class PlayerMovement : MonoBehaviour
 
     public bool IsMoving()
     {
-        if (agent.velocity != new Vector3 (0,0,0))
+        if (agent.velocity != Vector3.zero)
         {
             return true;
         }
         return false;
+    }
+
+    public float CurrentSpeed()
+    {
+        return agent.velocity.magnitude/agent.speed;
     }
 }
 

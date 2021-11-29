@@ -1,4 +1,5 @@
 using System.Collections;
+using UnityEngine.Events;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -13,11 +14,9 @@ public class ChairPuzzle : MonoBehaviour
     public Material materialCerto;
 
     public float chairSpeed;
-    public GameObject door;
-    public float doorSpeed;
 
-    public GridGen gridGen;
-    public GameObject cupula;
+    [SerializeField]
+    private UnityEvent onSolve;
 
 
     public void GiraCadeira(int index)
@@ -74,26 +73,8 @@ public class ChairPuzzle : MonoBehaviour
         if (win)
         {
             linhas[4].GetComponent<MeshRenderer>().material = materialCerto;
-            StartCoroutine(MoveDoor());
-            cupula.SetActive(false);
             VariableManager.instance.CompletePuzzle(puzzleName);
+            onSolve.Invoke();
         }
     }
-
-    private IEnumerator MoveDoor()
-    {
-        Vector3 startPos = door.transform.position;
-        Vector3 targetPos = new Vector3(startPos.x, startPos.y, startPos.z + 15);
-        float distance = Vector3.Distance(startPos, targetPos);
-        float time = distance / doorSpeed;
-        float t = 0;
-
-        do
-        {
-            yield return new WaitForFixedUpdate();
-            t += Time.deltaTime;
-            door.transform.position = Vector3.Lerp(startPos, targetPos, t / time);
-        } while (t < time);
-    }
-
 }

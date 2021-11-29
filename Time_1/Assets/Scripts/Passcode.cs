@@ -1,22 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 using TMPro;
 
 public class Passcode : MonoBehaviour
 {
+    
     public string passcode;
     public TextMeshProUGUI passcodeText;
     private string inputText = "";
     [SerializeField]
     private int maxSize;
-    [SerializeField]
-    private GameObject door;
-    [SerializeField]
-    private int time;
-    public GridGen gridGen;
-
+    
+    [SerializeField] 
+    private UnityEvent onAccept;
 
     void Start()
     {
@@ -43,7 +42,7 @@ public class Passcode : MonoBehaviour
        if (inputText == passcode)
         {
             inputText = "";
-            StartCoroutine(Correta());
+            Correta();
         }
         else
         {
@@ -66,21 +65,11 @@ public class Passcode : MonoBehaviour
         passcodeText.text = "";
     }
 
-    private IEnumerator Correta()
+    private void Correta()
     {
         passcodeText.text = "Correto";
 
-        Vector3 startPos = door.transform.position;
-        Vector3 targetPos = new Vector3 (startPos.x -12, startPos.y,startPos.z);
-        float t = 0;
-
-        do
-        {
-            yield return new WaitForFixedUpdate();
-            t += Time.deltaTime;
-            door.transform.position = Vector3.Lerp(startPos, targetPos, t / time);
-        } while (t < time);
-        gridGen.CreateGrid();
+        onAccept.Invoke();
 
         this.gameObject.SetActive(false);
     }
