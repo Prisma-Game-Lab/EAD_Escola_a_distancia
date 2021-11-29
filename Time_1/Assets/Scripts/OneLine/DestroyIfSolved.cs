@@ -8,7 +8,7 @@ public class DestroyIfSolved : MonoBehaviour
     private string puzzleName;
 
     private void Awake() {
-        if(VariableManager.instance.completedPuzzles.Contains(puzzleName))
+        if(VariableManager.instance.HasCompletedPuzzle(puzzleName))
         {
             Destroy(this.gameObject);
         }

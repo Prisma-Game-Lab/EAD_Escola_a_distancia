@@ -7,6 +7,23 @@ public enum Student
 {
     ericson, clara, maria
 }
+public class Students
+{
+    public static string GetName(Student s)
+    {
+        switch (s)
+        {
+            case Student.ericson:
+                return "Ericson";
+            case Student.clara:
+                return "Clara";
+            case Student.maria:
+                return "Maria";
+            default:
+                return "";
+        }
+    }
+}
 
 public class ModelSwapper : MonoBehaviour
 {
@@ -32,7 +49,7 @@ public class ModelSwapper : MonoBehaviour
     {
         Student s = variableManager.activeCharacter;
         Student student = Student.ericson;
-        
+
         if (variableManager.IsStudentAlive(s))
         {
             switch (s)
