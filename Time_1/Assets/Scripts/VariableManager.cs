@@ -51,6 +51,10 @@ public class VariableManager : ScriptableSingleton<VariableManager>
     {
         collectedItems.Add(item);
     }
+    public bool HasItem(Item item)
+    {
+        return collectedItems.Contains(item);
+    }
 
     public void CompletePuzzle(string puzzle)
     {
@@ -58,6 +62,10 @@ public class VariableManager : ScriptableSingleton<VariableManager>
         {
             completedPuzzles.Add(puzzle);
         }
+    }
+    public bool HasCompletedPuzzle(string puzzle)
+    {
+        return completedPuzzles.Contains(puzzle);
     }
 
 }

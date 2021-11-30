@@ -31,7 +31,7 @@ public class ChairPuzzle : MonoBehaviour
     }
 
     private void Start() {
-        if(VariableManager.instance.completedPuzzles.Contains(puzzleName))
+        if(VariableManager.instance.HasCompletedPuzzle(puzzleName))
         {
             for (int i = 0; i < 4; i++)
             {
