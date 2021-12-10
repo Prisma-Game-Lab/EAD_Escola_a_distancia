@@ -16,6 +16,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     public Inventory inv;
     private CanvasGroup canvasGroup;
     public LayerMask unwalkableLayer;
+    public bool allowdrop = true;
 
     void Start()
     {   
@@ -82,6 +83,11 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
 
     public void OnDrop(PointerEventData eventData)
     {
+        if (!allowdrop)
+        {
+            return;
+        }
+        
         invManager.destino = inv;
         invManager.indDestino = transform.GetSiblingIndex();
         invManager.MoveItemTo();
