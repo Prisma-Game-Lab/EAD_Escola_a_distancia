@@ -39,6 +39,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void StartDialogue(Dialogue dialogue)
     {
+        Debug.Log("Starting dialogue " + dialogue.name);
         PlayerMovement.instance.LockMovement();
         Interactable.LockInteraction();
         isInDialogue = true;
@@ -83,7 +84,7 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = "";
         string currentText = "";
         string finalText = box.text;
-        
+
         for (int i = 0; i < finalText.Length; i++)
         {
             currentText = finalText.Substring(0, i);

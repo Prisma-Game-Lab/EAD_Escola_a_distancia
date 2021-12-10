@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.054713704, g: 0.055761956, b: 0.07798753, a: 1}
+  m_IndirectSpecularColor: {r: 0.05475062, g: 0.055750526, b: 0.078344695, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -361,6 +361,7 @@ GameObject:
   - component: {fileID: 16650293}
   - component: {fileID: 16650292}
   - component: {fileID: 16650295}
+  - component: {fileID: 16650296}
   m_Layer: 5
   m_Name: GlobalInventoryButton
   m_TagString: Untagged
@@ -378,15 +379,14 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 620166450}
+  m_Children: []
   m_Father: {fileID: 1324653168}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 10, y: 10}
-  m_SizeDelta: {x: 225.33997, y: 100}
+  m_AnchoredPosition: {x: 30, y: 30}
+  m_SizeDelta: {x: 250, y: 250}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &16650292
 MonoBehaviour:
@@ -464,8 +464,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 3f942d553a37a3748a7c295fc92f8793, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -494,6 +494,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea73ae27b5262e24bb8d2b2ad5db2032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &16650296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 16650290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5591cc357ef6a8f43a4cfd4995518530, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clara: {fileID: 21300000, guid: 3f942d553a37a3748a7c295fc92f8793, type: 3}
+  ericson: {fileID: 21300000, guid: a319ee8fc6cc2634380fad98e2544021, type: 3}
+  maria: {fileID: 21300000, guid: 5ed111854b499d34c9850faf7299ac9f, type: 3}
+  buttonImage: {fileID: 16650293}
 --- !u!1 &20163125
 GameObject:
   m_ObjectHideFlags: 0
@@ -1660,6 +1676,56 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 185503577}
   m_CullTransparentMesh: 1
+--- !u!1 &187183574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 187183576}
+  - component: {fileID: 187183575}
+  m_Layer: 3
+  m_Name: dialogueWithClara
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &187183575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187183574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7806f4eab893afb4ab461ed43710ef3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: 2
+  targetStudent: 1
+  initialDialogue: {fileID: 11400000, guid: 681a65dab6342aa4abc74e5c14937635, type: 2}
+  itemDialogueOptions: []
+  puzzleDialogueOptions: []
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: 1523b8aaa524d404692bcbf6d15b376b, type: 2}
+--- !u!4 &187183576
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187183574}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1609269006}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &188377473
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2677,6 +2743,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 379336806}
   m_CullTransparentMesh: 1
+--- !u!1 &381812741
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 381812742}
+  - component: {fileID: 381812743}
+  m_Layer: 3
+  m_Name: dialogueWithMaria
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &381812742
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381812741}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -7.0499997, y: 0, z: 0.16000009}
+  m_LocalScale: {x: 1.0804499, y: 2.1608999, z: 1.0804499}
+  m_Children: []
+  m_Father: {fileID: 806636969}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &381812743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 381812741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7806f4eab893afb4ab461ed43710ef3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: 0
+  targetStudent: 2
+  initialDialogue: {fileID: 11400000, guid: 6c5b03811ba415a4b95978cab28768d0, type: 2}
+  itemDialogueOptions: []
+  puzzleDialogueOptions: []
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: e9a6b554032a93844818950136e7ccf3, type: 2}
+  - {fileID: 11400000, guid: b31a2f1e809355b47b892fdabafb4a19, type: 2}
 --- !u!4 &384573815 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 4dd4764e495d8b948813cda848abd87c, type: 3}
@@ -2757,6 +2874,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 389516200}
   m_CullTransparentMesh: 1
+--- !u!1 &390152073
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 390152074}
+  - component: {fileID: 390152075}
+  m_Layer: 3
+  m_Name: dialogueWithClara
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &390152074
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390152073}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.9199998, y: 0, z: -3.6799998}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 806636969}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &390152075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 390152073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7806f4eab893afb4ab461ed43710ef3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: 0
+  targetStudent: 1
+  initialDialogue: {fileID: 11400000, guid: b695717d1025c634d89757b3ffcc4b02, type: 2}
+  itemDialogueOptions: []
+  puzzleDialogueOptions: []
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: 78c937a729c51a3429d186735a6ae12e, type: 2}
+  - {fileID: 11400000, guid: 1ab9acaf7c3fd9842b010e2b16e55a22, type: 2}
 --- !u!4 &392610099 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5467920508588226255, guid: f992230477ff6394181a8957d9ae1635, type: 3}
@@ -4097,85 +4265,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 615977511}
-  m_CullTransparentMesh: 1
---- !u!1 &620166449
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 620166450}
-  - component: {fileID: 620166452}
-  - component: {fileID: 620166451}
-  m_Layer: 5
-  m_Name: Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &620166450
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 620166449}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 16650291}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &620166451
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 620166449}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 50
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 5
-    m_MaxSize: 50
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Inventario
---- !u!222 &620166452
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 620166449}
   m_CullTransparentMesh: 1
 --- !u!114 &620485800 stripped
 MonoBehaviour:
@@ -5964,8 +6053,6 @@ GameObject:
   - component: {fileID: 806636969}
   - component: {fileID: 806636973}
   - component: {fileID: 806636970}
-  - component: {fileID: 806636972}
-  - component: {fileID: 806636971}
   m_Layer: 3
   m_Name: Student A
   m_TagString: Untagged
@@ -5985,6 +6072,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 188377474}
+  - {fileID: 381812742}
+  - {fileID: 390152074}
   m_Father: {fileID: 608676183}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6015,7 +6104,7 @@ MonoBehaviour:
           m_StringArgument: eric
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 806636972}
+      - m_Target: {fileID: 381812743}
         m_TargetAssemblyTypeName: NPCDialogue, Assembly-CSharp
         m_MethodName: TriggerDialogue
         m_Mode: 1
@@ -6027,7 +6116,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 806636972}
+      - m_Target: {fileID: 390152075}
         m_TargetAssemblyTypeName: NPCDialogue, Assembly-CSharp
         m_MethodName: TriggerDialogue
         m_Mode: 1
@@ -6039,46 +6128,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &806636971
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 806636968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7806f4eab893afb4ab461ed43710ef3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  self: 0
-  targetStudent: 2
-  initialDialogue: {fileID: 11400000, guid: 6c5b03811ba415a4b95978cab28768d0, type: 2}
-  itemDialogueOptions: []
-  puzzleDialogueOptions: []
-  genericDialogueOptions:
-  - {fileID: 11400000, guid: e9a6b554032a93844818950136e7ccf3, type: 2}
-  - {fileID: 11400000, guid: b31a2f1e809355b47b892fdabafb4a19, type: 2}
---- !u!114 &806636972
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 806636968}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7806f4eab893afb4ab461ed43710ef3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  self: 0
-  targetStudent: 1
-  initialDialogue: {fileID: 11400000, guid: b695717d1025c634d89757b3ffcc4b02, type: 2}
-  itemDialogueOptions: []
-  puzzleDialogueOptions: []
-  genericDialogueOptions:
-  - {fileID: 11400000, guid: 78c937a729c51a3429d186735a6ae12e, type: 2}
-  - {fileID: 11400000, guid: 1ab9acaf7c3fd9842b010e2b16e55a22, type: 2}
 --- !u!65 &806636973
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7825,8 +7874,6 @@ GameObject:
   - component: {fileID: 989015304}
   - component: {fileID: 989015308}
   - component: {fileID: 989015305}
-  - component: {fileID: 989015307}
-  - component: {fileID: 989015306}
   m_Layer: 3
   m_Name: Student B
   m_TagString: Untagged
@@ -7846,6 +7893,8 @@ Transform:
   m_LocalScale: {x: 1.08045, y: 2.1609, z: 1.08045}
   m_Children:
   - {fileID: 742520065}
+  - {fileID: 1009369714}
+  - {fileID: 1608328304}
   m_Father: {fileID: 608676183}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7876,7 +7925,7 @@ MonoBehaviour:
           m_StringArgument: clara
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 989015307}
+      - m_Target: {fileID: 1009369715}
         m_TargetAssemblyTypeName: NPCDialogue, Assembly-CSharp
         m_MethodName: TriggerDialogue
         m_Mode: 1
@@ -7888,7 +7937,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 989015307}
+      - m_Target: {fileID: 1608328305}
         m_TargetAssemblyTypeName: NPCDialogue, Assembly-CSharp
         m_MethodName: TriggerDialogue
         m_Mode: 1
@@ -7900,46 +7949,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &989015306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 989015303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7806f4eab893afb4ab461ed43710ef3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  self: 1
-  targetStudent: 2
-  initialDialogue: {fileID: 11400000, guid: 711be9a474955154a81500024129e223, type: 2}
-  itemDialogueOptions: []
-  puzzleDialogueOptions: []
-  genericDialogueOptions:
-  - {fileID: 11400000, guid: 66b569601ecd9d747aa8f96925e66e83, type: 2}
-  - {fileID: 11400000, guid: caadc2b03e064a24bbd1812428b79e31, type: 2}
---- !u!114 &989015307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 989015303}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7806f4eab893afb4ab461ed43710ef3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  self: 1
-  targetStudent: 0
-  initialDialogue: {fileID: 11400000, guid: 352b7247b0530d94e925c9cfb3fd240e, type: 2}
-  itemDialogueOptions: []
-  puzzleDialogueOptions: []
-  genericDialogueOptions:
-  - {fileID: 11400000, guid: 87af05067f9ed1846b28a494d699cddf, type: 2}
-  - {fileID: 11400000, guid: b9a2e6206d5313148b01259fe380eaf4, type: 2}
 --- !u!65 &989015308
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8209,6 +8218,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea73ae27b5262e24bb8d2b2ad5db2032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1009369713
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1009369714}
+  - component: {fileID: 1009369715}
+  m_Layer: 3
+  m_Name: dialogueWithEric
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1009369714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009369713}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 989015304}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1009369715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1009369713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7806f4eab893afb4ab461ed43710ef3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: 1
+  targetStudent: 0
+  initialDialogue: {fileID: 11400000, guid: 352b7247b0530d94e925c9cfb3fd240e, type: 2}
+  itemDialogueOptions: []
+  puzzleDialogueOptions: []
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: 87af05067f9ed1846b28a494d699cddf, type: 2}
+  - {fileID: 11400000, guid: b9a2e6206d5313148b01259fe380eaf4, type: 2}
 --- !u!1 &1009520151
 GameObject:
   m_ObjectHideFlags: 0
@@ -10237,7 +10297,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2210862282504744281, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -49.999756
+      value: -49.99951
       objectReference: {fileID: 0}
     - target: {fileID: 2210862282504744281, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -10258,6 +10318,14 @@ PrefabInstance:
     - target: {fileID: 2210862283322458776, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
       propertyPath: m_text
       value: Oie
+      objectReference: {fileID: 0}
+    - target: {fileID: 2210862283322458776, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
+      propertyPath: m_fontSize
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 2210862283322458776, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 65
       objectReference: {fileID: 0}
     - target: {fileID: 2210862283322458782, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
       propertyPath: m_IsActive
@@ -12737,6 +12805,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fc5dead8b4b9101419f3f54db46a9610, type: 3}
   m_PrefabInstance: {fileID: 436588198}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1608328303
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1608328304}
+  - component: {fileID: 1608328305}
+  m_Layer: 3
+  m_Name: dialogueWithMaria
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1608328304
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608328303}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 989015304}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1608328305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1608328303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7806f4eab893afb4ab461ed43710ef3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: 1
+  targetStudent: 2
+  initialDialogue: {fileID: 11400000, guid: 711be9a474955154a81500024129e223, type: 2}
+  itemDialogueOptions: []
+  puzzleDialogueOptions: []
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: 66b569601ecd9d747aa8f96925e66e83, type: 2}
+  - {fileID: 11400000, guid: caadc2b03e064a24bbd1812428b79e31, type: 2}
 --- !u!1 &1609269005
 GameObject:
   m_ObjectHideFlags: 0
@@ -12748,8 +12867,6 @@ GameObject:
   - component: {fileID: 1609269006}
   - component: {fileID: 1609269007}
   - component: {fileID: 1609269008}
-  - component: {fileID: 1609269010}
-  - component: {fileID: 1609269009}
   m_Layer: 3
   m_Name: Student C
   m_TagString: Untagged
@@ -12769,6 +12886,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400193707}
+  - {fileID: 1848731923}
+  - {fileID: 187183576}
   m_Father: {fileID: 608676183}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12812,7 +12931,7 @@ MonoBehaviour:
           m_StringArgument: maria
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1609269010}
+      - m_Target: {fileID: 1848731922}
         m_TargetAssemblyTypeName: NPCDialogue, Assembly-CSharp
         m_MethodName: TriggerDialogue
         m_Mode: 1
@@ -12824,7 +12943,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1609269010}
+      - m_Target: {fileID: 187183575}
         m_TargetAssemblyTypeName: NPCDialogue, Assembly-CSharp
         m_MethodName: TriggerDialogue
         m_Mode: 1
@@ -12836,44 +12955,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1609269009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1609269005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7806f4eab893afb4ab461ed43710ef3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  self: 0
-  targetStudent: 1
-  initialDialogue: {fileID: 11400000, guid: 681a65dab6342aa4abc74e5c14937635, type: 2}
-  itemDialogueOptions: []
-  puzzleDialogueOptions: []
-  genericDialogueOptions:
-  - {fileID: 11400000, guid: 1523b8aaa524d404692bcbf6d15b376b, type: 2}
---- !u!114 &1609269010
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1609269005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7806f4eab893afb4ab461ed43710ef3b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  self: 2
-  targetStudent: 0
-  initialDialogue: {fileID: 11400000, guid: 0020918ccd704614d8eea0dbb947135e, type: 2}
-  itemDialogueOptions: []
-  puzzleDialogueOptions: []
-  genericDialogueOptions:
-  - {fileID: 11400000, guid: 4f25e92430d6b084eae0e579cfbf6b1f, type: 2}
 --- !u!1 &1624379642
 GameObject:
   m_ObjectHideFlags: 0
@@ -14577,6 +14658,56 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8331967323785649879, guid: 9e5b682c8d111de46a6fe2f0d5e0ad9b, type: 3}
   m_PrefabInstance: {fileID: 1790024976}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1848731921
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1848731923}
+  - component: {fileID: 1848731922}
+  m_Layer: 3
+  m_Name: dialogueWithEric
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1848731922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848731921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7806f4eab893afb4ab461ed43710ef3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: 2
+  targetStudent: 0
+  initialDialogue: {fileID: 11400000, guid: 0020918ccd704614d8eea0dbb947135e, type: 2}
+  itemDialogueOptions: []
+  puzzleDialogueOptions: []
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: 4f25e92430d6b084eae0e579cfbf6b1f, type: 2}
+--- !u!4 &1848731923
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1848731921}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1609269006}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1878274253
 GameObject:
   m_ObjectHideFlags: 0

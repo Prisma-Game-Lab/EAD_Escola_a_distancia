@@ -141,6 +141,7 @@ public class ModelSwapper : MonoBehaviour
     }
     public void WaitDialogueThenSwapTo(string studentName)
     {
+        StopAllCoroutines();
         StartCoroutine(WaitDialogueThenSwapModel(studentName));
     }
 
