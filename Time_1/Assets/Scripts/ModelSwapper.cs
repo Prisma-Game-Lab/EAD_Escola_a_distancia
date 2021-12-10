@@ -133,6 +133,17 @@ public class ModelSwapper : MonoBehaviour
         StartCoroutine(SwapModels(s));
     }
 
+    private IEnumerator WaitDialogueThenSwapModel(string studentName)
+    {
+        yield return new WaitUntil(()=>DialogueManager.instance.isInDialogue);
+        yield return new WaitWhile(()=>DialogueManager.instance.isInDialogue);
+        SwapTo(studentName);
+    }
+    public void WaitDialogueThenSwapTo(string studentName)
+    {
+        StartCoroutine(WaitDialogueThenSwapModel(studentName));
+    }
+
     public void SwapTo(string s)
     {
         Student student = Student.ericson;
