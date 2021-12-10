@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.05475062, g: 0.055750526, b: 0.078344695, a: 1}
+  m_IndirectSpecularColor: {r: 0.054713704, g: 0.055761956, b: 0.07798753, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5964,6 +5964,8 @@ GameObject:
   - component: {fileID: 806636969}
   - component: {fileID: 806636973}
   - component: {fileID: 806636970}
+  - component: {fileID: 806636972}
+  - component: {fileID: 806636971}
   m_Layer: 3
   m_Name: Student A
   m_TagString: Untagged
@@ -6003,7 +6005,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 868655720}
         m_TargetAssemblyTypeName: ModelSwapper, Assembly-CSharp
-        m_MethodName: SwapTo
+        m_MethodName: WaitDialogueThenSwapTo
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6013,6 +6015,70 @@ MonoBehaviour:
           m_StringArgument: eric
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 806636972}
+        m_TargetAssemblyTypeName: NPCDialogue, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 806636972}
+        m_TargetAssemblyTypeName: NPCDialogue, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &806636971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806636968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7806f4eab893afb4ab461ed43710ef3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: 0
+  targetStudent: 2
+  initialDialogue: {fileID: 11400000, guid: 6c5b03811ba415a4b95978cab28768d0, type: 2}
+  itemDialogueOptions: []
+  puzzleDialogueOptions: []
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: e9a6b554032a93844818950136e7ccf3, type: 2}
+  - {fileID: 11400000, guid: b31a2f1e809355b47b892fdabafb4a19, type: 2}
+--- !u!114 &806636972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 806636968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7806f4eab893afb4ab461ed43710ef3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: 0
+  targetStudent: 1
+  initialDialogue: {fileID: 11400000, guid: b695717d1025c634d89757b3ffcc4b02, type: 2}
+  itemDialogueOptions: []
+  puzzleDialogueOptions: []
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: 78c937a729c51a3429d186735a6ae12e, type: 2}
+  - {fileID: 11400000, guid: 1ab9acaf7c3fd9842b010e2b16e55a22, type: 2}
 --- !u!65 &806636973
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7759,6 +7825,8 @@ GameObject:
   - component: {fileID: 989015304}
   - component: {fileID: 989015308}
   - component: {fileID: 989015305}
+  - component: {fileID: 989015307}
+  - component: {fileID: 989015306}
   m_Layer: 3
   m_Name: Student B
   m_TagString: Untagged
@@ -7798,7 +7866,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 868655720}
         m_TargetAssemblyTypeName: ModelSwapper, Assembly-CSharp
-        m_MethodName: SwapTo
+        m_MethodName: WaitDialogueThenSwapTo
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7808,6 +7876,70 @@ MonoBehaviour:
           m_StringArgument: clara
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 989015307}
+        m_TargetAssemblyTypeName: NPCDialogue, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 989015307}
+        m_TargetAssemblyTypeName: NPCDialogue, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &989015306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989015303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7806f4eab893afb4ab461ed43710ef3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: 1
+  targetStudent: 2
+  initialDialogue: {fileID: 11400000, guid: 711be9a474955154a81500024129e223, type: 2}
+  itemDialogueOptions: []
+  puzzleDialogueOptions: []
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: 66b569601ecd9d747aa8f96925e66e83, type: 2}
+  - {fileID: 11400000, guid: caadc2b03e064a24bbd1812428b79e31, type: 2}
+--- !u!114 &989015307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 989015303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7806f4eab893afb4ab461ed43710ef3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: 1
+  targetStudent: 0
+  initialDialogue: {fileID: 11400000, guid: 352b7247b0530d94e925c9cfb3fd240e, type: 2}
+  itemDialogueOptions: []
+  puzzleDialogueOptions: []
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: 87af05067f9ed1846b28a494d699cddf, type: 2}
+  - {fileID: 11400000, guid: b9a2e6206d5313148b01259fe380eaf4, type: 2}
 --- !u!65 &989015308
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12616,6 +12748,8 @@ GameObject:
   - component: {fileID: 1609269006}
   - component: {fileID: 1609269007}
   - component: {fileID: 1609269008}
+  - component: {fileID: 1609269010}
+  - component: {fileID: 1609269009}
   m_Layer: 3
   m_Name: Student C
   m_TagString: Untagged
@@ -12668,7 +12802,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 868655720}
         m_TargetAssemblyTypeName: ModelSwapper, Assembly-CSharp
-        m_MethodName: SwapTo
+        m_MethodName: WaitDialogueThenSwapTo
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12678,6 +12812,68 @@ MonoBehaviour:
           m_StringArgument: maria
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1609269010}
+        m_TargetAssemblyTypeName: NPCDialogue, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1609269010}
+        m_TargetAssemblyTypeName: NPCDialogue, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1609269009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609269005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7806f4eab893afb4ab461ed43710ef3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: 0
+  targetStudent: 1
+  initialDialogue: {fileID: 11400000, guid: 681a65dab6342aa4abc74e5c14937635, type: 2}
+  itemDialogueOptions: []
+  puzzleDialogueOptions: []
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: 1523b8aaa524d404692bcbf6d15b376b, type: 2}
+--- !u!114 &1609269010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609269005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7806f4eab893afb4ab461ed43710ef3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: 2
+  targetStudent: 0
+  initialDialogue: {fileID: 11400000, guid: 0020918ccd704614d8eea0dbb947135e, type: 2}
+  itemDialogueOptions: []
+  puzzleDialogueOptions: []
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: 4f25e92430d6b084eae0e579cfbf6b1f, type: 2}
 --- !u!1 &1624379642
 GameObject:
   m_ObjectHideFlags: 0
