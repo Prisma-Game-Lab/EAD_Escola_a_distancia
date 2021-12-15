@@ -92,6 +92,7 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
             dialogueText.text = currentText;
         }
+        dialogueText.text = finalText;
         // helps avoiding accidently skipping dialogue
         yield return new WaitForSeconds(0.5f);
         displayBoxCoroutine = null;
