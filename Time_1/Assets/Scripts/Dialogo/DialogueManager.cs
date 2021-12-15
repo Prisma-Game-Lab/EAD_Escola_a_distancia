@@ -68,7 +68,7 @@ public class DialogueManager : MonoBehaviour
         {
             if (queue.Count <= 0)
             {
-                EndDialogue();
+                StartCoroutine(EndDialogue());
             }
             else
             {
@@ -102,10 +102,11 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = box.text;
     }
 
-    public void EndDialogue()
+    public IEnumerator EndDialogue()
     {
         dialogueBox.SetActive(false);
         isInDialogue = false;
+        yield return new WaitForSeconds(0.5f);
         PlayerMovement.instance.UnlockMovement();
         Interactable.UnlockInteraction();
     }
