@@ -35,18 +35,15 @@ public class ModelSwapper : MonoBehaviour
     public GameObject playerClara;
     public GameObject playerMaria;
 
-    public Button buttonEricson;
-    public Button buttonClara;
-    public Button buttonMaria;
-
     public Student currentStudent;
-    public VariableManager variableManager;
+    private VariableManager variableManager;
     public FadeOut fadeOut;
 
     public PlayerMovement playerMovement;
 
     private void Awake()
     {
+        variableManager = VariableManager.instance;
         Student s = variableManager.activeCharacter;
         Student student = Student.ericson;
 
@@ -86,7 +83,6 @@ public class ModelSwapper : MonoBehaviour
 
         currentStudent = student;
         UpdateModels();
-        UpdateButtons();
     }
 
     private void UpdateModels()
@@ -167,7 +163,6 @@ public class ModelSwapper : MonoBehaviour
 
     private IEnumerator SwapModels(Student s)
     {
-        ButtonsOff();
         fadeOut.gameObject.SetActive(true);
         yield return fadeOut.StartCoroutine(fadeOut.FadeOutCoroutine());
         currentStudent = s;
@@ -176,32 +171,6 @@ public class ModelSwapper : MonoBehaviour
         playerMovement.ResetPosition();
         fadeOut.gameObject.SetActive(true);
         yield return fadeOut.StartCoroutine(fadeOut.FadeInCoroutine());
-        UpdateButtons();
-    }
-
-    public void UpdateButtons()
-    {
-        if (variableManager.activeCharacter != Student.ericson && variableManager.ericson)
-            buttonEricson.interactable = true;
-        else
-            buttonEricson.interactable = false;
-
-        if (variableManager.activeCharacter != Student.clara && variableManager.clara)
-            buttonClara.interactable = true;
-        else
-            buttonClara.interactable = false;
-
-        if (variableManager.activeCharacter != Student.maria && variableManager.maria)
-            buttonMaria.interactable = true;
-        else
-            buttonMaria.interactable = false;
-    }
-
-    public void ButtonsOff()
-    {
-        buttonEricson.interactable = false;
-        buttonClara.interactable = false;
-        buttonMaria.interactable = false;
     }
 
 }
