@@ -182,6 +182,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &2246158
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,6 +292,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &4635390
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -527,6 +529,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &18895951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1117,6 +1120,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &137067802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1877,6 +1881,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &186917193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2359,6 +2364,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &293202114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2638,6 +2644,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &308803343
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2747,6 +2754,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &319548186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2856,6 +2864,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &336366162
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3110,6 +3119,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &343517885
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3219,6 +3229,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &394544498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4065,6 +4076,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &487899093
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4634,6 +4646,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &623097536
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5120,6 +5133,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &688532705
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5229,6 +5243,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &737827122
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5338,6 +5353,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &753289814
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5587,6 +5603,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &780741633
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6109,13 +6126,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825708688}
-  m_LocalRotation: {x: 0.5, y: -0.5, z: -0.5, w: -0.5}
-  m_LocalPosition: {x: 39.910004, y: 7.61, z: -2.6600037}
+  m_LocalRotation: {x: 0.5, y: -0.5, z: 0.5, w: 0.5}
+  m_LocalPosition: {x: 40.06, y: 7.61, z: -2.66}
   m_LocalScale: {x: 1.5637397, y: 1, z: 0.74596995}
   m_Children: []
   m_Father: {fileID: 1118941571}
   m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 90}
 --- !u!64 &825708690
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -6149,7 +6166,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 43b9f4b2b62b7ac4ebe1a98576a83ce7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6356,6 +6373,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &863079318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6470,6 +6488,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &877168779
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6856,6 +6875,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &927595846
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7235,6 +7255,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &990460638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7521,6 +7542,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &1049855746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7937,6 +7959,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &1085774070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8116,6 +8139,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &1107459828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8294,6 +8318,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &1114914296
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8588,6 +8613,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &1131249455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9211,6 +9237,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &1208074168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10008,6 +10035,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &1295523675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10117,6 +10145,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &1297597677
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10690,6 +10719,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &1385399306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11005,6 +11035,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &1414576181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11790,6 +11821,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &1539711838
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11899,6 +11931,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &1540732802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12298,6 +12331,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &1561098770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12820,6 +12854,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &1630689156
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13675,6 +13710,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &1838163786
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14085,6 +14121,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &1864126436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14455,6 +14492,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &1888385947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15210,6 +15248,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &2003772626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15453,6 +15492,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &2039383231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15674,6 +15714,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &2070478180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15783,6 +15824,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &2097845579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16033,6 +16075,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &2110157753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16142,6 +16185,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &2126361904
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16402,6 +16446,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &2143726594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16511,6 +16556,7 @@ MonoBehaviour:
   unwalkableLayer:
     serializedVersion: 2
     m_Bits: 0
+  allowdrop: 1
 --- !u!114 &2145567591
 MonoBehaviour:
   m_ObjectHideFlags: 0
