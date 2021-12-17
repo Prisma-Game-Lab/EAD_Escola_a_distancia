@@ -39,10 +39,11 @@ public class ModelSwapper : MonoBehaviour
     private VariableManager variableManager;
     public FadeOut fadeOut;
 
-    public PlayerMovement playerMovement;
+    private PlayerMovement playerMovement;
 
     private void Awake()
     {
+        playerMovement = PlayerMovement.instance;
         variableManager = VariableManager.instance;
         Student s = variableManager.activeCharacter;
         Student student = Student.ericson;
