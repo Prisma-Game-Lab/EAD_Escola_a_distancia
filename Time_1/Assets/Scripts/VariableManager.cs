@@ -16,6 +16,8 @@ public class VariableManager : ScriptableSingleton<VariableManager>
 
     public List<string> completedPuzzles;
 
+    public int lastPortal;
+
 
     public bool IsStudentAlive(Student s)
     {
