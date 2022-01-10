@@ -8,10 +8,18 @@ public class Portal : MonoBehaviour
     public SceneJump sceneManager;
     public int cenaEric;
     public int cenaClara;
-    public int cenaMaria;    
+    public int cenaMaria;
+
+    public int portalNumber;
+    // this default should be overridden in the inspector in corridor scenes
+    public bool corridor = false;
 
     private void OnTriggerEnter(Collider other)
     {
+        if(corridor)
+        {
+            VariableManager.instance.lastPortal = portalNumber;
+        }
         if (other.gameObject.CompareTag("Player"))
         {
             Student s = variableManager.activeCharacter;
