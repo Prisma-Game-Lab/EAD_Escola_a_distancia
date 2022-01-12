@@ -15,7 +15,12 @@ MonoBehaviour:
   ericson: 1
   clara: 1
   maria: 1
-  activeCharacter: 1
+  activeCharacter: 0
   rescuables: []
   collectedItems: []
-  completedPuzzles: []
+  completedPuzzles:
+  - ClarametEricson
+  - EricsonmetMaria
+  - MariametEricson
+  - EricsonmetClara
+  lastPortal: 0

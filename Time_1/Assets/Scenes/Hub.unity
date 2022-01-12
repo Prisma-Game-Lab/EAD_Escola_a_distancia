@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.054709457, g: 0.055758424, b: 0.077982895, a: 1}
+  m_IndirectSpecularColor: {r: 0.05475062, g: 0.055750526, b: 0.078344695, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -5702,17 +5702,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1617568255812838024, guid: 1ddc7c4db74e16346a403f00d591c88c, type: 3}
   m_PrefabInstance: {fileID: 1617568257273874953}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &719715311 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1617568255812838027, guid: 1ddc7c4db74e16346a403f00d591c88c, type: 3}
-  m_PrefabInstance: {fileID: 1617568257273874953}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 719715310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7e1a6b37bd9543345831414730dcb10b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &724086169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6919,7 +6908,6 @@ MonoBehaviour:
   playerMaria: {fileID: 663115041}
   currentStudent: 2
   fadeOut: {fileID: 1074099476}
-  playerMovement: {fileID: 719715311}
 --- !u!1 &876611060
 GameObject:
   m_ObjectHideFlags: 0
