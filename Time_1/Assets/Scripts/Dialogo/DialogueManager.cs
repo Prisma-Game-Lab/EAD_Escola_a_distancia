@@ -61,6 +61,7 @@ public class DialogueManager : MonoBehaviour
     public void DisplayNextBox()
     {
         Assert.IsTrue(isInDialogue);
+        dialogueBoxObject.setPortrait(currentBox.speaker);
 
         // if displaying a dialogue box currently, just skips the animation
         if (displayBoxCoroutine != null)
