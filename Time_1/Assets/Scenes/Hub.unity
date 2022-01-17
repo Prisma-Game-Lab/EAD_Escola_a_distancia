@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.054709457, g: 0.055758424, b: 0.077982895, a: 1}
+  m_IndirectSpecularColor: {r: 0.05475062, g: 0.055750526, b: 0.078344695, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -7065,11 +7065,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 661972074}
   m_CullTransparentMesh: 1
---- !u!1 &663115041 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6042528139093846041, guid: 1ddc7c4db74e16346a403f00d591c88c, type: 3}
-  m_PrefabInstance: {fileID: 1617568257273874953}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &669837291 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fc5dead8b4b9101419f3f54db46a9610, type: 3}
@@ -8586,11 +8581,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc5dead8b4b9101419f3f54db46a9610, type: 3}
---- !u!1 &796954412 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5867814568964250577, guid: 1ddc7c4db74e16346a403f00d591c88c, type: 3}
-  m_PrefabInstance: {fileID: 1617568257273874953}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &806636968
 GameObject:
   m_ObjectHideFlags: 0
@@ -9515,9 +9505,7 @@ MonoBehaviour:
   ericson: {fileID: 806636968}
   clara: {fileID: 989015303}
   maria: {fileID: 1609269005}
-  playerEricson: {fileID: 796954412}
-  playerClara: {fileID: 1778873722}
-  playerMaria: {fileID: 663115041}
+  playerModels: {fileID: 0}
   currentStudent: 2
   fadeOut: {fileID: 1074099476}
 --- !u!1 &876611060
@@ -13650,6 +13638,18 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 34.619873
       objectReference: {fileID: 0}
+    - target: {fileID: 5245257403162579708, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
+      propertyPath: background
+      value: 
+      objectReference: {fileID: 1607883813}
+    - target: {fileID: 5245257403162579708, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 620485800}
+    - target: {fileID: 5245257403162579708, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
+      propertyPath: speakerNameText
+      value: 
+      objectReference: {fileID: 284489728}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
 --- !u!1 &1264843878
@@ -16977,6 +16977,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fc5dead8b4b9101419f3f54db46a9610, type: 3}
   m_PrefabInstance: {fileID: 436588198}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1607883813 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2210862281458034794, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
+  m_PrefabInstance: {fileID: 1251781637}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1608328303
 GameObject:
   m_ObjectHideFlags: 0
@@ -19126,11 +19131,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6603051286584436445, guid: adbe9c5fd08f5954399b054b7b2fa9e0, type: 3}
   m_PrefabInstance: {fileID: 1776755359}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1778873722 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2193683721546456055, guid: 1ddc7c4db74e16346a403f00d591c88c, type: 3}
-  m_PrefabInstance: {fileID: 1617568257273874953}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1786877936
 PrefabInstance:
