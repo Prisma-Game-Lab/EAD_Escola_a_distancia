@@ -6,13 +6,9 @@ using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
-    // objeto que contem o balão de fala
-    public GameObject dialogueBox;
-    // campo pras falas de fato
-    public TextMeshProUGUI dialogueText;
-    // campo pro nome do interlocutor
-    public TextMeshProUGUI speakerNameText;
+    public DialogueBoxObject dialogueBoxObject;
 
+    [HideInInspector]
     public bool isInDialogue = false;
 
     private Queue<DialogueBox> queue;
@@ -24,9 +20,15 @@ public class DialogueManager : MonoBehaviour
     private DialogueBox currentBox;
     public static DialogueManager instance = null;
 
+    private GameObject dialogueBox;
+    private TextMeshProUGUI dialogueText;
+    private TextMeshProUGUI speakerNameText;
     private void Awake() {
+        dialogueBox = dialogueBoxObject.gameObject;
         Assert.IsNotNull(dialogueBox);
+        dialogueText = dialogueBoxObject.dialogueText;
         Assert.IsNotNull(dialogueText);
+        speakerNameText = dialogueBoxObject.speakerNameText;
         Assert.IsNotNull(speakerNameText);
         Assert.IsNull(instance);
         instance=this;
