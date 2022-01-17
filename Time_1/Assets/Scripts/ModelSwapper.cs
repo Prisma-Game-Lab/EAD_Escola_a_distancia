@@ -31,9 +31,7 @@ public class ModelSwapper : MonoBehaviour
     public GameObject clara;
     public GameObject maria;
 
-    public GameObject playerEricson;
-    public GameObject playerClara;
-    public GameObject playerMaria;
+    public PlayerModels playerModels;
 
     public Student currentStudent;
     private VariableManager variableManager;
@@ -43,6 +41,10 @@ public class ModelSwapper : MonoBehaviour
 
     private void Awake()
     {
+        if(playerModels == null)
+        {
+            playerModels = GameObject.FindObjectOfType<PlayerModels>();
+        }
         playerMovement = PlayerMovement.instance;
         variableManager = VariableManager.instance;
         Student s = variableManager.activeCharacter;
@@ -103,23 +105,23 @@ public class ModelSwapper : MonoBehaviour
         else
             maria.SetActive(false);
 
-        playerClara.SetActive(false);
-        playerEricson.SetActive(false);
-        playerMaria.SetActive(false);
+        playerModels.clara.SetActive(false);
+        playerModels.ericson.SetActive(false);
+        playerModels.maria.SetActive(false);
 
         switch (currentStudent)
         {
             case Student.ericson:
                 ericson.SetActive(false);
-                playerEricson.SetActive(true);
+                playerModels.ericson.SetActive(true);
                 break;
             case Student.clara:
                 clara.SetActive(false);
-                playerClara.SetActive(true);
+                playerModels.clara.SetActive(true);
                 break;
             case Student.maria:
                 maria.SetActive(false);
-                playerMaria.SetActive(true);
+                playerModels.maria.SetActive(true);
                 break;
         }
     }

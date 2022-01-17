@@ -24,6 +24,10 @@ public class DialogueManager : MonoBehaviour
     private TextMeshProUGUI dialogueText;
     private TextMeshProUGUI speakerNameText;
     private void Awake() {
+        if(dialogueBoxObject == null)
+        {
+            dialogueBoxObject = GameObject.FindObjectOfType<DialogueBoxObject>(true);
+        }
         dialogueBox = dialogueBoxObject.gameObject;
         Assert.IsNotNull(dialogueBox);
         dialogueText = dialogueBoxObject.dialogueText;
