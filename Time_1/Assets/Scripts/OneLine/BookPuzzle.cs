@@ -32,6 +32,7 @@ public class BookPuzzle : MonoBehaviour
             PlayerMovement.instance.UnlockMovement();
             Destroy(interactable);
             Destroy(gameObject);
+            Destroy(this);
         }
     }
 }
