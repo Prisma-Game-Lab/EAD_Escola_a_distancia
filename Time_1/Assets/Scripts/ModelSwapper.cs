@@ -171,7 +171,7 @@ public class ModelSwapper : MonoBehaviour
         currentStudent = s;
         variableManager.activeCharacter = s;
         UpdateModels();
-        playerMovement.ResetPosition();
+        //playerMovement.ResetPosition();
         fadeOut.gameObject.SetActive(true);
         yield return fadeOut.StartCoroutine(fadeOut.FadeInCoroutine());
     }
