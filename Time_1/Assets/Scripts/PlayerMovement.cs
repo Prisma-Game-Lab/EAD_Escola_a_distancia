@@ -69,6 +69,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Stop()
     {
+        agent.ResetPath();
         StopAllCoroutines();
     }
 
