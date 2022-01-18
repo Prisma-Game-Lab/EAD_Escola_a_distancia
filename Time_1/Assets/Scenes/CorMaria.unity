@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.05475062, g: 0.055750526, b: 0.078344695, a: 1}
+  m_IndirectSpecularColor: {r: 0.054709457, g: 0.055758424, b: 0.077982895, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3293,7 +3293,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 543463664}
-  m_RootOrder: 28
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &106007801 stripped
 Transform:
@@ -15879,8 +15879,8 @@ Transform:
   - {fileID: 2011305294}
   - {fileID: 1163419210}
   - {fileID: 1666357418}
-  - {fileID: 1881631625}
   - {fileID: 101155733}
+  - {fileID: 1881631625}
   - {fileID: 1782923157}
   - {fileID: 127565807}
   - {fileID: 81654937}
@@ -41199,6 +41199,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Apagador
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4fa193f0f6587e241ab521b15be69825, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 4fa193f0f6587e241ab521b15be69825, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4fa193f0f6587e241ab521b15be69825, type: 3}
 --- !u!4 &1374737735 stripped
@@ -46098,6 +46106,14 @@ PrefabInstance:
     - target: {fileID: 7014465270982111280, guid: c897da179a6118a46a82636878404009, type: 3}
       propertyPath: m_Name
       value: Lapis classico escolar
+      objectReference: {fileID: 0}
+    - target: {fileID: 7014465270982111280, guid: c897da179a6118a46a82636878404009, type: 3}
+      propertyPath: m_NavMeshLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7014465270982111280, guid: c897da179a6118a46a82636878404009, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7643649064084679306, guid: c897da179a6118a46a82636878404009, type: 3}
       propertyPath: m_RootOrder
