@@ -2142,7 +2142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2210862282504744281, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -50.000122
+      value: -50.000244
       objectReference: {fileID: 0}
     - target: {fileID: 2210862282504744281, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -10857,6 +10857,76 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 50772ef1efbe3514985c9d452d993661, type: 3}
+--- !u!1 &1577083144 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 50772ef1efbe3514985c9d452d993661, type: 3}
+  m_PrefabInstance: {fileID: 1577083143}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1577083145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577083144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 491596fc72f23204884cff8d3cca28f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selfName: Porteiro
+  initialDialogue: {fileID: 11400000, guid: 5ea937d85322cef489c776722328eb31, type: 2}
+  itemDialogueOptions:
+  - item: {fileID: 11400000, guid: 97baef93d9e100e46b08e5013ff0d862, type: 2}
+    dialogue: {fileID: 11400000, guid: c76754915fc3f1c458e10b643d959f2e, type: 2}
+    blockingEvents:
+    - panoquadrocod
+  - item: {fileID: 11400000, guid: a8e9baee5b5156340981b25728c18d1b, type: 2}
+    dialogue: {fileID: 11400000, guid: c76754915fc3f1c458e10b643d959f2e, type: 2}
+    blockingEvents:
+    - panoquadrocod
+  puzzleDialogueOptions: []
+  genericDialogueOptions: []
+--- !u!114 &1577083146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577083144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efaf63b044fbb8a409cbbbf934d55dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1577083145}
+        m_TargetAssemblyTypeName: NPCDialogue2, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!65 &1577083147
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1577083144}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.059710443, y: 0.12310413, z: 0.24647881}
+  m_Center: {x: -0.025511485, y: 0.00086811086, z: -0.08750942}
 --- !u!1001 &1582078166
 PrefabInstance:
   m_ObjectHideFlags: 0
