@@ -8,12 +8,14 @@ public class ItemDialogueOption
 {
     public Item item;
     public Dialogue dialogue;
+    public List<string> blockingEvents;
 }
 [System.Serializable]
 public class PuzzleDialogueOption
 {
     public string puzzle;
     public Dialogue dialogue;
+    public List<string> blockingEvents;
 }
 public class NPCDialogue : MonoBehaviour
 {
@@ -57,7 +59,17 @@ public class NPCDialogue : MonoBehaviour
         }
         else
         {
-            foreach (var item in itemDialogueOptions)
+            foreach (var item in itemDialogueOptions.FindAll((dialogueOption) => {
+
+                foreach (var e in dialogueOption.blockingEvents)
+                {
+                    if (vInstance.HasCompletedPuzzle(e))
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }))
             {
                 if (vInstance.HasItem(item.item))
                 {
