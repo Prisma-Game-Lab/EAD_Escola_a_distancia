@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6982d77c771246a48b942b7913c1dc9d
+guid: 5bd65f07f5ea24243b8d1b231ca29696
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
@@ -10,17 +10,17 @@ ModelImporter:
       74: -3419257869308726280
     second: walk
   - first:
-      74: -1224936423611694404
-    second: Morrendo
+      74: 2843304832418934625
+    second: morrendo
   - first:
-      74: -6629297484029148161
+      74: -1224936423611694404
     second: Morta
   externalObjects: {}
   materials:
-    materialImportMode: 2
-    materialName: 0
+    materialImportMode: 1
+    materialName: 3
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
@@ -35,7 +35,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -47,8 +47,8 @@ ModelImporter:
       name: Idle
       takeName: Scene
       internalID: 0
-      firstFrame: 1
-      lastFrame: 258
+      firstFrame: 0
+      lastFrame: 267
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -71,13 +71,13 @@ ModelImporter:
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 1
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: walk
       takeName: Scene
       internalID: 0
-      firstFrame: 268
-      lastFrame: 293
+      firstFrame: 283
+      lastFrame: 306
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -100,13 +100,13 @@ ModelImporter:
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 1
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Morrendo
+      name: morrendo
       takeName: Scene
       internalID: 0
-      firstFrame: 305
-      lastFrame: 541
+      firstFrame: 313
+      lastFrame: 562
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -129,13 +129,13 @@ ModelImporter:
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 1
+      additiveReferencePoseFrame: 0
     - serializedVersion: 16
       name: Morta
       takeName: Scene
       internalID: 0
-      firstFrame: 441
-      lastFrame: 541
+      firstFrame: 463
+      lastFrame: 562
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -158,8 +158,8 @@ ModelImporter:
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 1
-    isReadable: 0
+      additiveReferencePoseFrame: 0
+    isReadable: 1
   meshes:
     lODScreenPercentages: []
     globalScale: 1
@@ -167,11 +167,11 @@ ModelImporter:
     addColliders: 0
     useSRGBMaterialColor: 1
     sortHierarchyByName: 1
-    importVisibility: 1
+    importVisibility: 0
     importBlendShapes: 1
-    importCameras: 1
-    importLights: 1
-    fileIdsGeneration: 2
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
     useFileUnits: 1
@@ -183,21 +183,21 @@ ModelImporter:
     maxBonesPerVertex: 4
     minBoneWeight: 0.001
     meshOptimizationFlags: -1
-    indexFormat: 0
+    indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
     secondaryUVHardAngle: 88
-    secondaryUVMarginMethod: 1
+    secondaryUVMarginMethod: 0
     secondaryUVMinLightmapResolution: 40
     secondaryUVMinObjectScale: 1
     secondaryUVPackMargin: 4
-    useFileScale: 1
+    useFileScale: 0
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
-    tangentImportMode: 3
-    normalCalculationMode: 4
-    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    tangentImportMode: 4
+    normalCalculationMode: 0
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 1
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips: []
@@ -216,14 +216,14 @@ ModelImporter:
     globalScale: 1
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
   avatarSetup: 0
-  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
   additionalBone: 0
   userData: 
   assetBundleName: 
