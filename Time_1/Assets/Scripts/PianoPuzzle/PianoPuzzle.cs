@@ -6,6 +6,7 @@ using UnityEngine.Assertions;
 public class PianoPuzzle : MonoBehaviour
 {
     public List<int> correctSequence;
+    public List<float> intervals;
     private List<int> currentSequence;
     public List<PianoKey> keys;
     public GameObject blocker;
@@ -31,9 +32,9 @@ public class PianoPuzzle : MonoBehaviour
     {
         for (int i = 0; i < correctSequence.Count; i++)
         {
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(intervals[i]);
             keys[correctSequence[i]].OnPointerDown();
-            yield return new WaitForSeconds(0.3f);
+            yield return new WaitForSeconds(0.45f);
             keys[correctSequence[i]].OnPointerUp();
         }
         blocker.SetActive(false);
