@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.05475062, g: 0.055750526, b: 0.078344695, a: 1}
+  m_IndirectSpecularColor: {r: 0.054713704, g: 0.055761956, b: 0.07798753, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13757,11 +13757,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1617568255812838024, guid: 1ddc7c4db74e16346a403f00d591c88c, type: 3}
   m_PrefabInstance: {fileID: 1735196692}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1735196695 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6042528139093846041, guid: 1ddc7c4db74e16346a403f00d591c88c, type: 3}
-  m_PrefabInstance: {fileID: 1735196692}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1735196697 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5867814568964250577, guid: 1ddc7c4db74e16346a403f00d591c88c, type: 3}
@@ -15583,7 +15578,7 @@ PrefabInstance:
     - target: {fileID: 4215206474514115550, guid: 6dbd23278ea771d449a885f34456633c, type: 3}
       propertyPath: playerMaria
       value: 
-      objectReference: {fileID: 1735196695}
+      objectReference: {fileID: 0}
     - target: {fileID: 4215206474514115550, guid: 6dbd23278ea771d449a885f34456633c, type: 3}
       propertyPath: playerEricson
       value: 
@@ -16474,6 +16469,54 @@ PrefabInstance:
       propertyPath: audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 0790a171f92299541a0e3629f8bed38e, type: 3}
+    - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
+      propertyPath: correctSequence.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
+      propertyPath: correctSequence.Array.data[0]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
+      propertyPath: correctSequence.Array.data[1]
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
+      propertyPath: correctSequence.Array.data[2]
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
+      propertyPath: correctSequence.Array.data[3]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
+      propertyPath: correctSequence.Array.data[4]
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
+      propertyPath: correctSequence.Array.data[5]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
+      propertyPath: correctSequence.Array.data[6]
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
+      propertyPath: correctSequence.Array.data[7]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
+      propertyPath: correctSequence.Array.data[8]
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
+      propertyPath: correctSequence.Array.data[9]
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
+      propertyPath: correctSequence.Array.data[10]
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6592873181266776611, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

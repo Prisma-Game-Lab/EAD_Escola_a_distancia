@@ -31,9 +31,9 @@ public class PianoPuzzle : MonoBehaviour
     {
         for (int i = 0; i < correctSequence.Count; i++)
         {
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.3f);
             keys[correctSequence[i]].OnPointerDown();
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.3f);
             keys[correctSequence[i]].OnPointerUp();
         }
         blocker.SetActive(false);
