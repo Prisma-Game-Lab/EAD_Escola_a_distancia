@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.05475062, g: 0.055750526, b: 0.078344695, a: 1}
+  m_IndirectSpecularColor: {r: 0.054713704, g: 0.055761956, b: 0.07798753, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2554,13 +2554,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: 
-        m_Mode: 1
+      - m_Target: {fileID: 1919106199}
+        m_TargetAssemblyTypeName: DialogueManager, Assembly-CSharp
+        m_MethodName: StartDialogue
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgument: {fileID: 11400000, guid: 4566a301911ee5145bcd53d8d917502b, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Dialogue, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2760,7 +2760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1458932445371769632, guid: 8d516908f0a185a4584eedecf8aa4f6d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 30.000061
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1458932445371769632, guid: 8d516908f0a185a4584eedecf8aa4f6d, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -9658,7 +9658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2210862282504744281, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -49.99994
+      value: -50
       objectReference: {fileID: 0}
     - target: {fileID: 2210862282504744281, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -9683,6 +9683,18 @@ PrefabInstance:
     - target: {fileID: 2210862283322458782, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2210862283322458783, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 34.620117
+      objectReference: {fileID: 0}
+    - target: {fileID: 2210862283322458783, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -32.032104
+      objectReference: {fileID: 0}
+    - target: {fileID: 4372354808925397601, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -77.90332
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
@@ -15681,6 +15693,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 45, y: 45, z: 0}
+--- !u!114 &1919106199 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4895951264423524280, guid: ec0bee4fa4c41cf49811f29803335303, type: 3}
+  m_PrefabInstance: {fileID: 1258771978}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16a1751b8cdbf9348ade25487e653041, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1924474928 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8835872617978869771, guid: 0bed3f2e87e0d4e478fabf47ea47e782, type: 3}
