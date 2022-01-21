@@ -18,6 +18,17 @@ public class VariableManager : ScriptableSingleton<VariableManager>
 
     public int lastPortal;
 
+    public void ResetVariables()
+    {
+        ericson = true;
+        clara = true;
+        maria = true;
+        rescuables.Clear();
+        collectedItems.Clear();
+        completedPuzzles.Clear();
+        lastPortal = 0;
+    }
+
 
     public bool IsStudentAlive(Student s)
     {
