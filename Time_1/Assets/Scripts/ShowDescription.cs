@@ -29,7 +29,6 @@ public class ShowDescription : MonoBehaviour, IPointerEnterHandler, IPointerExit
 
     void IPointerExitHandler.OnPointerExit(PointerEventData eventData)
     {
-        Debug.Log(transform.GetSiblingIndex());
         descriptionObj.gameObject.SetActive(false);
     }
 }
