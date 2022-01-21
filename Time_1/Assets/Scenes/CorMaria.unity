@@ -30336,7 +30336,6 @@ MonoBehaviour:
   bookInventory: {fileID: 11400000, guid: 6c81f41943a0f154492d108df9691410, type: 2}
   personalInventory: {fileID: 11400000, guid: d36588eddde7dc141a8d76cb888b67ec, type: 2}
   chave: {fileID: 11400000, guid: 08d8f45bf584e0f458ab6fccf8ad9568, type: 2}
-  interactable: {fileID: 1753542211}
 --- !u!1 &1042974712 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5d9b3284fd4bd624baafc36b98626608, type: 3}
@@ -52604,6 +52603,18 @@ MonoBehaviour:
   onInteract:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 1042801597}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 148047186}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
         m_MethodName: LockMovement
