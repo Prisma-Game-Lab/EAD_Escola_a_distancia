@@ -17,9 +17,12 @@ public class PianoPuzzle : MonoBehaviour
     {
         StopAllCoroutines();
         currentSequence = new List<int>();
+        PlayerMovement.instance.LockMovement();
         StartPuzzle();
     }
-    private void OnDisable() {
+    private void OnDisable()
+    {
+        PlayerMovement.instance.UnlockMovement();
         StopAllCoroutines();
     }
 
@@ -55,11 +58,17 @@ public class PianoPuzzle : MonoBehaviour
         }
         if (currentSequence.Count == correctSequence.Count)
         {
-            Debug.Log("Correct sequence");
-            currentSequence.Clear();
-            onCorrectSequence.Invoke();
-            VariableManager.instance.CompletePuzzle("piano");
-            gameObject.SetActive(false);
+            StartCoroutine(CompletePuzzle());
         }
+    }
+
+    private IEnumerator CompletePuzzle()
+    {
+        yield return new WaitForSeconds(0.5f);
+        Debug.Log("Correct sequence");
+        currentSequence.Clear();
+        onCorrectSequence.Invoke();
+        VariableManager.instance.CompletePuzzle("piano");
+        gameObject.SetActive(false);
     }
 }
