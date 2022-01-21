@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.054713704, g: 0.055761956, b: 0.07798753, a: 1}
+  m_IndirectSpecularColor: {r: 0.054709457, g: 0.055758424, b: 0.077982895, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -18099,58 +18099,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8230558138675559356, guid: 103eb57e6b64e0f47ab5460713c18830, type: 3}
   m_PrefabInstance: {fileID: 1715983991}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1715983993 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8751340328759632134, guid: 103eb57e6b64e0f47ab5460713c18830, type: 3}
-  m_PrefabInstance: {fileID: 1715983991}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1715983994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1715983993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 491596fc72f23204884cff8d3cca28f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selfName: 
-  initialDialogue: {fileID: 11400000, guid: 6a6516f3c0c0e2443bc815fea7d566b5, type: 2}
-  itemDialogueOptions: []
-  puzzleDialogueOptions: []
-  genericDialogueOptions:
-  - {fileID: 11400000, guid: 03535882e5463cf43bba17fa44b05a6e, type: 2}
-  - {fileID: 11400000, guid: 6a6516f3c0c0e2443bc815fea7d566b5, type: 2}
---- !u!114 &1715983995
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1715983993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efaf63b044fbb8a409cbbbf934d55dc0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  destroyIf: 
-  onInteract:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1715983994}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1716873222
 GameObject:
   m_ObjectHideFlags: 0
