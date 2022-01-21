@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.Assertions;
 
 public class PianoPuzzle : MonoBehaviour
@@ -10,6 +11,7 @@ public class PianoPuzzle : MonoBehaviour
     private List<int> currentSequence;
     public List<PianoKey> keys;
     public GameObject blocker;
+    public UnityEvent onCorrectSequence;
 
     private void OnEnable()
     {
@@ -55,6 +57,7 @@ public class PianoPuzzle : MonoBehaviour
         {
             Debug.Log("Correct sequence");
             currentSequence.Clear();
+            onCorrectSequence.Invoke();
             VariableManager.instance.CompletePuzzle("piano");
             gameObject.SetActive(false);
         }
