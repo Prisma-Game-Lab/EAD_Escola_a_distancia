@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CursorController : MonoBehaviour
 {
+    //troca cursor
     public Texture2D cursorPadrao;
     public Texture2D cursorDrag;
     public Texture2D cursorInteract;
