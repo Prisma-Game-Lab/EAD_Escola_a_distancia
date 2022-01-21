@@ -10,6 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8331967323785649879}
   - component: {fileID: 2032970010412218533}
+  - component: {fileID: 8775809991509125446}
+  - component: {fileID: 5867180029636199069}
   m_Layer: 3
   m_Name: bebedouro
   m_TagString: Untagged
@@ -45,6 +47,52 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.3339996, y: 1.2, z: 0.38422966}
   m_Center: {x: 0.014949324, y: 0.61, z: -0.0029899036}
+--- !u!114 &8775809991509125446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8712996943407055981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efaf63b044fbb8a409cbbbf934d55dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5867180029636199069}
+        m_TargetAssemblyTypeName: NPCDialogue2, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5867180029636199069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8712996943407055981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 491596fc72f23204884cff8d3cca28f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selfName: Bebedouro
+  initialDialogue: {fileID: 11400000, guid: 068b02b1c8c420542b0c2c12b123ae95, type: 2}
+  itemDialogueOptions: []
+  puzzleDialogueOptions: []
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: 448d87d7ae919a147842102ab4449518, type: 2}
+  - {fileID: 11400000, guid: 487353b0b7933ad4dabb4e222c023f70, type: 2}
 --- !u!1001 &1803459874824399100
 PrefabInstance:
   m_ObjectHideFlags: 0

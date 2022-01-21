@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6244788353467712805}
   - component: {fileID: 6991322194743626368}
   - component: {fileID: 5107888157797350986}
+  - component: {fileID: -7093171021982602088}
   m_Layer: 0
   m_Name: Bandeja
   m_TagString: Untagged
@@ -83,3 +84,23 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-7093171021982602088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6765006180352843679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 491596fc72f23204884cff8d3cca28f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selfName: Bandeija
+  initialDialogue: {fileID: 11400000, guid: a7f1d1d21aaf11445b8b04a840c24db7, type: 2}
+  itemDialogueOptions: []
+  puzzleDialogueOptions: []
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: 7291d91bddfcacd46b25662b1f8280d3, type: 2}
+  - {fileID: 11400000, guid: 2e6ff8776c7f0db4b83bc74078612185, type: 2}
+  - {fileID: 11400000, guid: 10486b56a6237064cb8505b15b97b2a0, type: 2}

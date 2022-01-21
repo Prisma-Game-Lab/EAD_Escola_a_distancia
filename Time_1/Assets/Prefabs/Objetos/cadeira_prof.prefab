@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1415881001969709904}
+  - component: {fileID: 3766641793198819527}
   m_Layer: 3
   m_Name: cadeira_prof
   m_TagString: Untagged
@@ -31,6 +32,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3766641793198819527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796347916434057706}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 491596fc72f23204884cff8d3cca28f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selfName: Carteira
+  initialDialogue: {fileID: 11400000, guid: a852d936034d50549be5732332d99420, type: 2}
+  itemDialogueOptions: []
+  puzzleDialogueOptions: []
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: c85c77c9a55d6954d88234615e56f677, type: 2}
+  - {fileID: 11400000, guid: 085bad36bf727fe4e97476af52e611a3, type: 2}
 --- !u!65 &8401372715345762266
 BoxCollider:
   m_ObjectHideFlags: 0

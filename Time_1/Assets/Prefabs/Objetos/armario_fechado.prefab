@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 7973599737920594842}
   - component: {fileID: 5279096168691226448}
   - component: {fileID: 4544691479516300450}
+  - component: {fileID: -6282028727655465792}
+  - component: {fileID: 7662002497695472541}
   m_Layer: 3
   m_Name: armario_fechado
   m_TagString: Untagged
@@ -97,3 +99,49 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1.8657193, y: 2.635989, z: 1.8036598}
   m_Center: {x: -0.88415134, y: -1.1038278, z: 0.6807898}
+--- !u!114 &-6282028727655465792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5927829538499786373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efaf63b044fbb8a409cbbbf934d55dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7662002497695472541}
+        m_TargetAssemblyTypeName: NPCDialogue2, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &7662002497695472541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5927829538499786373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 491596fc72f23204884cff8d3cca28f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selfName: Armarios
+  initialDialogue: {fileID: 11400000, guid: 5e4406f7da402534b9889bd798b3e78a, type: 2}
+  itemDialogueOptions: []
+  puzzleDialogueOptions: []
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: 6dca2b5e9ffe1e641ba18cefc0f0cfd5, type: 2}
+  - {fileID: 11400000, guid: 027e667ae80504a47adad96b69e54561, type: 2}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3955451153711792659}
   - component: {fileID: 93254302552395190}
   - component: {fileID: 2787650115349346684}
+  - component: {fileID: -3067146091627484418}
   m_Layer: 0
   m_Name: Gamba
   m_TagString: Untagged
@@ -81,3 +82,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &-3067146091627484418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4444847715680442537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 491596fc72f23204884cff8d3cca28f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selfName: "Gamb\xE1"
+  initialDialogue: {fileID: 11400000, guid: b2aa7c765418d544bb784aee1378db0b, type: 2}
+  itemDialogueOptions: []
+  puzzleDialogueOptions: []
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: de1de9d1c1fbbc54b923a214a2653766, type: 2}
+  - {fileID: 11400000, guid: 1374c5735b7dd804fb0a568821535a41, type: 2}
