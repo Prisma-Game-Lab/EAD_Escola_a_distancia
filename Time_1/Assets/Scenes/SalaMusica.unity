@@ -7188,6 +7188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efaf63b044fbb8a409cbbbf934d55dc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyIf: piano
   onInteract:
     m_PersistentCalls:
       m_Calls:
@@ -16813,7 +16814,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
       propertyPath: onCorrectSequence.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
       propertyPath: onCorrectSequence.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -16824,6 +16825,10 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
+      propertyPath: onCorrectSequence.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
       propertyPath: onCorrectSequence.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 826732738}
@@ -16832,11 +16837,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 909858789}
     - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
+      propertyPath: onCorrectSequence.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 826732737}
+    - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
       propertyPath: onCorrectSequence.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
       propertyPath: onCorrectSequence.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
+      propertyPath: onCorrectSequence.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
@@ -16848,12 +16861,20 @@ PrefabInstance:
       value: StartDialogue
       objectReference: {fileID: 0}
     - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
+      propertyPath: onCorrectSequence.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: Destroy
+      objectReference: {fileID: 0}
+    - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
       propertyPath: onCorrectSequence.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: UnityEngine.AudioSource, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
       propertyPath: onCorrectSequence.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: DialogueManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
+      propertyPath: onCorrectSequence.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: Interactable, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
       propertyPath: onCorrectSequence.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -16864,12 +16885,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 4566a301911ee5145bcd53d8d917502b, type: 2}
     - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
+      propertyPath: onCorrectSequence.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
       propertyPath: onCorrectSequence.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.AudioClip, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
       propertyPath: onCorrectSequence.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: Dialogue, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6592873181266776608, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
+      propertyPath: onCorrectSequence.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 6592873181266776611, guid: 139e5db4ab33d69428ae64db509feca4, type: 3}
       propertyPath: m_Pivot.x

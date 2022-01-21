@@ -10,9 +10,21 @@ public class Interactable : MonoBehaviour
 {
     private LayerMask player;
 
+    [SerializeField]
+    private string destroyIf;
+
     void Awake()
     {
         player = LayerMask.GetMask("Player");
+        if(VariableManager.instance.HasCompletedPuzzle(destroyIf))
+        {
+            Destroy(this);
+        }
+    }
+
+    public void Destroy()
+    {
+        Destroy(this);
     }
 
     static int _locks;
