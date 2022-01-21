@@ -78,6 +78,7 @@ public class VariableManager : ScriptableSingleton<VariableManager>
     }
     public bool HasCompletedPuzzle(string puzzle)
     {
+        if(puzzle == "") return true;
         return completedPuzzles.Contains(puzzle);
     }
 

@@ -11103,8 +11103,22 @@ MonoBehaviour:
     dialogue: {fileID: 11400000, guid: c76754915fc3f1c458e10b643d959f2e, type: 2}
     blockingEvents:
     - panoquadrocod
-  puzzleDialogueOptions: []
-  genericDialogueOptions: []
+  - item: {fileID: 11400000, guid: 2dfdbc444b55697488d8c9c2a3788885, type: 2}
+    dialogue: {fileID: 11400000, guid: 6a2e9781651708d49b7ec4160e5bd740, type: 2}
+    blockingEvents:
+    - tabua
+  puzzleDialogueOptions:
+  - puzzle: 
+    dialogue: {fileID: 11400000, guid: 2c4cc6dd3901cd344998f0d10ee62ea7, type: 2}
+    blockingEvents:
+    - piano
+  - puzzle: 
+    dialogue: {fileID: 11400000, guid: 66f31ccf093f5fa4bac16f440f83e6b7, type: 2}
+    blockingEvents:
+    - informatica
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: f2a73669d9ba2564794c5ed93f29428c, type: 2}
+  - {fileID: 11400000, guid: fd2cf164568a49045b30c6707f08bd9f, type: 2}
 --- !u!114 &1577083146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11117,6 +11131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efaf63b044fbb8a409cbbbf934d55dc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  destroyIf: 
   onInteract:
     m_PersistentCalls:
       m_Calls:
