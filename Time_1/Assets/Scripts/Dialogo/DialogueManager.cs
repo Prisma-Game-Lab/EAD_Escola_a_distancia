@@ -45,7 +45,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void StartDialogue(Dialogue dialogue)
     {
-        Debug.Log("Starting dialogue " + dialogue.name);
+        //Debug.Log("Starting dialogue " + dialogue.name);
         PlayerMovement.instance.LockMovement();
         Interactable.LockInteraction();
         isInDialogue = true;

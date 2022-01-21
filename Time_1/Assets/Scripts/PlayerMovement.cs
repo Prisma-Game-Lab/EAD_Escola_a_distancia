@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void LockMovement()
     {
-        Debug.Log("playerMovLocked");
+        //Debug.Log("playerMovLocked");
         Assert.IsTrue(locks >= 0);
         locks += 1;
         Stop();
@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void UnlockMovement()
     {
-        Debug.Log("playerMovUnlocked");
+        //Debug.Log("playerMovUnlocked");
         Assert.IsTrue(locks >= 1);
         locks -= 1;
     }

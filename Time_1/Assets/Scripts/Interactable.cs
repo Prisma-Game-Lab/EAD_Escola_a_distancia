@@ -31,12 +31,12 @@ public class Interactable : MonoBehaviour
     public static void LockInteraction()
     {
         _locks += 1;
-        Debug.Log(_locks);
+        //Debug.Log(_locks);
     }
     public static void UnlockInteraction()
     {
         _locks -= 1;
-        Debug.Log(_locks);
+        //Debug.Log(_locks);
     }
     Collider _col;
     private void Start()

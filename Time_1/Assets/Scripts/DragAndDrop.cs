@@ -43,6 +43,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
         {
             dragItem.SetActive(true);
             child.gameObject.SetActive(false);
+            CursorController.instance.SetDrag();
         }  
 
         canvasGroup.blocksRaycasts = false;
@@ -63,6 +64,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
         {
             child.gameObject.SetActive(true);
             dragItem.SetActive(false);
+            CursorController.instance.SetDrop();
         }
         canvasGroup.blocksRaycasts = true;
 
