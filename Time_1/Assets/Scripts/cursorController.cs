@@ -81,9 +81,10 @@ public class CursorController : MonoBehaviour
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit, Mathf.Infinity, unwalkableLayer))
-        {   
+        {
             Collider col = hit.collider;
-            Interactable receiver = col.GetComponent(typeof(Interactable)) as Interactable;
+            Interactable receiver = col.gameObject.GetComponent(typeof(Interactable)) as Interactable;
+            Debug.Log(receiver);
             if (receiver)
             {
                 if (currentCursor == cursorInteract)
