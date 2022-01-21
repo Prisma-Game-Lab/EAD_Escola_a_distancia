@@ -19991,7 +19991,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4277364823234885463, guid: 13c5dbec29ecee348b4e7462b1ddb503, type: 3}
       propertyPath: onAccept.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4277364823234885463, guid: 13c5dbec29ecee348b4e7462b1ddb503, type: 3}
       propertyPath: onAccept.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -20002,6 +20002,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4277364823234885463, guid: 13c5dbec29ecee348b4e7462b1ddb503, type: 3}
+      propertyPath: onAccept.m_PersistentCalls.m_Calls.Array.data[2].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4277364823234885463, guid: 13c5dbec29ecee348b4e7462b1ddb503, type: 3}
       propertyPath: onAccept.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2127746178}
@@ -20010,11 +20014,19 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2127746178}
     - target: {fileID: 4277364823234885463, guid: 13c5dbec29ecee348b4e7462b1ddb503, type: 3}
+      propertyPath: onAccept.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 778fd65bc6cc1ee4f8270199f51eebb8, type: 2}
+    - target: {fileID: 4277364823234885463, guid: 13c5dbec29ecee348b4e7462b1ddb503, type: 3}
       propertyPath: onAccept.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4277364823234885463, guid: 13c5dbec29ecee348b4e7462b1ddb503, type: 3}
       propertyPath: onAccept.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4277364823234885463, guid: 13c5dbec29ecee348b4e7462b1ddb503, type: 3}
+      propertyPath: onAccept.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4277364823234885463, guid: 13c5dbec29ecee348b4e7462b1ddb503, type: 3}
@@ -20026,12 +20038,20 @@ PrefabInstance:
       value: MoveStraight
       objectReference: {fileID: 0}
     - target: {fileID: 4277364823234885463, guid: 13c5dbec29ecee348b4e7462b1ddb503, type: 3}
+      propertyPath: onAccept.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
+      value: CompletePuzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 4277364823234885463, guid: 13c5dbec29ecee348b4e7462b1ddb503, type: 3}
       propertyPath: onAccept.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: MoveItem, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4277364823234885463, guid: 13c5dbec29ecee348b4e7462b1ddb503, type: 3}
       propertyPath: onAccept.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: MoveItem, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4277364823234885463, guid: 13c5dbec29ecee348b4e7462b1ddb503, type: 3}
+      propertyPath: onAccept.m_PersistentCalls.m_Calls.Array.data[2].m_TargetAssemblyTypeName
+      value: VariableManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 4277364823234885463, guid: 13c5dbec29ecee348b4e7462b1ddb503, type: 3}
       propertyPath: onAccept.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
@@ -20042,11 +20062,19 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4277364823234885463, guid: 13c5dbec29ecee348b4e7462b1ddb503, type: 3}
+      propertyPath: onAccept.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_StringArgument
+      value: panoquadrocod
+      objectReference: {fileID: 0}
+    - target: {fileID: 4277364823234885463, guid: 13c5dbec29ecee348b4e7462b1ddb503, type: 3}
       propertyPath: onAccept.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4277364823234885463, guid: 13c5dbec29ecee348b4e7462b1ddb503, type: 3}
       propertyPath: onAccept.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 4277364823234885463, guid: 13c5dbec29ecee348b4e7462b1ddb503, type: 3}
+      propertyPath: onAccept.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 4277364823264318633, guid: 13c5dbec29ecee348b4e7462b1ddb503, type: 3}
