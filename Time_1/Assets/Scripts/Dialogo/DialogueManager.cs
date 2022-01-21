@@ -58,6 +58,16 @@ public class DialogueManager : MonoBehaviour
         DisplayNextBox();
     }
 
+    private string GetSpeakerName(string speaker)
+    {
+        if (speaker == "")
+        {
+            return Students.GetName(VariableManager.instance.activeCharacter);
+        }
+        return speaker;
+
+    }
+
     public void DisplayNextBox()
     {
         Assert.IsTrue(isInDialogue);
@@ -80,8 +90,8 @@ public class DialogueManager : MonoBehaviour
             else
             {
                 currentBox = queue.Dequeue();
-                speakerNameText.text = currentBox.speaker;
-                dialogueBoxObject.setPortrait(currentBox.speaker);
+                speakerNameText.text = GetSpeakerName(currentBox.speaker);
+                dialogueBoxObject.setPortrait(GetSpeakerName(currentBox.speaker));
                 displayBoxCoroutine = StartCoroutine(DisplayBox(currentBox));
             }
         }

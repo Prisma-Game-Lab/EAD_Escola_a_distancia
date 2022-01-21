@@ -7,6 +7,7 @@ using TMPro;
 public class Timer : MonoBehaviour
 {
     public float totalTime;
+    [SerializeField]
     private float timeRemaining;
     private bool running = false;
     public VariableManager variableManager;
@@ -14,11 +15,15 @@ public class Timer : MonoBehaviour
     public FadeOut fadeOut;
     public SceneJump sceneJump;
     public Inventory personalInventory;
+    public Item mask;
+    private bool hasMask;
+    public float maskTime;
 
     private void Start()
     {
         timeRemaining = totalTime;
         running = true;
+        hasMask = false;    
     }
 
     void Update()
@@ -27,6 +32,7 @@ public class Timer : MonoBehaviour
         {
             if (timeRemaining > 0)
             {
+                CheckMask();
                 timeRemaining -= Time.deltaTime;
                 DisplayTime(timeRemaining);
             }
@@ -61,11 +67,27 @@ public class Timer : MonoBehaviour
         }
     }
 
-
+    public void CheckMask()
+    {
+        Debug.Log("TESTOU");
+        if (personalInventory.itemList.Contains(mask) && hasMask == false)
+        {
+            totalTime += maskTime;
+            timeRemaining += maskTime;
+            hasMask = true;
+        }
+        else if (!personalInventory.itemList.Contains(mask) && hasMask == true)
+        {
+            totalTime -= maskTime;
+            timeRemaining -= maskTime;
+            hasMask = false;
+        }
+        return;
+    }
     
     void DisplayTime(float timeToDisplay)
     {
-        o2Fill.fillAmount = timeRemaining / totalTime;
+        o2Fill.fillAmount = 0.664f*(timeRemaining / totalTime);
     }
 
     void Kill(Student s)
