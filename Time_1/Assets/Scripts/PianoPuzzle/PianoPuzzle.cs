@@ -55,6 +55,8 @@ public class PianoPuzzle : MonoBehaviour
         {
             Debug.Log("Correct sequence");
             currentSequence.Clear();
+            VariableManager.instance.CompletePuzzle("piano");
+            gameObject.SetActive(false);
         }
     }
 }

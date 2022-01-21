@@ -6,8 +6,6 @@ using UnityEngine.EventSystems;
 
 public class ShowDescription : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    static float duration = 0.5f;
-
     static ItemDescription descriptionObj;
     public Inventory inventory;
 
