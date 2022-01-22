@@ -2406,7 +2406,10 @@ MonoBehaviour:
   targetStudent: 1
   initialDialogue: {fileID: 11400000, guid: 681a65dab6342aa4abc74e5c14937635, type: 2}
   itemDialogueOptions: []
-  puzzleDialogueOptions: []
+  puzzleDialogueOptions:
+  - puzzle: informatica
+    dialogue: {fileID: 11400000, guid: 5f5523382c74ce947b8723218d6614c2, type: 2}
+    blockingEvents: []
   genericDialogueOptions:
   - {fileID: 11400000, guid: 1523b8aaa524d404692bcbf6d15b376b, type: 2}
 --- !u!4 &187183576
@@ -4319,7 +4322,10 @@ MonoBehaviour:
   targetStudent: 2
   initialDialogue: {fileID: 11400000, guid: 6c5b03811ba415a4b95978cab28768d0, type: 2}
   itemDialogueOptions: []
-  puzzleDialogueOptions: []
+  puzzleDialogueOptions:
+  - puzzle: informatica
+    dialogue: {fileID: 11400000, guid: 6c4f87c691aafa848b21e1511dff7c28, type: 2}
+    blockingEvents: []
   genericDialogueOptions:
   - {fileID: 11400000, guid: e9a6b554032a93844818950136e7ccf3, type: 2}
   - {fileID: 11400000, guid: b31a2f1e809355b47b892fdabafb4a19, type: 2}
