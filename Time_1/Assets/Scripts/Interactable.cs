@@ -16,7 +16,7 @@ public class Interactable : MonoBehaviour
     void Awake()
     {
         player = LayerMask.GetMask("Player");
-        if(VariableManager.instance.HasCompletedPuzzle(destroyIf))
+        if(destroyIf != "" && VariableManager.instance.HasCompletedPuzzle(destroyIf))
         {
             Destroy(this);
         }
