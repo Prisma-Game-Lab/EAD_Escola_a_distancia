@@ -4,6 +4,7 @@ using System.Collections;
 // CopyComponents - by Michael L. Croswell for Colorado Game Coders, LLC
 // March 2010
 
+#if (UNITY_EDITOR)
 public class ReplaceGameObjects : ScriptableWizard
 {
     public bool copyValues = true;
@@ -12,8 +13,6 @@ public class ReplaceGameObjects : ScriptableWizard
 
 
     [MenuItem("Custom/Replace GameObjects")]
-
-
     static void CreateWizard()
     {
         ScriptableWizard.DisplayWizard("Replace GameObjects", typeof(ReplaceGameObjects), "Replace");
@@ -37,3 +36,5 @@ public class ReplaceGameObjects : ScriptableWizard
 
     }
 }
+#endif
+
