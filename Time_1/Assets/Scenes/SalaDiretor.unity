@@ -3092,7 +3092,7 @@ MonoBehaviour:
           m_StringArgument: clara
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1883593239}
         m_TargetAssemblyTypeName: NPCDialogue, Assembly-CSharp
         m_MethodName: TriggerDialogue
         m_Mode: 1
@@ -5610,7 +5610,7 @@ MonoBehaviour:
           m_StringArgument: maria
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 859210909}
         m_TargetAssemblyTypeName: NPCDialogue, Assembly-CSharp
         m_MethodName: TriggerDialogue
         m_Mode: 1
@@ -5622,7 +5622,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1655202968}
         m_TargetAssemblyTypeName: NPCDialogue, Assembly-CSharp
         m_MethodName: TriggerDialogue
         m_Mode: 1
@@ -6148,7 +6148,7 @@ MonoBehaviour:
           m_StringArgument: eric
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1514883348}
         m_TargetAssemblyTypeName: NPCDialogue, Assembly-CSharp
         m_MethodName: TriggerDialogue
         m_Mode: 1
@@ -6160,9 +6160,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2077666005}
         m_TargetAssemblyTypeName: NPCDialogue, Assembly-CSharp
-        m_MethodName: TriggerDialogue
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6194,6 +6194,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 859210908}
+  - component: {fileID: 859210909}
   m_Layer: 3
   m_Name: dialogueWithClara
   m_TagString: Untagged
@@ -6215,6 +6216,25 @@ Transform:
   m_Father: {fileID: 788293819}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &859210909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 859210907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7806f4eab893afb4ab461ed43710ef3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: 2
+  targetStudent: 1
+  initialDialogue: {fileID: 11400000, guid: 3807a6f4d9b97f347a4b4d3e335d7dca, type: 2}
+  itemDialogueOptions: []
+  puzzleDialogueOptions: []
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: 3807a6f4d9b97f347a4b4d3e335d7dca, type: 2}
 --- !u!1 &863929924
 GameObject:
   m_ObjectHideFlags: 0
@@ -11701,6 +11721,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1514883347}
+  - component: {fileID: 1514883348}
   m_Layer: 3
   m_Name: dialogueWithMaria
   m_TagString: Untagged
@@ -11722,6 +11743,25 @@ Transform:
   m_Father: {fileID: 848813430}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1514883348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514883346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7806f4eab893afb4ab461ed43710ef3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: 0
+  targetStudent: 2
+  initialDialogue: {fileID: 11400000, guid: 01112aa620fe22d409d5f16ea2c03ea5, type: 2}
+  itemDialogueOptions: []
+  puzzleDialogueOptions: []
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: 01112aa620fe22d409d5f16ea2c03ea5, type: 2}
 --- !u!1 &1519646722
 GameObject:
   m_ObjectHideFlags: 0
@@ -12087,6 +12127,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1570932711}
+  - component: {fileID: 1570932712}
   m_Layer: 3
   m_Name: dialogueWithEric
   m_TagString: Untagged
@@ -12108,6 +12149,25 @@ Transform:
   m_Father: {fileID: 383193349}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1570932712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1570932710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7806f4eab893afb4ab461ed43710ef3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: 1
+  targetStudent: 0
+  initialDialogue: {fileID: 11400000, guid: f562015ad043ebf4bafee014769a6259, type: 2}
+  itemDialogueOptions: []
+  puzzleDialogueOptions: []
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: f562015ad043ebf4bafee014769a6259, type: 2}
 --- !u!1 &1576927217
 GameObject:
   m_ObjectHideFlags: 0
@@ -12884,6 +12944,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1655202967}
+  - component: {fileID: 1655202968}
   m_Layer: 3
   m_Name: dialogueWithEric
   m_TagString: Untagged
@@ -12905,6 +12966,25 @@ Transform:
   m_Father: {fileID: 788293819}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1655202968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655202966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7806f4eab893afb4ab461ed43710ef3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: 2
+  targetStudent: 0
+  initialDialogue: {fileID: 11400000, guid: 01112aa620fe22d409d5f16ea2c03ea5, type: 2}
+  itemDialogueOptions: []
+  puzzleDialogueOptions: []
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: 01112aa620fe22d409d5f16ea2c03ea5, type: 2}
 --- !u!1 &1669441917
 GameObject:
   m_ObjectHideFlags: 0
@@ -14412,6 +14492,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1883593238}
+  - component: {fileID: 1883593239}
   m_Layer: 3
   m_Name: dialogueWithMaria
   m_TagString: Untagged
@@ -14433,6 +14514,25 @@ Transform:
   m_Father: {fileID: 383193349}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1883593239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1883593237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7806f4eab893afb4ab461ed43710ef3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: 1
+  targetStudent: 2
+  initialDialogue: {fileID: 11400000, guid: 3807a6f4d9b97f347a4b4d3e335d7dca, type: 2}
+  itemDialogueOptions: []
+  puzzleDialogueOptions: []
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: 3807a6f4d9b97f347a4b4d3e335d7dca, type: 2}
 --- !u!1 &1883743635
 GameObject:
   m_ObjectHideFlags: 0
@@ -15608,6 +15708,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2077666006}
+  - component: {fileID: 2077666007}
   m_Layer: 3
   m_Name: dialogueWithClara
   m_TagString: Untagged
@@ -15629,6 +15730,25 @@ Transform:
   m_Father: {fileID: 848813430}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2077666007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077666005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7806f4eab893afb4ab461ed43710ef3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  self: 0
+  targetStudent: 1
+  initialDialogue: {fileID: 11400000, guid: f562015ad043ebf4bafee014769a6259, type: 2}
+  itemDialogueOptions: []
+  puzzleDialogueOptions: []
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: f562015ad043ebf4bafee014769a6259, type: 2}
 --- !u!1 &2084356043
 GameObject:
   m_ObjectHideFlags: 0
