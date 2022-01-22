@@ -45,7 +45,7 @@ public class NPCDialogue : MonoBehaviour
     public void TriggerDialogue()
     {
         var vInstance = VariableManager.instance;
-        if(targetStudent != vInstance.activeCharacter)
+        if (targetStudent != vInstance.activeCharacter)
         {
             return;
         }
@@ -59,7 +59,8 @@ public class NPCDialogue : MonoBehaviour
         }
         else
         {
-            foreach (var item in itemDialogueOptions.FindAll((dialogueOption) => {
+            foreach (var item in itemDialogueOptions.FindAll((dialogueOption) =>
+            {
 
                 foreach (var e in dialogueOption.blockingEvents)
                 {
@@ -77,7 +78,18 @@ public class NPCDialogue : MonoBehaviour
                     return;
                 }
             }
-            foreach (var puzzle in puzzleDialogueOptions)
+            foreach (var puzzle in puzzleDialogueOptions.FindAll((dialogueOption) =>
+            {
+
+                foreach (var e in dialogueOption.blockingEvents)
+                {
+                    if (vInstance.HasCompletedPuzzle(e))
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }))
             {
                 if (vInstance.HasCompletedPuzzle(puzzle.puzzle))
                 {

@@ -4539,7 +4539,15 @@ MonoBehaviour:
   targetStudent: 1
   initialDialogue: {fileID: 11400000, guid: b695717d1025c634d89757b3ffcc4b02, type: 2}
   itemDialogueOptions: []
-  puzzleDialogueOptions: []
+  puzzleDialogueOptions:
+  - puzzle: informatica
+    dialogue: {fileID: 11400000, guid: 7347d09734dacff43ba98a481517d369, type: 2}
+    blockingEvents:
+    - keys
+  - puzzle: informatica
+    dialogue: {fileID: 11400000, guid: 6366efe1f74ef1643bce9806b5ef1736, type: 2}
+    blockingEvents:
+    - keys
   genericDialogueOptions:
   - {fileID: 11400000, guid: 78c937a729c51a3429d186735a6ae12e, type: 2}
   - {fileID: 11400000, guid: 1ab9acaf7c3fd9842b010e2b16e55a22, type: 2}
@@ -10651,7 +10659,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1458932445371769632, guid: 8d516908f0a185a4584eedecf8aa4f6d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 30.000061
+      value: 30.000122
       objectReference: {fileID: 0}
     - target: {fileID: 1458932445371769632, guid: 8d516908f0a185a4584eedecf8aa4f6d, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -11893,7 +11901,10 @@ MonoBehaviour:
   targetStudent: 0
   initialDialogue: {fileID: 11400000, guid: 352b7247b0530d94e925c9cfb3fd240e, type: 2}
   itemDialogueOptions: []
-  puzzleDialogueOptions: []
+  puzzleDialogueOptions:
+  - puzzle: informatica
+    dialogue: {fileID: 11400000, guid: 7c368dba8d15ccc4cafdf1db056c801a, type: 2}
+    blockingEvents: []
   genericDialogueOptions:
   - {fileID: 11400000, guid: 87af05067f9ed1846b28a494d699cddf, type: 2}
   - {fileID: 11400000, guid: b9a2e6206d5313148b01259fe380eaf4, type: 2}
@@ -12699,6 +12710,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   porta: {fileID: 761719790}
   estante: {fileID: 1214436209}
+  priv: {fileID: 0}
+  global: {fileID: 0}
+  key1: {fileID: 0}
+  key2: {fileID: 0}
 --- !u!1001 &1121644585
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15378,7 +15393,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2210862282504744281, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -50
+      value: -49.999878
       objectReference: {fileID: 0}
     - target: {fileID: 2210862282504744281, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -19552,7 +19567,10 @@ MonoBehaviour:
   targetStudent: 2
   initialDialogue: {fileID: 11400000, guid: 711be9a474955154a81500024129e223, type: 2}
   itemDialogueOptions: []
-  puzzleDialogueOptions: []
+  puzzleDialogueOptions:
+  - puzzle: informatica
+    dialogue: {fileID: 11400000, guid: 5f5523382c74ce947b8723218d6614c2, type: 2}
+    blockingEvents: []
   genericDialogueOptions:
   - {fileID: 11400000, guid: 66b569601ecd9d747aa8f96925e66e83, type: 2}
   - {fileID: 11400000, guid: caadc2b03e064a24bbd1812428b79e31, type: 2}
@@ -22156,7 +22174,10 @@ MonoBehaviour:
   targetStudent: 0
   initialDialogue: {fileID: 11400000, guid: 0020918ccd704614d8eea0dbb947135e, type: 2}
   itemDialogueOptions: []
-  puzzleDialogueOptions: []
+  puzzleDialogueOptions:
+  - puzzle: informatica
+    dialogue: {fileID: 11400000, guid: 6c4f87c691aafa848b21e1511dff7c28, type: 2}
+    blockingEvents: []
   genericDialogueOptions:
   - {fileID: 11400000, guid: 4f25e92430d6b084eae0e579cfbf6b1f, type: 2}
 --- !u!4 &1848731923

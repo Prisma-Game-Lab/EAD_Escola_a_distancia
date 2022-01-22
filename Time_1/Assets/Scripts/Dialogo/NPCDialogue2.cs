@@ -71,7 +71,18 @@ public class NPCDialogue2 : MonoBehaviour
                     return;
                 }
             }
-            foreach (var puzzle in puzzleDialogueOptions)
+            foreach (var puzzle in puzzleDialogueOptions.FindAll((dialogueOption) =>
+            {
+
+                foreach (var e in dialogueOption.blockingEvents)
+                {
+                    if (vInstance.HasCompletedPuzzle(e))
+                    {
+                        return false;
+                    }
+                }
+                return true;
+            }))
             {
                 if (vInstance.HasCompletedPuzzle(puzzle.puzzle))
                 {
