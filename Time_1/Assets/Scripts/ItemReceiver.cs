@@ -75,6 +75,7 @@ public class ItemReceiver : MonoBehaviour
                 return;
             }
             Interact();
+            receivedItems.Clear();
         }
     }
 
