@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.05475062, g: 0.055750526, b: 0.078344695, a: 1}
+  m_IndirectSpecularColor: {r: 0.054713704, g: 0.055761956, b: 0.07798753, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -806,9 +806,17 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4544691479516300450, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_Name
       value: armario_fechado
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6415431693198994495, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_RootOrder
@@ -1902,7 +1910,7 @@ Transform:
   - {fileID: 1935657537}
   - {fileID: 1010446769}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &185503577
 GameObject:
@@ -2593,6 +2601,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6603051286584436445, guid: adbe9c5fd08f5954399b054b7b2fa9e0, type: 3}
   m_PrefabInstance: {fileID: 276180949}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &281134110
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 281134111}
+  m_Layer: 0
+  m_Name: PortaSalaDiretor (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &281134111
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 281134110}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &281905499
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4459,6 +4497,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3d4e93a04a8782f45b1ec3f701c6cbc6, type: 3}
   m_PrefabInstance: {fileID: 411210353}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &423238973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 423238974}
+  m_Layer: 0
+  m_Name: PortaSalaDiretor (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &423238974
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 423238973}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &427290291
 GameObject:
   m_ObjectHideFlags: 0
@@ -4940,6 +5008,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1385071920}
     m_Modifications:
+    - target: {fileID: 1501842903333621786, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7100525765358530922, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -4991,6 +5063,14 @@ PrefabInstance:
     - target: {fileID: 7620638386684193744, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
       propertyPath: m_Name
       value: armario_semifechado
+      objectReference: {fileID: 0}
+    - target: {fileID: 7620638386684193744, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 8989037421440517312, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
@@ -5641,9 +5721,17 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3559791531574312290, guid: 02bd2a25b2403a349b25e956885bfdf0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7361141950292161895, guid: 02bd2a25b2403a349b25e956885bfdf0, type: 3}
       propertyPath: m_Name
       value: armario_aberto
+      objectReference: {fileID: 0}
+    - target: {fileID: 7361141950292161895, guid: 02bd2a25b2403a349b25e956885bfdf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7882380403159576541, guid: 02bd2a25b2403a349b25e956885bfdf0, type: 3}
       propertyPath: m_RootOrder
@@ -6095,7 +6183,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &599340034
 PrefabInstance:
@@ -6170,9 +6258,17 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4544691479516300450, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_Name
       value: armario_fechado
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6415431693198994495, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_RootOrder
@@ -7306,11 +7402,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3559791531574312290, guid: 02bd2a25b2403a349b25e956885bfdf0, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7361141950292161895, guid: 02bd2a25b2403a349b25e956885bfdf0, type: 3}
       propertyPath: m_Name
       value: armario_aberto
+      objectReference: {fileID: 0}
+    - target: {fileID: 7361141950292161895, guid: 02bd2a25b2403a349b25e956885bfdf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7882380403159576541, guid: 02bd2a25b2403a349b25e956885bfdf0, type: 3}
       propertyPath: m_RootOrder
@@ -7877,6 +7977,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 693489754}
   m_CullTransparentMesh: 1
+--- !u!1 &699234971
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 699234972}
+  m_Layer: 0
+  m_Name: PortaSalaDiretor (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &699234972
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 699234971}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &700735478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8674,6 +8804,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: armario_fechado
       objectReference: {fileID: 0}
+    - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6415431693198994495, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -8908,6 +9042,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 517180093}
     m_Modifications:
+    - target: {fileID: 1501842903333621786, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7100525765358530922, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -8959,6 +9097,10 @@ PrefabInstance:
     - target: {fileID: 7620638386684193744, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
       propertyPath: m_Name
       value: armario_semifechado
+      objectReference: {fileID: 0}
+    - target: {fileID: 7620638386684193744, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8989037421440517312, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
       propertyPath: m_Enabled
@@ -9069,8 +9211,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.09, y: 13.14, z: 1.64}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.09, y: 13.14, z: 2.834239}
+  m_Center: {x: -0, y: 0, z: -0.13522553}
 --- !u!1 &810639951
 GameObject:
   m_ObjectHideFlags: 0
@@ -10070,9 +10212,17 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4544691479516300450, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_Name
       value: armario_fechado
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6415431693198994495, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_RootOrder
@@ -10610,6 +10760,36 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 946390916}
   m_CullTransparentMesh: 1
+--- !u!1 &966133782
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 966133783}
+  m_Layer: 0
+  m_Name: PortaSalaDiretor (Missing Prefab)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &966133783
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 966133782}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &970178336
 GameObject:
   m_ObjectHideFlags: 0
@@ -10763,7 +10943,7 @@ Transform:
   m_Children:
   - {fileID: 1500375174}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &975640624
 GameObject:
@@ -11152,8 +11332,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 6, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 6.088335, z: 4.06819}
+  m_Center: {x: 0, y: 0.044168945, z: 0.020100685}
 --- !u!1001 &1005308935
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12626,9 +12806,17 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4544691479516300450, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_Name
       value: armario_fechado
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6415431693198994495, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_RootOrder
@@ -13082,11 +13270,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4544691479516300450, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_Name
       value: armario_fechado
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6415431693198994495, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_RootOrder
@@ -13136,7 +13328,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -6282028727655465792, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+    - {fileID: 7662002497695472541, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
 --- !u!4 &1159293933 stripped
 Transform:
@@ -13248,7 +13442,7 @@ Transform:
   - {fileID: 2083007728}
   - {fileID: 2179440143421523732}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1173089547
 PrefabInstance:
@@ -13300,6 +13494,10 @@ PrefabInstance:
     - target: {fileID: 7361141950292161895, guid: 02bd2a25b2403a349b25e956885bfdf0, type: 3}
       propertyPath: m_Name
       value: armario_aberto
+      objectReference: {fileID: 0}
+    - target: {fileID: 7361141950292161895, guid: 02bd2a25b2403a349b25e956885bfdf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7882380403159576541, guid: 02bd2a25b2403a349b25e956885bfdf0, type: 3}
       propertyPath: m_RootOrder
@@ -14154,7 +14352,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3955451153711792659, guid: cf0bb3ad566c2c4448dfc5e9eeff0791, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3955451153711792659, guid: cf0bb3ad566c2c4448dfc5e9eeff0791, type: 3}
       propertyPath: m_LocalPosition.x
@@ -14236,7 +14434,7 @@ Transform:
   - {fileID: 712523658}
   - {fileID: 1054306677}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1218653178
 GameObject:
@@ -15208,9 +15406,17 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4544691479516300450, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_Name
       value: armario_fechado
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6415431693198994495, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_RootOrder
@@ -15367,7 +15573,7 @@ RectTransform:
   - {fileID: 1074099475}
   - {fileID: 7702329220203756211}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -15570,9 +15776,17 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4544691479516300450, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_Name
       value: armario_fechado
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6415431693198994495, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_RootOrder
@@ -16056,6 +16270,10 @@ PrefabInstance:
     - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_Name
       value: armario_fechado
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6415431693198994495, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_RootOrder
@@ -16758,6 +16976,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: armario_fechado
       objectReference: {fileID: 0}
+    - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6415431693198994495, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -17440,6 +17662,10 @@ PrefabInstance:
       propertyPath: genericDialogueOptions.Array.data[2]
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 1501842903333621786, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7100525765358530922, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -17491,6 +17717,10 @@ PrefabInstance:
     - target: {fileID: 7620638386684193744, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
       propertyPath: m_Name
       value: armario_semifechado
+      objectReference: {fileID: 0}
+    - target: {fileID: 7620638386684193744, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8989037421440517312, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
       propertyPath: m_Enabled
@@ -18008,9 +18238,17 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4544691479516300450, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_Name
       value: armario_fechado
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6415431693198994495, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_RootOrder
@@ -18328,7 +18566,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 45, y: 45, z: 0}
 --- !u!114 &1563432925
 MonoBehaviour:
@@ -18500,6 +18738,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 517180093}
     m_Modifications:
+    - target: {fileID: 1501842903333621786, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7100525765358530922, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -18551,6 +18793,10 @@ PrefabInstance:
     - target: {fileID: 7620638386684193744, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
       propertyPath: m_Name
       value: armario_semifechado
+      objectReference: {fileID: 0}
+    - target: {fileID: 7620638386684193744, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 8989037421440517312, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
       propertyPath: m_Enabled
@@ -18808,8 +19054,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.94, y: 5.77, z: 1.54}
-  m_Center: {x: 0.36, y: 2.69, z: -0.13}
+  m_Size: {x: 4.254553, y: 7.88552, z: 2.3352036}
+  m_Center: {x: 1.3500457, y: 2.158072, z: 0.26760173}
 --- !u!114 &1609269008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20572,6 +20818,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: armario_fechado
       objectReference: {fileID: 0}
+    - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 6415431693198994495, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -21170,9 +21420,17 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3559791531574312290, guid: 02bd2a25b2403a349b25e956885bfdf0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7361141950292161895, guid: 02bd2a25b2403a349b25e956885bfdf0, type: 3}
       propertyPath: m_Name
       value: armario_aberto
+      objectReference: {fileID: 0}
+    - target: {fileID: 7361141950292161895, guid: 02bd2a25b2403a349b25e956885bfdf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7882380403159576541, guid: 02bd2a25b2403a349b25e956885bfdf0, type: 3}
       propertyPath: m_RootOrder
@@ -21610,11 +21868,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4544691479516300450, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_Name
       value: armario_fechado
+      objectReference: {fileID: 0}
+    - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 6415431693198994495, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_RootOrder
@@ -23775,7 +24037,7 @@ Transform:
   - {fileID: 305603989}
   - {fileID: 1878274254}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: -180, z: 0}
 --- !u!1001 &2136605718
 PrefabInstance:
@@ -23943,9 +24205,17 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3559791531574312290, guid: 02bd2a25b2403a349b25e956885bfdf0, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7361141950292161895, guid: 02bd2a25b2403a349b25e956885bfdf0, type: 3}
       propertyPath: m_Name
       value: armario_aberto
+      objectReference: {fileID: 0}
+    - target: {fileID: 7361141950292161895, guid: 02bd2a25b2403a349b25e956885bfdf0, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 7882380403159576541, guid: 02bd2a25b2403a349b25e956885bfdf0, type: 3}
       propertyPath: m_RootOrder
