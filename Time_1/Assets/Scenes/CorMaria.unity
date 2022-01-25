@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.054713704, g: 0.055761956, b: 0.07798753, a: 1}
+  m_IndirectSpecularColor: {r: 0.05475062, g: 0.055750526, b: 0.078344695, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -22520,7 +22520,7 @@ MonoBehaviour:
   inv: {fileID: 11400000, guid: d36588eddde7dc141a8d76cb888b67ec, type: 2}
   unwalkableLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 219
   allowdrop: 1
 --- !u!114 &780501681
 MonoBehaviour:
@@ -22915,6 +22915,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 795981411}
+  - component: {fileID: 795981412}
   m_Layer: 0
   m_Name: ItemSpawner
   m_TagString: Untagged
@@ -22936,6 +22937,24 @@ Transform:
   m_Father: {fileID: 258192007}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &795981412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 795981410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 403282c8f3ac84a4e84312c4929fe11a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collectables:
+  - {fileID: 1433797281}
+  - {fileID: 1339900959}
+  items:
+  - {fileID: 11400000, guid: 1c93108cd5fe8c44791ea79c8aa4f040, type: 2}
+  - {fileID: 11400000, guid: 1ad07175e0ca1d14fb0ab297a0d4e7f7, type: 2}
 --- !u!1 &796513035 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6c936e8bec3d6554db62f09a3866e09b, type: 3}
@@ -30112,7 +30131,7 @@ MonoBehaviour:
   inv: {fileID: 11400000, guid: d36588eddde7dc141a8d76cb888b67ec, type: 2}
   unwalkableLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 219
   allowdrop: 1
 --- !u!114 &1050863588
 MonoBehaviour:
@@ -35275,7 +35294,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: b6ca63780166e1443a2c03887e585601, type: 3}
   m_PrefabInstance: {fileID: 1205578325}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1205578328
+--- !u!65 &1205578329
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205578327}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 171.56181, y: 103.82979, z: 225.12054}
+  m_Center: {x: 15.312831, y: -7.4610133, z: -10.456603}
+--- !u!114 &1205578330
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -35284,10 +35316,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1205578327}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 056d6a48408ded545ab30d885ff1ba1e, type: 3}
+  m_Script: {fileID: 11500000, guid: f4640b1028ba4684fbe6ef819ba66d6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destroyIf: cadeado
+  expectedItems:
+  - {fileID: 11400000, guid: 8de6c815562f7b240b1341177030e5fc, type: 2}
+  receivedItems: []
   onInteract:
     m_PersistentCalls:
       m_Calls:
@@ -35301,7 +35335,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: cadeado
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 11400000, guid: d36588eddde7dc141a8d76cb888b67ec, type: 2}
         m_TargetAssemblyTypeName: Inventory, Assembly-CSharp
@@ -35313,7 +35347,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 1
+          m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1589965379}
         m_TargetAssemblyTypeName: MoveItem, Assembly-CSharp
@@ -35323,18 +35357,6 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: -20
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1205578327}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -35363,16 +35385,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  inventory: {fileID: 11400000, guid: d36588eddde7dc141a8d76cb888b67ec, type: 2}
-  requiredItems:
-  - {fileID: 11400000, guid: 8de6c815562f7b240b1341177030e5fc, type: 2}
-  defaultBehaviour:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 11400000, guid: bf30d7684a12cd04c96254cef895b6c1, type: 2}
-        m_TargetAssemblyTypeName: Dialogue, Assembly-CSharp
-        m_MethodName: Play
-        m_Mode: 1
+      - m_Target: {fileID: 1205578327}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -35381,19 +35397,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!65 &1205578329
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1205578327}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 171.56181, y: 103.82979, z: 225.12054}
-  m_Center: {x: 15.312831, y: -7.4610133, z: -10.456603}
 --- !u!1001 &1205882099
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45455,7 +45458,7 @@ MonoBehaviour:
   inv: {fileID: 11400000, guid: d36588eddde7dc141a8d76cb888b67ec, type: 2}
   unwalkableLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 219
   allowdrop: 1
 --- !u!114 &1511677731
 MonoBehaviour:
@@ -47758,12 +47761,13 @@ GameObject:
   - component: {fileID: 1589965377}
   - component: {fileID: 1589965376}
   - component: {fileID: 1589965379}
+  - component: {fileID: 1589965380}
   m_Layer: 3
   m_Name: Cube (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 1
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1589965375
 Transform:
@@ -47854,6 +47858,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 1
+--- !u!208 &1589965380
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1589965374}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1590698625 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 3d4e93a04a8782f45b1ec3f701c6cbc6, type: 3}
@@ -58802,7 +58822,7 @@ MonoBehaviour:
   inv: {fileID: 11400000, guid: d36588eddde7dc141a8d76cb888b67ec, type: 2}
   unwalkableLayer:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 219
   allowdrop: 1
 --- !u!114 &1947808853
 MonoBehaviour:
