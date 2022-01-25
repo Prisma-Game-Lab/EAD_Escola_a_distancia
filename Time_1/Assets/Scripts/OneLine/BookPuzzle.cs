@@ -8,6 +8,8 @@ public class BookPuzzle : MonoBehaviour
     public Inventory bookInventory;
     public Inventory personalInventory;
     public Item chave;
+    public Interactable interactable;
+    public AudioSource winSound;
 
     private void Awake() {
         bookInventory.itemList[0] = ordemFinal[1];
@@ -30,6 +32,8 @@ public class BookPuzzle : MonoBehaviour
             this.gameObject.SetActive(false);
             PlayerMovement.instance.UnlockMovement();
             VariableManager.instance.CompletePuzzle("livros");
+            winSound.PlayDelayed(0.3f);
+            Destroy(interactable);
             Destroy(gameObject);
             Destroy(this);
         }
