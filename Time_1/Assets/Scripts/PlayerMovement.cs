@@ -64,12 +64,12 @@ public class PlayerMovement : MonoBehaviour
 
     public void WalkTo(Vector3 target)
     {
-        agent.SetDestination(target);
+        agent?.SetDestination(target);
     }
 
     public void Stop()
     {
-        agent.ResetPath();
+        agent?.ResetPath();
         StopAllCoroutines();
     }
 
