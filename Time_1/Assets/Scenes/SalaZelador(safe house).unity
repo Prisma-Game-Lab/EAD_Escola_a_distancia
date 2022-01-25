@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.054713704, g: 0.055761956, b: 0.07798753, a: 1}
+  m_IndirectSpecularColor: {r: 0.05475062, g: 0.055750526, b: 0.078344695, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -485,7 +485,6 @@ GameObject:
   - component: {fileID: 55557187}
   - component: {fileID: 55557186}
   - component: {fileID: 55557185}
-  - component: {fileID: 55557184}
   - component: {fileID: 55557188}
   m_Layer: 5
   m_Name: Slot Pessoal (21)
@@ -514,26 +513,6 @@ RectTransform:
   m_AnchoredPosition: {x: 170, y: -309.94}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &55557184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 55557182}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &55557185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -777,7 +756,6 @@ GameObject:
   - component: {fileID: 136204123}
   - component: {fileID: 136204122}
   - component: {fileID: 136204121}
-  - component: {fileID: 136204120}
   - component: {fileID: 136204124}
   m_Layer: 5
   m_Name: Slot Pessoal (18)
@@ -806,26 +784,6 @@ RectTransform:
   m_AnchoredPosition: {x: 940, y: -184.97}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &136204120
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 136204118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &136204121
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -901,7 +859,6 @@ GameObject:
   - component: {fileID: 143527637}
   - component: {fileID: 143527636}
   - component: {fileID: 143527635}
-  - component: {fileID: 143527634}
   - component: {fileID: 143527638}
   m_Layer: 5
   m_Name: Slot Pessoal (31)
@@ -930,26 +887,6 @@ RectTransform:
   m_AnchoredPosition: {x: 170, y: -434.91}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &143527634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 143527632}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &143527635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1234,7 +1171,6 @@ GameObject:
   - component: {fileID: 231921262}
   - component: {fileID: 231921261}
   - component: {fileID: 231921260}
-  - component: {fileID: 231921259}
   - component: {fileID: 231921263}
   m_Layer: 5
   m_Name: Slot Pessoal (6)
@@ -1263,26 +1199,6 @@ RectTransform:
   m_AnchoredPosition: {x: 720, y: -60}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &231921259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 231921257}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &231921260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1697,7 +1613,6 @@ GameObject:
   - component: {fileID: 256523462}
   - component: {fileID: 256523461}
   - component: {fileID: 256523460}
-  - component: {fileID: 256523459}
   - component: {fileID: 256523463}
   m_Layer: 5
   m_Name: Slot Pessoal (22)
@@ -1726,26 +1641,6 @@ RectTransform:
   m_AnchoredPosition: {x: 280, y: -309.94}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &256523459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 256523457}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &256523460
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2293,7 +2188,6 @@ GameObject:
   - component: {fileID: 326927628}
   - component: {fileID: 326927627}
   - component: {fileID: 326927626}
-  - component: {fileID: 326927625}
   - component: {fileID: 326927629}
   m_Layer: 5
   m_Name: Slot Pessoal (2)
@@ -2322,26 +2216,6 @@ RectTransform:
   m_AnchoredPosition: {x: 280, y: -60}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &326927625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 326927623}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &326927626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2736,7 +2610,6 @@ GameObject:
   - component: {fileID: 370745896}
   - component: {fileID: 370745895}
   - component: {fileID: 370745894}
-  - component: {fileID: 370745893}
   - component: {fileID: 370745897}
   m_Layer: 5
   m_Name: Slot Pessoal (11)
@@ -2765,26 +2638,6 @@ RectTransform:
   m_AnchoredPosition: {x: 170, y: -184.97}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &370745893
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 370745891}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &370745894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3010,7 +2863,6 @@ GameObject:
   - component: {fileID: 414670773}
   - component: {fileID: 414670772}
   - component: {fileID: 414670771}
-  - component: {fileID: 414670770}
   - component: {fileID: 414670774}
   m_Layer: 5
   m_Name: Slot Pessoal (17)
@@ -3039,26 +2891,6 @@ RectTransform:
   m_AnchoredPosition: {x: 830, y: -184.97}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &414670770
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 414670768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &414670771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3313,7 +3145,6 @@ GameObject:
   - component: {fileID: 500219010}
   - component: {fileID: 500219009}
   - component: {fileID: 500219008}
-  - component: {fileID: 500219007}
   - component: {fileID: 500219011}
   m_Layer: 5
   m_Name: Slot Pessoal (15)
@@ -3342,26 +3173,6 @@ RectTransform:
   m_AnchoredPosition: {x: 610, y: -184.97}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &500219007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 500219005}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &500219008
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4597,7 +4408,6 @@ GameObject:
   - component: {fileID: 736655560}
   - component: {fileID: 736655559}
   - component: {fileID: 736655558}
-  - component: {fileID: 736655557}
   - component: {fileID: 736655561}
   m_Layer: 5
   m_Name: Slot Pessoal (4)
@@ -4626,26 +4436,6 @@ RectTransform:
   m_AnchoredPosition: {x: 500, y: -60}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &736655557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 736655555}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &736655558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4721,7 +4511,6 @@ GameObject:
   - component: {fileID: 745842414}
   - component: {fileID: 745842413}
   - component: {fileID: 745842412}
-  - component: {fileID: 745842411}
   - component: {fileID: 745842415}
   m_Layer: 5
   m_Name: Slot Pessoal
@@ -4750,26 +4539,6 @@ RectTransform:
   m_AnchoredPosition: {x: 60, y: -60}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &745842411
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 745842409}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &745842412
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5197,7 +4966,6 @@ GameObject:
   - component: {fileID: 777066756}
   - component: {fileID: 777066755}
   - component: {fileID: 777066754}
-  - component: {fileID: 777066753}
   - component: {fileID: 777066757}
   m_Layer: 5
   m_Name: Slot Pessoal (12)
@@ -5226,26 +4994,6 @@ RectTransform:
   m_AnchoredPosition: {x: 280, y: -184.97}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &777066753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 777066751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &777066754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6260,7 +6008,6 @@ GameObject:
   - component: {fileID: 981543831}
   - component: {fileID: 981543830}
   - component: {fileID: 981543829}
-  - component: {fileID: 981543828}
   - component: {fileID: 981543832}
   m_Layer: 5
   m_Name: Slot Pessoal (1)
@@ -6289,26 +6036,6 @@ RectTransform:
   m_AnchoredPosition: {x: 170, y: -60}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &981543828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981543826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &981543829
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7263,7 +6990,6 @@ GameObject:
   - component: {fileID: 1139458517}
   - component: {fileID: 1139458516}
   - component: {fileID: 1139458515}
-  - component: {fileID: 1139458514}
   - component: {fileID: 1139458518}
   m_Layer: 5
   m_Name: Slot Pessoal (24)
@@ -7292,26 +7018,6 @@ RectTransform:
   m_AnchoredPosition: {x: 500, y: -309.94}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1139458514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1139458512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &1139458515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7857,7 +7563,6 @@ GameObject:
   - component: {fileID: 1279788324}
   - component: {fileID: 1279788323}
   - component: {fileID: 1279788322}
-  - component: {fileID: 1279788321}
   - component: {fileID: 1279788325}
   m_Layer: 5
   m_Name: Slot Pessoal (16)
@@ -7886,26 +7591,6 @@ RectTransform:
   m_AnchoredPosition: {x: 720, y: -184.97}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1279788321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1279788319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &1279788322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8056,7 +7741,6 @@ GameObject:
   - component: {fileID: 1298663656}
   - component: {fileID: 1298663655}
   - component: {fileID: 1298663654}
-  - component: {fileID: 1298663653}
   - component: {fileID: 1298663657}
   m_Layer: 5
   m_Name: Slot Pessoal (5)
@@ -8085,26 +7769,6 @@ RectTransform:
   m_AnchoredPosition: {x: 610, y: -60}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1298663653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1298663651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &1298663654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8461,7 +8125,6 @@ GameObject:
   - component: {fileID: 1384911624}
   - component: {fileID: 1384911623}
   - component: {fileID: 1384911622}
-  - component: {fileID: 1384911621}
   - component: {fileID: 1384911625}
   m_Layer: 5
   m_Name: Slot Pessoal (14)
@@ -8490,26 +8153,6 @@ RectTransform:
   m_AnchoredPosition: {x: 500, y: -184.97}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1384911621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1384911619}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &1384911622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9284,7 +8927,6 @@ GameObject:
   - component: {fileID: 1450708749}
   - component: {fileID: 1450708748}
   - component: {fileID: 1450708747}
-  - component: {fileID: 1450708746}
   - component: {fileID: 1450708750}
   m_Layer: 5
   m_Name: Slot Pessoal (8)
@@ -9313,26 +8955,6 @@ RectTransform:
   m_AnchoredPosition: {x: 940, y: -60}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1450708746
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1450708744}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &1450708747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9765,7 +9387,6 @@ GameObject:
   - component: {fileID: 1536496359}
   - component: {fileID: 1536496358}
   - component: {fileID: 1536496357}
-  - component: {fileID: 1536496356}
   - component: {fileID: 1536496360}
   m_Layer: 5
   m_Name: Slot Pessoal (26)
@@ -9794,26 +9415,6 @@ RectTransform:
   m_AnchoredPosition: {x: 720, y: -309.94}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1536496356
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1536496354}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &1536496357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9889,7 +9490,6 @@ GameObject:
   - component: {fileID: 1542905668}
   - component: {fileID: 1542905667}
   - component: {fileID: 1542905666}
-  - component: {fileID: 1542905665}
   - component: {fileID: 1542905669}
   m_Layer: 5
   m_Name: Slot Pessoal (10)
@@ -9918,26 +9518,6 @@ RectTransform:
   m_AnchoredPosition: {x: 60, y: -184.97}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1542905665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542905663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &1542905666
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10475,7 +10055,6 @@ GameObject:
   - component: {fileID: 1611988736}
   - component: {fileID: 1611988735}
   - component: {fileID: 1611988734}
-  - component: {fileID: 1611988733}
   - component: {fileID: 1611988737}
   m_Layer: 5
   m_Name: Slot Pessoal (27)
@@ -10504,26 +10083,6 @@ RectTransform:
   m_AnchoredPosition: {x: 830, y: -309.94}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1611988733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1611988731}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &1611988734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10599,7 +10158,6 @@ GameObject:
   - component: {fileID: 1617814495}
   - component: {fileID: 1617814494}
   - component: {fileID: 1617814493}
-  - component: {fileID: 1617814492}
   - component: {fileID: 1617814496}
   m_Layer: 5
   m_Name: Slot Pessoal (9)
@@ -10628,26 +10186,6 @@ RectTransform:
   m_AnchoredPosition: {x: 1050, y: -60}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1617814492
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1617814490}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &1617814493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11152,7 +10690,6 @@ GameObject:
   - component: {fileID: 1751210288}
   - component: {fileID: 1751210287}
   - component: {fileID: 1751210286}
-  - component: {fileID: 1751210285}
   - component: {fileID: 1751210289}
   m_Layer: 5
   m_Name: Slot Pessoal (28)
@@ -11181,26 +10718,6 @@ RectTransform:
   m_AnchoredPosition: {x: 940, y: -309.94}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1751210285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1751210283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &1751210286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11510,7 +11027,6 @@ GameObject:
   - component: {fileID: 1762304088}
   - component: {fileID: 1762304087}
   - component: {fileID: 1762304086}
-  - component: {fileID: 1762304085}
   - component: {fileID: 1762304089}
   m_Layer: 5
   m_Name: Slot Pessoal (3)
@@ -11539,26 +11055,6 @@ RectTransform:
   m_AnchoredPosition: {x: 390, y: -60}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1762304085
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1762304083}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &1762304086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11634,7 +11130,6 @@ GameObject:
   - component: {fileID: 1779588895}
   - component: {fileID: 1779588894}
   - component: {fileID: 1779588893}
-  - component: {fileID: 1779588892}
   - component: {fileID: 1779588896}
   m_Layer: 5
   m_Name: Slot Pessoal (23)
@@ -11663,26 +11158,6 @@ RectTransform:
   m_AnchoredPosition: {x: 390, y: -309.94}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1779588892
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779588890}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &1779588893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11908,7 +11383,6 @@ GameObject:
   - component: {fileID: 1806681603}
   - component: {fileID: 1806681602}
   - component: {fileID: 1806681601}
-  - component: {fileID: 1806681600}
   - component: {fileID: 1806681604}
   m_Layer: 5
   m_Name: Slot Pessoal (20)
@@ -11937,26 +11411,6 @@ RectTransform:
   m_AnchoredPosition: {x: 60, y: -309.94}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1806681600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1806681598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &1806681601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12391,7 +11845,6 @@ GameObject:
   - component: {fileID: 1826393249}
   - component: {fileID: 1826393248}
   - component: {fileID: 1826393247}
-  - component: {fileID: 1826393246}
   - component: {fileID: 1826393250}
   m_Layer: 5
   m_Name: Slot Pessoal (7)
@@ -12420,26 +11873,6 @@ RectTransform:
   m_AnchoredPosition: {x: 830, y: -60}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1826393246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1826393244}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &1826393247
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12701,7 +12134,6 @@ GameObject:
   - component: {fileID: 1927847209}
   - component: {fileID: 1927847208}
   - component: {fileID: 1927847207}
-  - component: {fileID: 1927847206}
   - component: {fileID: 1927847210}
   m_Layer: 5
   m_Name: Slot Pessoal (29)
@@ -12730,26 +12162,6 @@ RectTransform:
   m_AnchoredPosition: {x: 1050, y: -309.94}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1927847206
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1927847204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &1927847207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12887,7 +12299,6 @@ GameObject:
   - component: {fileID: 1966893873}
   - component: {fileID: 1966893872}
   - component: {fileID: 1966893871}
-  - component: {fileID: 1966893870}
   - component: {fileID: 1966893874}
   m_Layer: 5
   m_Name: Slot Pessoal (13)
@@ -12916,26 +12327,6 @@ RectTransform:
   m_AnchoredPosition: {x: 390, y: -184.97}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1966893870
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1966893868}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &1966893871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13261,7 +12652,6 @@ GameObject:
   - component: {fileID: 1991088368}
   - component: {fileID: 1991088367}
   - component: {fileID: 1991088366}
-  - component: {fileID: 1991088365}
   - component: {fileID: 1991088369}
   m_Layer: 5
   m_Name: Slot Pessoal (25)
@@ -13290,26 +12680,6 @@ RectTransform:
   m_AnchoredPosition: {x: 610, y: -309.94}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1991088365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1991088363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &1991088366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13607,7 +12977,6 @@ GameObject:
   - component: {fileID: 2055323456}
   - component: {fileID: 2055323455}
   - component: {fileID: 2055323454}
-  - component: {fileID: 2055323453}
   - component: {fileID: 2055323457}
   m_Layer: 5
   m_Name: Slot Pessoal (30)
@@ -13636,26 +13005,6 @@ RectTransform:
   m_AnchoredPosition: {x: 60, y: -434.91}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2055323453
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2055323451}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &2055323454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13806,7 +13155,6 @@ GameObject:
   - component: {fileID: 2073168814}
   - component: {fileID: 2073168813}
   - component: {fileID: 2073168812}
-  - component: {fileID: 2073168811}
   - component: {fileID: 2073168815}
   m_Layer: 5
   m_Name: Slot Pessoal (19)
@@ -13835,26 +13183,6 @@ RectTransform:
   m_AnchoredPosition: {x: 1050, y: -184.97}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2073168811
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2073168809}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f552b43e0e15bb843a5dabdc8042ca67, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 753824277}
-  dragItem: {fileID: 290994718}
-  invManager: {fileID: 802604365}
-  inv: {fileID: 11400000, guid: 9cafacfd17e1ab240b7bf82a4d594116, type: 2}
-  unwalkableLayer:
-    serializedVersion: 2
-    m_Bits: 0
-  allowdrop: 1
 --- !u!114 &2073168812
 MonoBehaviour:
   m_ObjectHideFlags: 0
