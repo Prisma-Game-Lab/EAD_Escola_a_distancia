@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.05475062, g: 0.055750526, b: 0.078344695, a: 1}
+  m_IndirectSpecularColor: {r: 0.054713704, g: 0.055761956, b: 0.07798753, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -14068,6 +14068,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6250357042432195681, guid: 53cf23cbf1422c74b9e6440f3ab329ae, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6250357042432195681, guid: 53cf23cbf1422c74b9e6440f3ab329ae, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 8434991714625123159, guid: 53cf23cbf1422c74b9e6440f3ab329ae, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -14123,6 +14131,14 @@ PrefabInstance:
     - target: {fileID: 9098622455729596909, guid: 53cf23cbf1422c74b9e6440f3ab329ae, type: 3}
       propertyPath: m_Name
       value: lixo (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098622455729596909, guid: 53cf23cbf1422c74b9e6440f3ab329ae, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098622455729596909, guid: 53cf23cbf1422c74b9e6440f3ab329ae, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53cf23cbf1422c74b9e6440f3ab329ae, type: 3}
@@ -24860,8 +24876,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 848848988}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -3.78, y: 0.17749976, z: 0.184}
-  m_LocalScale: {x: 0.49340987, y: 0.45528048, z: 0.8034502}
+  m_LocalPosition: {x: -3.991, y: 0.17749976, z: 0.184}
+  m_LocalScale: {x: 0.49340987, y: 0.45528048, z: 1.3878798}
   m_Children: []
   m_Father: {fileID: 658405119}
   m_RootOrder: 4
@@ -39796,7 +39812,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1339900959}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: 
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -42603,7 +42619,7 @@ MonoBehaviour:
   onInteract:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 919132149155446097, guid: e4aaf86f5e51f3b4c92d0a20b6edb895, type: 3}
+      - m_Target: {fileID: 1433797281}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
