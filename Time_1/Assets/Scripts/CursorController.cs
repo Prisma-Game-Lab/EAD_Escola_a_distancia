@@ -84,7 +84,6 @@ public class CursorController : MonoBehaviour
         {
             Collider col = hit.collider;
             Interactable receiver = col.gameObject.GetComponent(typeof(Interactable)) as Interactable;
-            Debug.Log(receiver);
             if (receiver)
             {
                 if (currentCursor == cursorInteract)
