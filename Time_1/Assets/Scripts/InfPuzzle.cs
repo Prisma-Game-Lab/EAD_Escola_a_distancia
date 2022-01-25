@@ -21,6 +21,16 @@ public class InfPuzzle : MonoBehaviour
         StartCoroutine(Blink());
     }
 
+    private void OnEnable()
+    {
+        StartCoroutine(Blink());
+    }
+
+    private void OnDisable()
+    {
+        StopAllCoroutines();
+    }
+
     void Update()
     {
         foreach (char c in Input.inputString)
@@ -48,10 +58,10 @@ public class InfPuzzle : MonoBehaviour
     {
         while(true)
         {
+            yield return new WaitForSeconds(.5f);
             blinkText.text = ">";
             yield return new WaitForSeconds(.5f);
             blinkText.text = "";
-            yield return new WaitForSeconds(.5f);
         }
     }
 
