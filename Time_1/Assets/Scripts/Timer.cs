@@ -18,12 +18,13 @@ public class Timer : MonoBehaviour
     public Item mask;
     private bool hasMask;
     public float maskTime;
+    public AudioSource deathSound;
 
     private void Start()
     {
         timeRemaining = totalTime;
         running = true;
-        hasMask = false;    
+        hasMask = false;
     }
 
     void Update()
@@ -59,12 +60,22 @@ public class Timer : MonoBehaviour
                 rs.student = variableManager.activeCharacter;
                 variableManager.rescuables.Add(rs);
 
-                // espaco para uma kill message
-                
-                //load hub
-                sceneJump.StartCoroutine(sceneJump.ChangeScene(1));
+
+                StartCoroutine(EndDeath());
+
             }
         }
+    }
+
+    private IEnumerator EndDeath()
+    {
+        FindObjectOfType<PlayerAnimator>().TriggerDeath();
+        if(deathSound != null)
+        {
+            deathSound.Play();
+        }
+        yield return new WaitForSeconds(1.5f);
+        sceneJump.StartCoroutine(sceneJump.ChangeScene(1));
     }
 
     public void CheckMask()
@@ -84,7 +95,7 @@ public class Timer : MonoBehaviour
         }
         return;
     }
-    
+
     void DisplayTime(float timeToDisplay)
     {
         o2Fill.fillAmount = 0.664f*(timeRemaining / totalTime);

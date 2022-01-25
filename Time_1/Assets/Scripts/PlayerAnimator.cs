@@ -7,44 +7,52 @@ public class PlayerAnimator : MonoBehaviour
     private Animator anim;
     public CharacterState _state;
 
-    public enum CharacterState 
-     {
-         idle,
-         walking    
-     }
-
-    void Start () 
+    public enum CharacterState
     {
-        anim = GetComponent <Animator> ();
+        idle,
+        walking
     }
 
-     void Update() 
-     { 
+    public void TriggerDeath()
+    {
+        anim.SetTrigger("Morte");
+    }
+
+    void Start()
+    {
+        anim = GetComponent<Animator>();
+    }
+
+    void Update()
+    {
         anim.SetFloat("Speed", PlayerMovement.instance.CurrentSpeed());
         //CheckKey();
-     }
+    }
 
-     void CheckKey()
-     {
-         if(PlayerMovement.instance.IsMoving()) {
-             _state = CharacterState.walking;
-         } else {
-             _state = CharacterState.idle;
-         }
-         PlayAnimation();
-     }
+    void CheckKey()
+    {
+        if (PlayerMovement.instance.IsMoving())
+        {
+            _state = CharacterState.walking;
+        }
+        else
+        {
+            _state = CharacterState.idle;
+        }
+        PlayAnimation();
+    }
 
-     void PlayAnimation() 
-     {
-         switch(_state)
-         {
+    void PlayAnimation()
+    {
+        switch (_state)
+        {
             case CharacterState.walking:
-                    anim.Play("Walking");
-                    break;
+                anim.Play("Walking");
+                break;
 
             case CharacterState.idle:
-                    anim.Play("Idle");
-                    break;
-         }            
-     }
+                anim.Play("Idle");
+                break;
+        }
+    }
 }
