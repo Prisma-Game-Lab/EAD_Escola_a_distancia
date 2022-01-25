@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.05475062, g: 0.055750526, b: 0.078344695, a: 1}
+  m_IndirectSpecularColor: {r: 0.054713704, g: 0.055761956, b: 0.07798753, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -987,13 +987,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 102887073}
-  m_LocalRotation: {x: 0.19441675, y: 0.7957708, z: -0.32961896, w: 0.4693637}
-  m_LocalPosition: {x: -117, y: 147, z: -71}
+  m_LocalRotation: {x: 0.14453997, y: 0.85544544, z: -0.35433745, w: 0.34895045}
+  m_LocalPosition: {x: -99.041, y: 143.38, z: -39.89}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 45, y: 118.934, z: 0}
+  m_LocalEulerAnglesHint: {x: 45, y: 135.617, z: 0}
 --- !u!1 &115509939
 GameObject:
   m_ObjectHideFlags: 0
@@ -2191,7 +2191,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1458932445371769632, guid: 8d516908f0a185a4584eedecf8aa4f6d, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 30.000061
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1458932445371769632, guid: 8d516908f0a185a4584eedecf8aa4f6d, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2705,7 +2705,7 @@ GameObject:
   - component: {fileID: 276610958}
   - component: {fileID: 276610957}
   - component: {fileID: 276610956}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4049,7 +4049,7 @@ GameObject:
   - component: {fileID: 415805999}
   - component: {fileID: 415805998}
   - component: {fileID: 415805997}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6044,6 +6044,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4372354808925397601, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -77.90332
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9df658de80b5de44490e90bb02aea241, type: 3}
 --- !u!224 &767012223 stripped
@@ -7474,7 +7478,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 957293007}
-  m_Layer: 0
+  - component: {fileID: 957293008}
+  m_Layer: 3
   m_Name: Maca
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7501,6 +7506,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
+--- !u!65 &957293008
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957293006}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &974629648
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8293,7 +8311,7 @@ GameObject:
   - component: {fileID: 1085372439}
   - component: {fileID: 1085372438}
   - component: {fileID: 1085372437}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8521,7 +8539,7 @@ GameObject:
   - component: {fileID: 1105797821}
   - component: {fileID: 1105797820}
   - component: {fileID: 1105797819}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8786,11 +8804,6 @@ Transform:
 --- !u!1 &1108340120 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1617568255812838024, guid: 1ddc7c4db74e16346a403f00d591c88c, type: 3}
-  m_PrefabInstance: {fileID: 1108340118}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1108340123 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5867814568964250577, guid: 1ddc7c4db74e16346a403f00d591c88c, type: 3}
   m_PrefabInstance: {fileID: 1108340118}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1130196281
@@ -10089,7 +10102,7 @@ GameObject:
   - component: {fileID: 1337263016}
   - component: {fileID: 1337263015}
   - component: {fileID: 1337263014}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13253,7 +13266,7 @@ GameObject:
   - component: {fileID: 1730845180}
   - component: {fileID: 1730845179}
   - component: {fileID: 1730845178}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -16365,7 +16378,7 @@ PrefabInstance:
     - target: {fileID: 4215206474514115550, guid: 6dbd23278ea771d449a885f34456633c, type: 3}
       propertyPath: playerEricson
       value: 
-      objectReference: {fileID: 1108340123}
+      objectReference: {fileID: 0}
     - target: {fileID: 4438380725720438487, guid: 6dbd23278ea771d449a885f34456633c, type: 3}
       propertyPath: m_RootOrder
       value: 4
