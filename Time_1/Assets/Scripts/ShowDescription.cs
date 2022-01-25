@@ -21,7 +21,7 @@ public class ShowDescription : MonoBehaviour, IPointerEnterHandler, IPointerExit
         var item = inventory.PeekItemAt(transform.GetSiblingIndex());
         if (item != null)
         {
-            descriptionObj.objName.text = item.name;
+            descriptionObj.objName.text = item.itemName;
             descriptionObj.description.text = item.description;
             descriptionObj.gameObject.SetActive(true);
         }
