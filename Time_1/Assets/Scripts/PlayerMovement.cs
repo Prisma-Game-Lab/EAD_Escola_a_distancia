@@ -64,12 +64,18 @@ public class PlayerMovement : MonoBehaviour
 
     public void WalkTo(Vector3 target)
     {
-        agent?.SetDestination(target);
+        if (agent != null)
+        {
+            agent.SetDestination(target);
+        }
     }
 
     public void Stop()
     {
-        agent?.ResetPath();
+        if (agent != null)
+        {
+            agent.ResetPath();
+        }
         StopAllCoroutines();
     }
 
@@ -89,7 +95,7 @@ public class PlayerMovement : MonoBehaviour
 
     public float CurrentSpeed()
     {
-        return agent.velocity.magnitude/agent.speed;
+        return agent.velocity.magnitude / agent.speed;
     }
 }
 

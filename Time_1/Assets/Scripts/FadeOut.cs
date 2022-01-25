@@ -23,9 +23,9 @@ public class FadeOut : MonoBehaviour
         var img = GetComponent<Image>();
         Assert.IsNotNull(img);
         var color = img.color;
-        for(float t=0; t<=transitionTime; t+=Time.deltaTime)
+        for (float t = 0; t <= transitionTime; t += Time.deltaTime)
         {
-            img.color = new Color(color.r,color.g,color.b,t/transitionTime);
+            img.color = new Color(color.r, color.g, color.b, t / transitionTime);
             yield return new WaitForEndOfFrame();
         }
         gameObject.SetActive(false);
@@ -33,13 +33,17 @@ public class FadeOut : MonoBehaviour
     }
     public IEnumerator FadeInCoroutine()
     {
-        PlayerMovement.instance?.LockMovement();
+        if (PlayerMovement.instance != null)
+        {
+            PlayerMovement.instance.LockMovement();
+        }
+
         var img = GetComponent<Image>();
         Assert.IsNotNull(img);
         var color = img.color;
-        for(float t=transitionTime; t>=0; t-=Time.deltaTime)
+        for (float t = transitionTime; t >= 0; t -= Time.deltaTime)
         {
-            img.color = new Color(color.r,color.g,color.b,t/transitionTime);
+            img.color = new Color(color.r, color.g, color.b, t / transitionTime);
             yield return new WaitForEndOfFrame();
         }
         gameObject.SetActive(false);
