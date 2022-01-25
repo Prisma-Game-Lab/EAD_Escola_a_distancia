@@ -74,7 +74,7 @@ public class Timer : MonoBehaviour
         {
             deathSound.Play();
         }
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(6.9f);
         sceneJump.StartCoroutine(sceneJump.ChangeScene(1));
     }
 
