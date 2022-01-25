@@ -33,9 +33,11 @@ public class FadeOut : MonoBehaviour
     }
     public IEnumerator FadeInCoroutine()
     {
+        var locked = true;
         if (PlayerMovement.instance != null)
         {
             PlayerMovement.instance.LockMovement();
+            locked = false;
         }
 
         var img = GetComponent<Image>();
@@ -47,6 +49,9 @@ public class FadeOut : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
         gameObject.SetActive(false);
-        PlayerMovement.instance?.UnlockMovement();
+        if (locked)
+        {
+            PlayerMovement.instance.UnlockMovement();
+        }
     }
 }
