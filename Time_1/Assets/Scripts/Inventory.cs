@@ -10,6 +10,8 @@ public class Inventory : ScriptableObject
     [System.NonSerialized]
     public bool changed = true;
 
+    private void OnEnable() => hideFlags = HideFlags.DontUnloadUnusedAsset;
+
     public void RemoveItem(Item item)
     {
         var index = itemList.IndexOf(item);

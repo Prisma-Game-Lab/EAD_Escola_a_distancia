@@ -80,7 +80,6 @@ public class Timer : MonoBehaviour
 
     public void CheckMask()
     {
-        Debug.Log("TESTOU");
         if (personalInventory.itemList.Contains(mask) && hasMask == false)
         {
             totalTime += maskTime;
