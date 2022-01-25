@@ -2844,6 +2844,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 8989037421440517312, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
 --- !u!4 &342116932 stripped
@@ -6265,6 +6269,63 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1415881001969709904, guid: 4eaede993d3415e4db3d67763a87deaf, type: 3}
   m_PrefabInstance: {fileID: 872226279}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &890270793 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1796347916434057706, guid: 4eaede993d3415e4db3d67763a87deaf, type: 3}
+  m_PrefabInstance: {fileID: 1738347608}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &890270794 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3766641793198819527, guid: 4eaede993d3415e4db3d67763a87deaf, type: 3}
+  m_PrefabInstance: {fileID: 1738347608}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890270793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 491596fc72f23204884cff8d3cca28f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &890270795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890270793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efaf63b044fbb8a409cbbbf934d55dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyIf: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 890270794}
+        m_TargetAssemblyTypeName: NPCDialogue2, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!65 &890270796
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890270793}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.811355, y: 2.7968032, z: 1.3954005}
+  m_Center: {x: 0.16104843, y: -0.15572853, z: -0.19770017}
 --- !u!1001 &906489404
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9893,11 +9954,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1ddc7c4db74e16346a403f00d591c88c, type: 3}
---- !u!1 &1423319757 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5867814568964250577, guid: 1ddc7c4db74e16346a403f00d591c88c, type: 3}
-  m_PrefabInstance: {fileID: 1423319754}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1431813098
 GameObject:
   m_ObjectHideFlags: 0
@@ -10100,6 +10156,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1079097511}
     m_Modifications:
+    - target: {fileID: -6282028727655465792, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_Name
       value: armario_fechado
@@ -13368,6 +13428,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1681382744}
     m_Modifications:
+    - target: {fileID: -1320625959301268301, guid: 103eb57e6b64e0f47ab5460713c18830, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8230558138675559356, guid: 103eb57e6b64e0f47ab5460713c18830, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -13423,6 +13487,57 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8230558138675559356, guid: 103eb57e6b64e0f47ab5460713c18830, type: 3}
   m_PrefabInstance: {fileID: 1814517214}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1814517216 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8751340328759632134, guid: 103eb57e6b64e0f47ab5460713c18830, type: 3}
+  m_PrefabInstance: {fileID: 1814517214}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1814517217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814517216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efaf63b044fbb8a409cbbbf934d55dc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyIf: 
+  onInteract:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1814517218}
+        m_TargetAssemblyTypeName: NPCDialogue2, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1814517218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814517216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 491596fc72f23204884cff8d3cca28f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selfName: 
+  initialDialogue: {fileID: 11400000, guid: 6a6516f3c0c0e2443bc815fea7d566b5, type: 2}
+  itemDialogueOptions: []
+  puzzleDialogueOptions: []
+  genericDialogueOptions:
+  - {fileID: 11400000, guid: 03535882e5463cf43bba17fa44b05a6e, type: 2}
 --- !u!1001 &1818016052
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13703,6 +13818,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1079097511}
     m_Modifications:
+    - target: {fileID: -6282028727655465792, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_Name
       value: armario_fechado (3)
@@ -13792,7 +13911,7 @@ PrefabInstance:
     - target: {fileID: 4215206474514115550, guid: 6dbd23278ea771d449a885f34456633c, type: 3}
       propertyPath: playerEricson
       value: 
-      objectReference: {fileID: 1423319757}
+      objectReference: {fileID: 0}
     - target: {fileID: 4438380725720438487, guid: 6dbd23278ea771d449a885f34456633c, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -15703,6 +15822,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Carrinho de zelador
       objectReference: {fileID: 0}
+    - target: {fileID: 2433141079473260751, guid: e0fb1baf86aad5d469fa0d8e8a599888, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3066828506833506933, guid: e0fb1baf86aad5d469fa0d8e8a599888, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -15762,15 +15885,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8177893627290764495, guid: 6d2b85ce34c6d4649985f623182e69e3, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.2762803
+      value: 0.2928571
       objectReference: {fileID: 0}
     - target: {fileID: 8177893627290764495, guid: 6d2b85ce34c6d4649985f623182e69e3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.3872567
+      value: 0.4104921
       objectReference: {fileID: 0}
     - target: {fileID: 8177893627290764495, guid: 6d2b85ce34c6d4649985f623182e69e3, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.03996792
+      value: 0.042365994
       objectReference: {fileID: 0}
     - target: {fileID: 8177893627290764495, guid: 6d2b85ce34c6d4649985f623182e69e3, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15782,7 +15905,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8177893627290764495, guid: 6d2b85ce34c6d4649985f623182e69e3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 5.2
+      value: 5.14
       objectReference: {fileID: 0}
     - target: {fileID: 8177893627290764495, guid: 6d2b85ce34c6d4649985f623182e69e3, type: 3}
       propertyPath: m_LocalRotation.w
