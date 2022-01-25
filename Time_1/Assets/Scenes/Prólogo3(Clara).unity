@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.05475062, g: 0.055750526, b: 0.078344695, a: 1}
+  m_IndirectSpecularColor: {r: 0.054713704, g: 0.055761956, b: 0.07798753, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -985,6 +985,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 85743441}
   m_CullTransparentMesh: 1
+--- !u!1 &91583101 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7124870129931568441, guid: 103eb57e6b64e0f47ab5460713c18830, type: 3}
+  m_PrefabInstance: {fileID: 1522701410}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &91583105
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91583101}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 29.451683, y: 2.1373062, z: 52.34694}
+  m_Center: {x: 0.0000052452087, y: 1.1360285, z: -0.000009536743}
 --- !u!1 &92580751
 GameObject:
   m_ObjectHideFlags: 0
@@ -6064,6 +6082,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1212776844}
     m_Modifications:
+    - target: {fileID: -6282028727655465792, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4544691479516300450, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5927829538499786373, guid: 568ee27de5358b845bacbf86c407a1e3, type: 3}
       propertyPath: m_Name
       value: armario_fechado
@@ -8887,6 +8913,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1212776844}
     m_Modifications:
+    - target: {fileID: 1501842903333621786, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7100525765358530922, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -8954,6 +8984,10 @@ PrefabInstance:
     - target: {fileID: 7620638386684193744, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8989037421440517312, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 23f39e6d972dd0d449a71e8117f13fb2, type: 3}
@@ -9135,6 +9169,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1212776844}
     m_Modifications:
+    - target: {fileID: 7124870129931568441, guid: 103eb57e6b64e0f47ab5460713c18830, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614266520170700675, guid: 103eb57e6b64e0f47ab5460713c18830, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7614266520170700675, guid: 103eb57e6b64e0f47ab5460713c18830, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 8230558138675559356, guid: 103eb57e6b64e0f47ab5460713c18830, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -9194,6 +9240,10 @@ PrefabInstance:
     - target: {fileID: 8751340328759632134, guid: 103eb57e6b64e0f47ab5460713c18830, type: 3}
       propertyPath: m_Name
       value: mesa_prof
+      objectReference: {fileID: 0}
+    - target: {fileID: 8751340328759632134, guid: 103eb57e6b64e0f47ab5460713c18830, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 103eb57e6b64e0f47ab5460713c18830, type: 3}
