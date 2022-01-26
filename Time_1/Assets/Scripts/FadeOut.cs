@@ -9,6 +9,11 @@ public class FadeOut : MonoBehaviour
 {
     public float transitionTime;
 
+    public void SetTransitionTime(float time)
+    {
+        transitionTime = time;
+    }
+
     public void StartFadeOut()
     {
         StartCoroutine(FadeOutCoroutine());
@@ -33,11 +38,11 @@ public class FadeOut : MonoBehaviour
     }
     public IEnumerator FadeInCoroutine()
     {
-        var locked = true;
+        var locked = false;
         if (PlayerMovement.instance != null)
         {
             PlayerMovement.instance.LockMovement();
-            locked = false;
+            locked = true;
         }
 
         var img = GetComponent<Image>();
