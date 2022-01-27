@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.054713704, g: 0.055761956, b: 0.07798753, a: 1}
+  m_IndirectSpecularColor: {r: 0.05475062, g: 0.055750526, b: 0.078344695, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8219,9 +8219,11 @@ MonoBehaviour:
   collectables:
   - {fileID: 1872971014}
   - {fileID: 2040614612}
+  - {fileID: 952079901}
   items:
   - {fileID: 11400000, guid: b4c38187d7f4b314c835d45582342239, type: 2}
   - {fileID: 11400000, guid: 6c628cbff15636c408b29a5c3445b62d, type: 2}
+  - {fileID: 11400000, guid: 1f726c23234dbf64781adbf43c22050b, type: 2}
 --- !u!1001 &516621887
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15996,6 +15998,18 @@ MonoBehaviour:
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 2dfdbc444b55697488d8c9c2a3788885, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Item, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 778fd65bc6cc1ee4f8270199f51eebb8, type: 2}
+        m_TargetAssemblyTypeName: VariableManager, Assembly-CSharp
+        m_MethodName: CollectItem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 1f726c23234dbf64781adbf43c22050b, type: 2}
           m_ObjectArgumentAssemblyTypeName: Item, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
