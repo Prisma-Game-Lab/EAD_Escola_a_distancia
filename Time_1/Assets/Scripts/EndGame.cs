@@ -7,12 +7,17 @@ public class EndGame : MonoBehaviour
     [SerializeField]
     private GameObject porta;
     [SerializeField]
+    private GameObject porta2;
+    [SerializeField]
     private GameObject estante;
 
     [SerializeField]
     private Inventory priv, global;
     [SerializeField]
     private Item key1, key2;
+
+    public FadeOut fadeOut;
+
 
     void Awake()
     {
@@ -36,5 +41,22 @@ public class EndGame : MonoBehaviour
         porta.SetActive(true);
         estante.transform.Rotate(0, 90, 0);
         estante.transform.position += new Vector3(0, 0, 1.5f);
+    }
+
+
+    public void Received()
+    {
+        Debug.Log("RECEBEU");
+        StartCoroutine(TrocaPorta());
+    }
+
+    public IEnumerator TrocaPorta()
+    {
+        fadeOut.gameObject.SetActive(true);
+        yield return fadeOut.StartCoroutine(fadeOut.FadeOutCoroutine());
+        porta.SetActive(false);
+        porta2.SetActive(true);
+        fadeOut.gameObject.SetActive(true);
+        yield return fadeOut.StartCoroutine(fadeOut.FadeInCoroutine());
     }
 }
